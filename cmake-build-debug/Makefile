@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
 # Target rules for targets named select_server
 
 # Build rule for target.
@@ -135,6 +122,19 @@ select_server: cmake_check_build_system
 select_server/fast:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
 .PHONY : select_server/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named biglittle
@@ -150,6 +150,19 @@ biglittle/fast:
 .PHONY : biglittle/fast
 
 #=============================================================================
+# Target rules for targets named addr
+
+# Build rule for target.
+addr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 addr
+.PHONY : addr
+
+# fast build rule for target.
+addr/fast:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
+.PHONY : addr/fast
+
+#=============================================================================
 # Target rules for targets named select_client
 
 # Build rule for target.
@@ -161,6 +174,49 @@ select_client: cmake_check_build_system
 select_client/fast:
 	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
 .PHONY : select_client/fast
+
+#=============================================================================
+# Target rules for targets named socket
+
+# Build rule for target.
+socket: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 socket
+.PHONY : socket
+
+# fast build rule for target.
+socket/fast:
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
+.PHONY : socket/fast
+
+addr/addr.o: addr/addr.c.o
+
+.PHONY : addr/addr.o
+
+# target to build an object file
+addr/addr.c.o:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/addr/addr.c.o
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/addr/addr.c.o
+.PHONY : addr/addr.c.o
+
+addr/addr.i: addr/addr.c.i
+
+.PHONY : addr/addr.i
+
+# target to preprocess a source file
+addr/addr.c.i:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/addr/addr.c.i
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/addr/addr.c.i
+.PHONY : addr/addr.c.i
+
+addr/addr.s: addr/addr.c.s
+
+.PHONY : addr/addr.s
+
+# target to generate assembly for a file
+addr/addr.c.s:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/addr/addr.c.s
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/addr/addr.c.s
+.PHONY : addr/addr.c.s
 
 biglittle/biglitter.o: biglittle/biglitter.c.o
 
@@ -270,18 +326,50 @@ select/server.c.s:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/select/server.c.s
 .PHONY : select/server.c.s
 
+socket/socket.o: socket/socket.c.o
+
+.PHONY : socket/socket.o
+
+# target to build an object file
+socket/socket.c.o:
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/socket/socket.c.o
+.PHONY : socket/socket.c.o
+
+socket/socket.i: socket/socket.c.i
+
+.PHONY : socket/socket.i
+
+# target to preprocess a source file
+socket/socket.c.i:
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/socket/socket.c.i
+.PHONY : socket/socket.c.i
+
+socket/socket.s: socket/socket.c.s
+
+.PHONY : socket/socket.s
+
+# target to generate assembly for a file
+socket/socket.c.s:
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/socket/socket.c.s
+.PHONY : socket/socket.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... main"
 	@echo "... select_server"
+	@echo "... main"
 	@echo "... biglittle"
+	@echo "... rebuild_cache"
+	@echo "... addr"
 	@echo "... edit_cache"
 	@echo "... select_client"
+	@echo "... socket"
+	@echo "... addr/addr.o"
+	@echo "... addr/addr.i"
+	@echo "... addr/addr.s"
 	@echo "... biglittle/biglitter.o"
 	@echo "... biglittle/biglitter.i"
 	@echo "... biglittle/biglitter.s"
@@ -294,6 +382,9 @@ help:
 	@echo "... select/server.o"
 	@echo "... select/server.i"
 	@echo "... select/server.s"
+	@echo "... socket/socket.o"
+	@echo "... socket/socket.i"
+	@echo "... socket/socket.s"
 .PHONY : help
 
 

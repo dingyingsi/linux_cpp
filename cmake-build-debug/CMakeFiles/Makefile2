@@ -53,10 +53,12 @@ CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
 all: CMakeFiles/select_server.dir/all
+all: CMakeFiles/main.dir/all
 all: CMakeFiles/biglittle.dir/all
+all: CMakeFiles/addr.dir/all
 all: CMakeFiles/select_client.dir/all
+all: CMakeFiles/socket.dir/all
 
 .PHONY : all
 
@@ -66,39 +68,14 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/select_server.dir/clean
+clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/biglittle.dir/clean
+clean: CMakeFiles/addr.dir/clean
 clean: CMakeFiles/select_client.dir/clean
+clean: CMakeFiles/socket.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/select_server.dir
@@ -107,7 +84,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/select_server.dir/all:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/depend
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target select_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target select_server"
 .PHONY : CMakeFiles/select_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -128,18 +105,45 @@ CMakeFiles/select_server.dir/clean:
 .PHONY : CMakeFiles/select_server.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/biglittle.dir
 
 # All Build rule for target.
 CMakeFiles/biglittle.dir/all:
 	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/depend
 	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target biglittle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target biglittle"
 .PHONY : CMakeFiles/biglittle.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/biglittle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/biglittle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/biglittle.dir/rule
@@ -155,13 +159,40 @@ CMakeFiles/biglittle.dir/clean:
 .PHONY : CMakeFiles/biglittle.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/addr.dir
+
+# All Build rule for target.
+CMakeFiles/addr.dir/all:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/depend
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target addr"
+.PHONY : CMakeFiles/addr.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/addr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/addr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/addr.dir/rule
+
+# Convenience name for target.
+addr: CMakeFiles/addr.dir/rule
+
+.PHONY : addr
+
+# clean rule for target.
+CMakeFiles/addr.dir/clean:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/clean
+.PHONY : CMakeFiles/addr.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/select_client.dir
 
 # All Build rule for target.
 CMakeFiles/select_client.dir/all:
 	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/depend
 	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target select_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target select_client"
 .PHONY : CMakeFiles/select_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -180,6 +211,33 @@ select_client: CMakeFiles/select_client.dir/rule
 CMakeFiles/select_client.dir/clean:
 	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/clean
 .PHONY : CMakeFiles/select_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/socket.dir
+
+# All Build rule for target.
+CMakeFiles/socket.dir/all:
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/depend
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target socket"
+.PHONY : CMakeFiles/socket.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/socket.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/socket.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/socket.dir/rule
+
+# Convenience name for target.
+socket: CMakeFiles/socket.dir/rule
+
+.PHONY : socket
+
+# clean rule for target.
+CMakeFiles/socket.dir/clean:
+	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/clean
+.PHONY : CMakeFiles/socket.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
