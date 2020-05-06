@@ -1,0 +1,1 @@
+/bin/cc -g   CMakeFiles/select_client.dir/select/client.c.o  -o select_client 
