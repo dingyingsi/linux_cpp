@@ -99,6 +99,42 @@
 					<DistClean command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="biglittle">
+				<Option output="/root/CLionProjects/tcp/cmake-build-debug/biglittle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 biglittle"/>
+					<CompileFile command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="biglittle/fast">
+				<Option output="/root/CLionProjects/tcp/cmake-build-debug/biglittle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 biglittle/fast"/>
+					<CompileFile command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j4 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
 				<Option type="4"/>
@@ -146,6 +182,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/root/CLionProjects/tcp/biglittle/biglitter.c">
+			<Option target="biglittle"/>
+		</Unit>
 		<Unit filename="/root/CLionProjects/tcp/main.c">
 			<Option target="main"/>
 		</Unit>

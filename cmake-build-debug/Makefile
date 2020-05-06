@@ -137,6 +137,19 @@ select_server/fast:
 .PHONY : select_server/fast
 
 #=============================================================================
+# Target rules for targets named biglittle
+
+# Build rule for target.
+biglittle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 biglittle
+.PHONY : biglittle
+
+# fast build rule for target.
+biglittle/fast:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/build
+.PHONY : biglittle/fast
+
+#=============================================================================
 # Target rules for targets named select_client
 
 # Build rule for target.
@@ -148,6 +161,33 @@ select_client: cmake_check_build_system
 select_client/fast:
 	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
 .PHONY : select_client/fast
+
+biglittle/biglitter.o: biglittle/biglitter.c.o
+
+.PHONY : biglittle/biglitter.o
+
+# target to build an object file
+biglittle/biglitter.c.o:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/biglittle/biglitter.c.o
+.PHONY : biglittle/biglitter.c.o
+
+biglittle/biglitter.i: biglittle/biglitter.c.i
+
+.PHONY : biglittle/biglitter.i
+
+# target to preprocess a source file
+biglittle/biglitter.c.i:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/biglittle/biglitter.c.i
+.PHONY : biglittle/biglitter.c.i
+
+biglittle/biglitter.s: biglittle/biglitter.c.s
+
+.PHONY : biglittle/biglitter.s
+
+# target to generate assembly for a file
+biglittle/biglitter.c.s:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/biglittle/biglitter.c.s
+.PHONY : biglittle/biglitter.c.s
 
 main.o: main.c.o
 
@@ -239,8 +279,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... select_server"
+	@echo "... biglittle"
 	@echo "... edit_cache"
 	@echo "... select_client"
+	@echo "... biglittle/biglitter.o"
+	@echo "... biglittle/biglitter.i"
+	@echo "... biglittle/biglitter.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

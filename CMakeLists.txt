@@ -4,5 +4,6 @@ project(tcp C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(main main.c)
+add_executable(biglittle biglittle/biglitter.c)
 add_executable(select_server select/server.c)
 add_executable(select_client select/client.c)
