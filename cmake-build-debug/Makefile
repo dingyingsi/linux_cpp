@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2020.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/tcp
+CMAKE_SOURCE_DIR = /home/dingyingsi/CLionProjects/tcp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dingyingsi/CLionProjects/tcp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,19 @@ select_server/fast:
 .PHONY : select_server/fast
 
 #=============================================================================
+# Target rules for targets named echo_client
+
+# Build rule for target.
+echo_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_client
+.PHONY : echo_client
+
+# fast build rule for target.
+echo_client/fast:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
+.PHONY : echo_client/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -150,19 +163,6 @@ biglittle/fast:
 .PHONY : biglittle/fast
 
 #=============================================================================
-# Target rules for targets named addr
-
-# Build rule for target.
-addr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 addr
-.PHONY : addr
-
-# fast build rule for target.
-addr/fast:
-	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
-.PHONY : addr/fast
-
-#=============================================================================
 # Target rules for targets named select_client
 
 # Build rule for target.
@@ -176,17 +176,30 @@ select_client/fast:
 .PHONY : select_client/fast
 
 #=============================================================================
-# Target rules for targets named socket
+# Target rules for targets named echo_server
 
 # Build rule for target.
-socket: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 socket
-.PHONY : socket
+echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
 
 # fast build rule for target.
-socket/fast:
-	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
-.PHONY : socket/fast
+echo_server/fast:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
+
+#=============================================================================
+# Target rules for targets named addr
+
+# Build rule for target.
+addr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 addr
+.PHONY : addr
+
+# fast build rule for target.
+addr/fast:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
+.PHONY : addr/fast
 
 addr/addr.o: addr/addr.c.o
 
@@ -244,6 +257,60 @@ biglittle/biglitter.s: biglittle/biglitter.c.s
 biglittle/biglitter.c.s:
 	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/biglittle/biglitter.c.s
 .PHONY : biglittle/biglitter.c.s
+
+echo/echo_client.o: echo/echo_client.c.o
+
+.PHONY : echo/echo_client.o
+
+# target to build an object file
+echo/echo_client.c.o:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/echo/echo_client.c.o
+.PHONY : echo/echo_client.c.o
+
+echo/echo_client.i: echo/echo_client.c.i
+
+.PHONY : echo/echo_client.i
+
+# target to preprocess a source file
+echo/echo_client.c.i:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/echo/echo_client.c.i
+.PHONY : echo/echo_client.c.i
+
+echo/echo_client.s: echo/echo_client.c.s
+
+.PHONY : echo/echo_client.s
+
+# target to generate assembly for a file
+echo/echo_client.c.s:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/echo/echo_client.c.s
+.PHONY : echo/echo_client.c.s
+
+echo/echo_server.o: echo/echo_server.c.o
+
+.PHONY : echo/echo_server.o
+
+# target to build an object file
+echo/echo_server.c.o:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo/echo_server.c.o
+.PHONY : echo/echo_server.c.o
+
+echo/echo_server.i: echo/echo_server.c.i
+
+.PHONY : echo/echo_server.i
+
+# target to preprocess a source file
+echo/echo_server.c.i:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo/echo_server.c.i
+.PHONY : echo/echo_server.c.i
+
+echo/echo_server.s: echo/echo_server.c.s
+
+.PHONY : echo/echo_server.s
+
+# target to generate assembly for a file
+echo/echo_server.c.s:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo/echo_server.c.s
+.PHONY : echo/echo_server.c.s
 
 main.o: main.c.o
 
@@ -326,33 +393,6 @@ select/server.c.s:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/select/server.c.s
 .PHONY : select/server.c.s
 
-socket/socket.o: socket/socket.c.o
-
-.PHONY : socket/socket.o
-
-# target to build an object file
-socket/socket.c.o:
-	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/socket/socket.c.o
-.PHONY : socket/socket.c.o
-
-socket/socket.i: socket/socket.c.i
-
-.PHONY : socket/socket.i
-
-# target to preprocess a source file
-socket/socket.c.i:
-	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/socket/socket.c.i
-.PHONY : socket/socket.c.i
-
-socket/socket.s: socket/socket.c.s
-
-.PHONY : socket/socket.s
-
-# target to generate assembly for a file
-socket/socket.c.s:
-	$(MAKE) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/socket/socket.c.s
-.PHONY : socket/socket.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,19 +400,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... select_server"
+	@echo "... echo_client"
 	@echo "... main"
 	@echo "... biglittle"
-	@echo "... rebuild_cache"
-	@echo "... addr"
 	@echo "... edit_cache"
 	@echo "... select_client"
-	@echo "... socket"
+	@echo "... echo_server"
+	@echo "... rebuild_cache"
+	@echo "... addr"
 	@echo "... addr/addr.o"
 	@echo "... addr/addr.i"
 	@echo "... addr/addr.s"
 	@echo "... biglittle/biglitter.o"
 	@echo "... biglittle/biglitter.i"
 	@echo "... biglittle/biglitter.s"
+	@echo "... echo/echo_client.o"
+	@echo "... echo/echo_client.i"
+	@echo "... echo/echo_client.s"
+	@echo "... echo/echo_server.o"
+	@echo "... echo/echo_server.i"
+	@echo "... echo/echo_server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -382,9 +429,6 @@ help:
 	@echo "... select/server.o"
 	@echo "... select/server.i"
 	@echo "... select/server.s"
-	@echo "... socket/socket.o"
-	@echo "... socket/socket.i"
-	@echo "... socket/socket.s"
 .PHONY : help
 
 

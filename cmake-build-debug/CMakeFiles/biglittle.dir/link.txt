@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/biglittle.dir/biglittle/biglitter.c.o CMakeFiles/biglittle.dir/addr/addr.c.o  -o biglittle 
+/usr/bin/cc -g   CMakeFiles/biglittle.dir/biglittle/biglitter.c.o CMakeFiles/biglittle.dir/addr/addr.c.o  -o biglittle 
