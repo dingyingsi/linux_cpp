@@ -49,9 +49,11 @@ int main(int argc, char** argv)
             else if (ret == 0)
             {
                 printf("peer close\n");
+                break;
             }
             fputs(recvbuf, stdout);
         }
+        close(sock);
     }
     else {
         char sendbuf[1024] = {0};
@@ -60,6 +62,7 @@ int main(int argc, char** argv)
             write(sock, sendbuf, strlen(sendbuf));
             memset(sendbuf, 0, sizeof(sendbuf));
         }
+        close(sock);
     }
 
     return EXIT_SUCCESS;

@@ -5,6 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <arpa/inet.h>
+#include <signal.h>
 
 #define ERR_EXIT(m) \
     do \
@@ -12,6 +13,12 @@
         perror(m); \
         exit(EXIT_FAILURE); \
     } while(0)
+
+void handler(int sig)
+{
+    printf("recv a sig=%d\n", sig);
+    exit(EXIT_SUCCESS);
+}
 
 void do_service(int conn)
 {
@@ -80,12 +87,14 @@ int main(int argc, char** argv)
     }
     else if (pid == 0)
     {
+        signal(SIGUSR1, handler);
         char sendbuf[1024] = {0};
         while (fgets(sendbuf, sizeof(sendbuf), stdin) != NULL)
         {
             write(conn, sendbuf, strlen(sendbuf));
             memset(sendbuf, 0, sizeof(sendbuf));
         }
+        printf("child closed\n");
         exit(EXIT_SUCCESS);
     }
     else
@@ -101,10 +110,13 @@ int main(int argc, char** argv)
             else if (ret == 0)
             {
                 printf("peer close\n");
+                break;
             }
             fputs(recvbuf, stdout);
 
         }
+        printf("parent closed\n");
+        kill(pid, SIGUSR1);
         exit(EXIT_SUCCESS);
     }
 
