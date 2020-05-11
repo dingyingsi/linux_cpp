@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/CLionProjects/tcp/p2p/p2p_server.c
+stdlib.h
+-
+stdio.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+string.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+
