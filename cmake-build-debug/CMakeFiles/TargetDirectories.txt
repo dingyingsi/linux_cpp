@@ -1,11 +1,13 @@
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/addr.dir
-/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_server.dir
-/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/select_client.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_server.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/biglittle.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_fork_server.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_client.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_fork_client.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/main.dir
 /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/select_server.dir
+/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/addr.dir
+/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/p2p_server.dir
+/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/select_client.dir
+/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/p2p_client.dir

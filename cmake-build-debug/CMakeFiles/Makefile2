@@ -53,15 +53,17 @@ CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/addr.dir/all
 all: CMakeFiles/echo_server.dir/all
-all: CMakeFiles/select_client.dir/all
 all: CMakeFiles/biglittle.dir/all
 all: CMakeFiles/echo_fork_server.dir/all
 all: CMakeFiles/echo_client.dir/all
 all: CMakeFiles/echo_fork_client.dir/all
 all: CMakeFiles/main.dir/all
 all: CMakeFiles/select_server.dir/all
+all: CMakeFiles/addr.dir/all
+all: CMakeFiles/p2p_server.dir/all
+all: CMakeFiles/select_client.dir/all
+all: CMakeFiles/p2p_client.dir/all
 
 .PHONY : all
 
@@ -71,44 +73,19 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/addr.dir/clean
 clean: CMakeFiles/echo_server.dir/clean
-clean: CMakeFiles/select_client.dir/clean
 clean: CMakeFiles/biglittle.dir/clean
 clean: CMakeFiles/echo_fork_server.dir/clean
 clean: CMakeFiles/echo_client.dir/clean
 clean: CMakeFiles/echo_fork_client.dir/clean
 clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/select_server.dir/clean
+clean: CMakeFiles/addr.dir/clean
+clean: CMakeFiles/p2p_server.dir/clean
+clean: CMakeFiles/select_client.dir/clean
+clean: CMakeFiles/p2p_client.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/addr.dir
-
-# All Build rule for target.
-CMakeFiles/addr.dir/all:
-	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/depend
-	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target addr"
-.PHONY : CMakeFiles/addr.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/addr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/addr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/addr.dir/rule
-
-# Convenience name for target.
-addr: CMakeFiles/addr.dir/rule
-
-.PHONY : addr
-
-# clean rule for target.
-CMakeFiles/addr.dir/clean:
-	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/clean
-.PHONY : CMakeFiles/addr.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/echo_server.dir
@@ -136,33 +113,6 @@ echo_server: CMakeFiles/echo_server.dir/rule
 CMakeFiles/echo_server.dir/clean:
 	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/clean
 .PHONY : CMakeFiles/echo_server.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/select_client.dir
-
-# All Build rule for target.
-CMakeFiles/select_client.dir/all:
-	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/depend
-	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target select_client"
-.PHONY : CMakeFiles/select_client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/select_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/select_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/select_client.dir/rule
-
-# Convenience name for target.
-select_client: CMakeFiles/select_client.dir/rule
-
-.PHONY : select_client
-
-# clean rule for target.
-CMakeFiles/select_client.dir/clean:
-	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/clean
-.PHONY : CMakeFiles/select_client.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/biglittle.dir
@@ -306,7 +256,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/select_server.dir/all:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/depend
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target select_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target select_server"
 .PHONY : CMakeFiles/select_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -325,6 +275,114 @@ select_server: CMakeFiles/select_server.dir/rule
 CMakeFiles/select_server.dir/clean:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/clean
 .PHONY : CMakeFiles/select_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/addr.dir
+
+# All Build rule for target.
+CMakeFiles/addr.dir/all:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/depend
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target addr"
+.PHONY : CMakeFiles/addr.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/addr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/addr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/addr.dir/rule
+
+# Convenience name for target.
+addr: CMakeFiles/addr.dir/rule
+
+.PHONY : addr
+
+# clean rule for target.
+CMakeFiles/addr.dir/clean:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/clean
+.PHONY : CMakeFiles/addr.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/p2p_server.dir
+
+# All Build rule for target.
+CMakeFiles/p2p_server.dir/all:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/depend
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target p2p_server"
+.PHONY : CMakeFiles/p2p_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/p2p_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/p2p_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/p2p_server.dir/rule
+
+# Convenience name for target.
+p2p_server: CMakeFiles/p2p_server.dir/rule
+
+.PHONY : p2p_server
+
+# clean rule for target.
+CMakeFiles/p2p_server.dir/clean:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/clean
+.PHONY : CMakeFiles/p2p_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/select_client.dir
+
+# All Build rule for target.
+CMakeFiles/select_client.dir/all:
+	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/depend
+	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target select_client"
+.PHONY : CMakeFiles/select_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/select_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/select_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/select_client.dir/rule
+
+# Convenience name for target.
+select_client: CMakeFiles/select_client.dir/rule
+
+.PHONY : select_client
+
+# clean rule for target.
+CMakeFiles/select_client.dir/clean:
+	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/clean
+.PHONY : CMakeFiles/select_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/p2p_client.dir
+
+# All Build rule for target.
+CMakeFiles/p2p_client.dir/all:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/depend
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target p2p_client"
+.PHONY : CMakeFiles/p2p_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/p2p_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/p2p_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/p2p_client.dir/rule
+
+# Convenience name for target.
+p2p_client: CMakeFiles/p2p_client.dir/rule
+
+.PHONY : p2p_client
+
+# clean rule for target.
+CMakeFiles/p2p_client.dir/clean:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/clean
+.PHONY : CMakeFiles/p2p_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

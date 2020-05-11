@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named addr
-
-# Build rule for target.
-addr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 addr
-.PHONY : addr
-
-# fast build rule for target.
-addr/fast:
-	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
-.PHONY : addr/fast
-
-#=============================================================================
 # Target rules for targets named echo_server
 
 # Build rule for target.
@@ -135,19 +122,6 @@ echo_server: cmake_check_build_system
 echo_server/fast:
 	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
 .PHONY : echo_server/fast
-
-#=============================================================================
-# Target rules for targets named select_client
-
-# Build rule for target.
-select_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 select_client
-.PHONY : select_client
-
-# fast build rule for target.
-select_client/fast:
-	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
-.PHONY : select_client/fast
 
 #=============================================================================
 # Target rules for targets named biglittle
@@ -226,6 +200,58 @@ select_server: cmake_check_build_system
 select_server/fast:
 	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
 .PHONY : select_server/fast
+
+#=============================================================================
+# Target rules for targets named addr
+
+# Build rule for target.
+addr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 addr
+.PHONY : addr
+
+# fast build rule for target.
+addr/fast:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
+.PHONY : addr/fast
+
+#=============================================================================
+# Target rules for targets named p2p_server
+
+# Build rule for target.
+p2p_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p2p_server
+.PHONY : p2p_server
+
+# fast build rule for target.
+p2p_server/fast:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/build
+.PHONY : p2p_server/fast
+
+#=============================================================================
+# Target rules for targets named select_client
+
+# Build rule for target.
+select_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 select_client
+.PHONY : select_client
+
+# fast build rule for target.
+select_client/fast:
+	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
+.PHONY : select_client/fast
+
+#=============================================================================
+# Target rules for targets named p2p_client
+
+# Build rule for target.
+p2p_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p2p_client
+.PHONY : p2p_client
+
+# fast build rule for target.
+p2p_client/fast:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/build
+.PHONY : p2p_client/fast
 
 addr/addr.o: addr/addr.c.o
 
@@ -416,6 +442,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+p2p/p2p_client.o: p2p/p2p_client.c.o
+
+.PHONY : p2p/p2p_client.o
+
+# target to build an object file
+p2p/p2p_client.c.o:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/p2p/p2p_client.c.o
+.PHONY : p2p/p2p_client.c.o
+
+p2p/p2p_client.i: p2p/p2p_client.c.i
+
+.PHONY : p2p/p2p_client.i
+
+# target to preprocess a source file
+p2p/p2p_client.c.i:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/p2p/p2p_client.c.i
+.PHONY : p2p/p2p_client.c.i
+
+p2p/p2p_client.s: p2p/p2p_client.c.s
+
+.PHONY : p2p/p2p_client.s
+
+# target to generate assembly for a file
+p2p/p2p_client.c.s:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/p2p/p2p_client.c.s
+.PHONY : p2p/p2p_client.c.s
+
+p2p/p2p_server.o: p2p/p2p_server.c.o
+
+.PHONY : p2p/p2p_server.o
+
+# target to build an object file
+p2p/p2p_server.c.o:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/p2p/p2p_server.c.o
+.PHONY : p2p/p2p_server.c.o
+
+p2p/p2p_server.i: p2p/p2p_server.c.i
+
+.PHONY : p2p/p2p_server.i
+
+# target to preprocess a source file
+p2p/p2p_server.c.i:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/p2p/p2p_server.c.i
+.PHONY : p2p/p2p_server.c.i
+
+p2p/p2p_server.s: p2p/p2p_server.c.s
+
+.PHONY : p2p/p2p_server.s
+
+# target to generate assembly for a file
+p2p/p2p_server.c.s:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/p2p/p2p_server.c.s
+.PHONY : p2p/p2p_server.c.s
+
 select/client.o: select/client.c.o
 
 .PHONY : select/client.o
@@ -477,16 +557,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... addr"
-	@echo "... echo_server"
-	@echo "... select_client"
 	@echo "... edit_cache"
+	@echo "... echo_server"
 	@echo "... biglittle"
 	@echo "... echo_fork_server"
 	@echo "... echo_client"
 	@echo "... echo_fork_client"
 	@echo "... main"
 	@echo "... select_server"
+	@echo "... addr"
+	@echo "... p2p_server"
+	@echo "... select_client"
+	@echo "... p2p_client"
 	@echo "... addr/addr.o"
 	@echo "... addr/addr.i"
 	@echo "... addr/addr.s"
@@ -508,6 +590,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... p2p/p2p_client.o"
+	@echo "... p2p/p2p_client.i"
+	@echo "... p2p/p2p_client.s"
+	@echo "... p2p/p2p_server.o"
+	@echo "... p2p/p2p_server.i"
+	@echo "... p2p/p2p_server.s"
 	@echo "... select/client.o"
 	@echo "... select/client.i"
 	@echo "... select/client.s"

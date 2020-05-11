@@ -62,6 +62,7 @@ int main(int argc, char** argv)
         write(conn, recvbuf, ret);
     }
     close(conn);
+    close(listenfd);
 
 
     return EXIT_SUCCESS;
