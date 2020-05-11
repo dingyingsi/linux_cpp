@@ -4,6 +4,7 @@
 #include <netinet/in.h>
 #include <string.h>
 #include <unistd.h>
+#include <arpa/inet.h>
 
 #define ERR_EXIT(m) \
     do \
@@ -29,6 +30,12 @@ int main(int argc, char** argv)
     // servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
     // inet_aton("127.0.0.1", &servaddr.sin_addr);
 
+    int on = 1;
+    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(on)) < 0)
+    {
+        ERR_EXIT("setsocketopt");
+    }
+
     if (bind(listenfd, (struct sockaddr*) &servaddr, sizeof(servaddr)) < 0 )
     {
         ERR_EXIT("bind");
@@ -44,6 +51,8 @@ int main(int argc, char** argv)
     if ((conn = accept(listenfd, (struct sockaddr*)&peeraddr, &peerlen)) < 0) {
         ERR_EXIT("accept");
     }
+
+    printf("ip=%s port=%d\n", inet_ntoa(peeraddr.sin_addr), ntohs(peeraddr.sin_port));
 
     char recvbuf[1024];
     while(1) {

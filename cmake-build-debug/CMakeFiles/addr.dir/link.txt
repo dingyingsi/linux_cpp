@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/addr.dir/addr/addr.c.o  -o addr 
+/bin/cc -g   CMakeFiles/addr.dir/addr/addr.c.o  -o addr 
