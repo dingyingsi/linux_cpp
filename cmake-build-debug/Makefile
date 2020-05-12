@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named echo3_fork_client
+
+# Build rule for target.
+echo3_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo3_fork_client
+.PHONY : echo3_fork_client
+
+# fast build rule for target.
+echo3_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo3_fork_client.dir/build.make CMakeFiles/echo3_fork_client.dir/build
+.PHONY : echo3_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo3_fork_server
+
+# Build rule for target.
+echo3_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo3_fork_server
+.PHONY : echo3_fork_server
+
+# fast build rule for target.
+echo3_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/build
+.PHONY : echo3_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo2_fork_client
+
+# Build rule for target.
+echo2_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo2_fork_client
+.PHONY : echo2_fork_client
+
+# fast build rule for target.
+echo2_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo2_fork_client.dir/build.make CMakeFiles/echo2_fork_client.dir/build
+.PHONY : echo2_fork_client/fast
+
+#=============================================================================
 # Target rules for targets named echo_server
 
 # Build rule for target.
@@ -150,6 +189,45 @@ echo_fork_server/fast:
 .PHONY : echo_fork_server/fast
 
 #=============================================================================
+# Target rules for targets named select_server
+
+# Build rule for target.
+select_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 select_server
+.PHONY : select_server
+
+# fast build rule for target.
+select_server/fast:
+	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
+.PHONY : select_server/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named echo2_fork_server
+
+# Build rule for target.
+echo2_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo2_fork_server
+.PHONY : echo2_fork_server
+
+# fast build rule for target.
+echo2_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo2_fork_server.dir/build.make CMakeFiles/echo2_fork_server.dir/build
+.PHONY : echo2_fork_server/fast
+
+#=============================================================================
 # Target rules for targets named echo_client
 
 # Build rule for target.
@@ -174,32 +252,6 @@ echo_fork_client: cmake_check_build_system
 echo_fork_client/fast:
 	$(MAKE) -f CMakeFiles/echo_fork_client.dir/build.make CMakeFiles/echo_fork_client.dir/build
 .PHONY : echo_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named select_server
-
-# Build rule for target.
-select_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 select_server
-.PHONY : select_server
-
-# fast build rule for target.
-select_server/fast:
-	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
-.PHONY : select_server/fast
 
 #=============================================================================
 # Target rules for targets named addr
@@ -360,6 +412,114 @@ echo/echo_server.s: echo/echo_server.c.s
 echo/echo_server.c.s:
 	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo/echo_server.c.s
 .PHONY : echo/echo_server.c.s
+
+echo2_fork/echo2_fork_client.o: echo2_fork/echo2_fork_client.c.o
+
+.PHONY : echo2_fork/echo2_fork_client.o
+
+# target to build an object file
+echo2_fork/echo2_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo2_fork_client.dir/build.make CMakeFiles/echo2_fork_client.dir/echo2_fork/echo2_fork_client.c.o
+.PHONY : echo2_fork/echo2_fork_client.c.o
+
+echo2_fork/echo2_fork_client.i: echo2_fork/echo2_fork_client.c.i
+
+.PHONY : echo2_fork/echo2_fork_client.i
+
+# target to preprocess a source file
+echo2_fork/echo2_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo2_fork_client.dir/build.make CMakeFiles/echo2_fork_client.dir/echo2_fork/echo2_fork_client.c.i
+.PHONY : echo2_fork/echo2_fork_client.c.i
+
+echo2_fork/echo2_fork_client.s: echo2_fork/echo2_fork_client.c.s
+
+.PHONY : echo2_fork/echo2_fork_client.s
+
+# target to generate assembly for a file
+echo2_fork/echo2_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo2_fork_client.dir/build.make CMakeFiles/echo2_fork_client.dir/echo2_fork/echo2_fork_client.c.s
+.PHONY : echo2_fork/echo2_fork_client.c.s
+
+echo2_fork/echo2_fork_server.o: echo2_fork/echo2_fork_server.c.o
+
+.PHONY : echo2_fork/echo2_fork_server.o
+
+# target to build an object file
+echo2_fork/echo2_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo2_fork_server.dir/build.make CMakeFiles/echo2_fork_server.dir/echo2_fork/echo2_fork_server.c.o
+.PHONY : echo2_fork/echo2_fork_server.c.o
+
+echo2_fork/echo2_fork_server.i: echo2_fork/echo2_fork_server.c.i
+
+.PHONY : echo2_fork/echo2_fork_server.i
+
+# target to preprocess a source file
+echo2_fork/echo2_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo2_fork_server.dir/build.make CMakeFiles/echo2_fork_server.dir/echo2_fork/echo2_fork_server.c.i
+.PHONY : echo2_fork/echo2_fork_server.c.i
+
+echo2_fork/echo2_fork_server.s: echo2_fork/echo2_fork_server.c.s
+
+.PHONY : echo2_fork/echo2_fork_server.s
+
+# target to generate assembly for a file
+echo2_fork/echo2_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo2_fork_server.dir/build.make CMakeFiles/echo2_fork_server.dir/echo2_fork/echo2_fork_server.c.s
+.PHONY : echo2_fork/echo2_fork_server.c.s
+
+echo3_fork/echo3_fork_client.o: echo3_fork/echo3_fork_client.c.o
+
+.PHONY : echo3_fork/echo3_fork_client.o
+
+# target to build an object file
+echo3_fork/echo3_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo3_fork_client.dir/build.make CMakeFiles/echo3_fork_client.dir/echo3_fork/echo3_fork_client.c.o
+.PHONY : echo3_fork/echo3_fork_client.c.o
+
+echo3_fork/echo3_fork_client.i: echo3_fork/echo3_fork_client.c.i
+
+.PHONY : echo3_fork/echo3_fork_client.i
+
+# target to preprocess a source file
+echo3_fork/echo3_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo3_fork_client.dir/build.make CMakeFiles/echo3_fork_client.dir/echo3_fork/echo3_fork_client.c.i
+.PHONY : echo3_fork/echo3_fork_client.c.i
+
+echo3_fork/echo3_fork_client.s: echo3_fork/echo3_fork_client.c.s
+
+.PHONY : echo3_fork/echo3_fork_client.s
+
+# target to generate assembly for a file
+echo3_fork/echo3_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo3_fork_client.dir/build.make CMakeFiles/echo3_fork_client.dir/echo3_fork/echo3_fork_client.c.s
+.PHONY : echo3_fork/echo3_fork_client.c.s
+
+echo3_fork/echo3_fork_server.o: echo3_fork/echo3_fork_server.c.o
+
+.PHONY : echo3_fork/echo3_fork_server.o
+
+# target to build an object file
+echo3_fork/echo3_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/echo3_fork/echo3_fork_server.c.o
+.PHONY : echo3_fork/echo3_fork_server.c.o
+
+echo3_fork/echo3_fork_server.i: echo3_fork/echo3_fork_server.c.i
+
+.PHONY : echo3_fork/echo3_fork_server.i
+
+# target to preprocess a source file
+echo3_fork/echo3_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/echo3_fork/echo3_fork_server.c.i
+.PHONY : echo3_fork/echo3_fork_server.c.i
+
+echo3_fork/echo3_fork_server.s: echo3_fork/echo3_fork_server.c.s
+
+.PHONY : echo3_fork/echo3_fork_server.s
+
+# target to generate assembly for a file
+echo3_fork/echo3_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/echo3_fork/echo3_fork_server.c.s
+.PHONY : echo3_fork/echo3_fork_server.c.s
 
 echo_fork/echo_fork_client.o: echo_fork/echo_fork_client.c.o
 
@@ -558,13 +718,17 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... echo3_fork_client"
+	@echo "... echo3_fork_server"
+	@echo "... echo2_fork_client"
 	@echo "... echo_server"
 	@echo "... biglittle"
 	@echo "... echo_fork_server"
+	@echo "... select_server"
+	@echo "... main"
+	@echo "... echo2_fork_server"
 	@echo "... echo_client"
 	@echo "... echo_fork_client"
-	@echo "... main"
-	@echo "... select_server"
 	@echo "... addr"
 	@echo "... p2p_server"
 	@echo "... select_client"
@@ -581,6 +745,18 @@ help:
 	@echo "... echo/echo_server.o"
 	@echo "... echo/echo_server.i"
 	@echo "... echo/echo_server.s"
+	@echo "... echo2_fork/echo2_fork_client.o"
+	@echo "... echo2_fork/echo2_fork_client.i"
+	@echo "... echo2_fork/echo2_fork_client.s"
+	@echo "... echo2_fork/echo2_fork_server.o"
+	@echo "... echo2_fork/echo2_fork_server.i"
+	@echo "... echo2_fork/echo2_fork_server.s"
+	@echo "... echo3_fork/echo3_fork_client.o"
+	@echo "... echo3_fork/echo3_fork_client.i"
+	@echo "... echo3_fork/echo3_fork_client.s"
+	@echo "... echo3_fork/echo3_fork_server.o"
+	@echo "... echo3_fork/echo3_fork_server.i"
+	@echo "... echo3_fork/echo3_fork_server.s"
 	@echo "... echo_fork/echo_fork_client.o"
 	@echo "... echo_fork/echo_fork_client.i"
 	@echo "... echo_fork/echo_fork_client.s"
