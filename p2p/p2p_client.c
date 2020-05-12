@@ -5,6 +5,7 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <unistd.h>
+#include <signal.h>
 
 #define ERR_EXIT(m) \
     do \
@@ -12,6 +13,12 @@
         perror(m); \
         exit(EXIT_FAILURE); \
     } while(0)
+
+void handler(int sig)
+{
+    printf("recv a sig=%d\n", sig);
+    exit(EXIT_SUCCESS);
+}
 
 int main(int argc, char** argv)
 {
@@ -54,8 +61,10 @@ int main(int argc, char** argv)
             fputs(recvbuf, stdout);
         }
         close(sock);
+        kill(getppid(), SIGUSR1);
     }
     else {
+        signal(SIGUSR1, handler);
         char sendbuf[1024] = {0};
         while (fgets(sendbuf, sizeof(sendbuf), stdin) != NULL)
         {
