@@ -217,6 +217,42 @@
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="echo4_fork_server">
+				<Option output="/root/CLionProjects/tcp/cmake-build-debug/echo4_fork_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo4_fork_server"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="echo4_fork_server/fast">
+				<Option output="/root/CLionProjects/tcp/cmake-build-debug/echo4_fork_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo4_fork_server/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="echo_fork_server">
 				<Option output="/root/CLionProjects/tcp/cmake-build-debug/echo_fork_server" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
@@ -392,6 +428,42 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo_client/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="echo4_fork_client">
+				<Option output="/root/CLionProjects/tcp/cmake-build-debug/echo4_fork_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo4_fork_client"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="echo4_fork_client/fast">
+				<Option output="/root/CLionProjects/tcp/cmake-build-debug/echo4_fork_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo4_fork_client/fast"/>
 					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -601,6 +673,12 @@
 		</Unit>
 		<Unit filename="/root/CLionProjects/tcp/echo3_fork/echo3_fork_server.c">
 			<Option target="echo3_fork_server"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/tcp/echo4_fork/echo4_fork_client.c">
+			<Option target="echo4_fork_client"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/tcp/echo4_fork/echo4_fork_server.c">
+			<Option target="echo4_fork_server"/>
 		</Unit>
 		<Unit filename="/root/CLionProjects/tcp/echo_fork/echo_fork_client.c">
 			<Option target="echo_fork_client"/>

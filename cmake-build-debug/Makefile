@@ -176,6 +176,19 @@ biglittle/fast:
 .PHONY : biglittle/fast
 
 #=============================================================================
+# Target rules for targets named echo4_fork_server
+
+# Build rule for target.
+echo4_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo4_fork_server
+.PHONY : echo4_fork_server
+
+# fast build rule for target.
+echo4_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo4_fork_server.dir/build.make CMakeFiles/echo4_fork_server.dir/build
+.PHONY : echo4_fork_server/fast
+
+#=============================================================================
 # Target rules for targets named echo_fork_server
 
 # Build rule for target.
@@ -239,6 +252,19 @@ echo_client: cmake_check_build_system
 echo_client/fast:
 	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
 .PHONY : echo_client/fast
+
+#=============================================================================
+# Target rules for targets named echo4_fork_client
+
+# Build rule for target.
+echo4_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo4_fork_client
+.PHONY : echo4_fork_client
+
+# fast build rule for target.
+echo4_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo4_fork_client.dir/build.make CMakeFiles/echo4_fork_client.dir/build
+.PHONY : echo4_fork_client/fast
 
 #=============================================================================
 # Target rules for targets named echo_fork_client
@@ -521,6 +547,60 @@ echo3_fork/echo3_fork_server.c.s:
 	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/echo3_fork/echo3_fork_server.c.s
 .PHONY : echo3_fork/echo3_fork_server.c.s
 
+echo4_fork/echo4_fork_client.o: echo4_fork/echo4_fork_client.c.o
+
+.PHONY : echo4_fork/echo4_fork_client.o
+
+# target to build an object file
+echo4_fork/echo4_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo4_fork_client.dir/build.make CMakeFiles/echo4_fork_client.dir/echo4_fork/echo4_fork_client.c.o
+.PHONY : echo4_fork/echo4_fork_client.c.o
+
+echo4_fork/echo4_fork_client.i: echo4_fork/echo4_fork_client.c.i
+
+.PHONY : echo4_fork/echo4_fork_client.i
+
+# target to preprocess a source file
+echo4_fork/echo4_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo4_fork_client.dir/build.make CMakeFiles/echo4_fork_client.dir/echo4_fork/echo4_fork_client.c.i
+.PHONY : echo4_fork/echo4_fork_client.c.i
+
+echo4_fork/echo4_fork_client.s: echo4_fork/echo4_fork_client.c.s
+
+.PHONY : echo4_fork/echo4_fork_client.s
+
+# target to generate assembly for a file
+echo4_fork/echo4_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo4_fork_client.dir/build.make CMakeFiles/echo4_fork_client.dir/echo4_fork/echo4_fork_client.c.s
+.PHONY : echo4_fork/echo4_fork_client.c.s
+
+echo4_fork/echo4_fork_server.o: echo4_fork/echo4_fork_server.c.o
+
+.PHONY : echo4_fork/echo4_fork_server.o
+
+# target to build an object file
+echo4_fork/echo4_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo4_fork_server.dir/build.make CMakeFiles/echo4_fork_server.dir/echo4_fork/echo4_fork_server.c.o
+.PHONY : echo4_fork/echo4_fork_server.c.o
+
+echo4_fork/echo4_fork_server.i: echo4_fork/echo4_fork_server.c.i
+
+.PHONY : echo4_fork/echo4_fork_server.i
+
+# target to preprocess a source file
+echo4_fork/echo4_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo4_fork_server.dir/build.make CMakeFiles/echo4_fork_server.dir/echo4_fork/echo4_fork_server.c.i
+.PHONY : echo4_fork/echo4_fork_server.c.i
+
+echo4_fork/echo4_fork_server.s: echo4_fork/echo4_fork_server.c.s
+
+.PHONY : echo4_fork/echo4_fork_server.s
+
+# target to generate assembly for a file
+echo4_fork/echo4_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo4_fork_server.dir/build.make CMakeFiles/echo4_fork_server.dir/echo4_fork/echo4_fork_server.c.s
+.PHONY : echo4_fork/echo4_fork_server.c.s
+
 echo_fork/echo_fork_client.o: echo_fork/echo_fork_client.c.o
 
 .PHONY : echo_fork/echo_fork_client.o
@@ -723,11 +803,13 @@ help:
 	@echo "... echo2_fork_client"
 	@echo "... echo_server"
 	@echo "... biglittle"
+	@echo "... echo4_fork_server"
 	@echo "... echo_fork_server"
 	@echo "... select_server"
 	@echo "... main"
 	@echo "... echo2_fork_server"
 	@echo "... echo_client"
+	@echo "... echo4_fork_client"
 	@echo "... echo_fork_client"
 	@echo "... addr"
 	@echo "... p2p_server"
@@ -757,6 +839,12 @@ help:
 	@echo "... echo3_fork/echo3_fork_server.o"
 	@echo "... echo3_fork/echo3_fork_server.i"
 	@echo "... echo3_fork/echo3_fork_server.s"
+	@echo "... echo4_fork/echo4_fork_client.o"
+	@echo "... echo4_fork/echo4_fork_client.i"
+	@echo "... echo4_fork/echo4_fork_client.s"
+	@echo "... echo4_fork/echo4_fork_server.o"
+	@echo "... echo4_fork/echo4_fork_server.i"
+	@echo "... echo4_fork/echo4_fork_server.s"
 	@echo "... echo_fork/echo_fork_client.o"
 	@echo "... echo_fork/echo_fork_client.i"
 	@echo "... echo_fork/echo_fork_client.s"
