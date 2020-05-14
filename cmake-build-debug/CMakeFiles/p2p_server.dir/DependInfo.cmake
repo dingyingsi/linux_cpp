@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/root/CLionProjects/tcp/p2p/p2p_server.c" "/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/p2p_server.dir/p2p/p2p_server.c.o"
+  "/home/dingyingsi/CLionProjects/tcp/p2p/p2p_server.c" "/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/p2p_server.dir/p2p/p2p_server.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

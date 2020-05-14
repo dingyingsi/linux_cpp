@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/root/CLionProjects/tcp/echo2_fork/echo2_fork_client.c
+/home/dingyingsi/CLionProjects/tcp/echo2_fork/echo2_fork_client.c
 stdlib.h
 -
 stdio.h

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2020.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/tcp
+CMAKE_SOURCE_DIR = /home/dingyingsi/CLionProjects/tcp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dingyingsi/CLionProjects/tcp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named gethostbyname2
+
+# Build rule for target.
+gethostbyname2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname2
+.PHONY : gethostbyname2
+
+# fast build rule for target.
+gethostbyname2/fast:
+	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
+.PHONY : gethostbyname2/fast
+
+#=============================================================================
+# Target rules for targets named gethostbyname
+
+# Build rule for target.
+gethostbyname: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname
+.PHONY : gethostbyname
+
+# fast build rule for target.
+gethostbyname/fast:
+	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/build
+.PHONY : gethostbyname/fast
 
 #=============================================================================
 # Target rules for targets named echo3_fork_client
@@ -655,6 +681,60 @@ echo_fork/echo_fork_server.c.s:
 	$(MAKE) -f CMakeFiles/echo_fork_server.dir/build.make CMakeFiles/echo_fork_server.dir/echo_fork/echo_fork_server.c.s
 .PHONY : echo_fork/echo_fork_server.c.s
 
+gethostbyname/gethostbyname.o: gethostbyname/gethostbyname.c.o
+
+.PHONY : gethostbyname/gethostbyname.o
+
+# target to build an object file
+gethostbyname/gethostbyname.c.o:
+	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/gethostbyname/gethostbyname.c.o
+.PHONY : gethostbyname/gethostbyname.c.o
+
+gethostbyname/gethostbyname.i: gethostbyname/gethostbyname.c.i
+
+.PHONY : gethostbyname/gethostbyname.i
+
+# target to preprocess a source file
+gethostbyname/gethostbyname.c.i:
+	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/gethostbyname/gethostbyname.c.i
+.PHONY : gethostbyname/gethostbyname.c.i
+
+gethostbyname/gethostbyname.s: gethostbyname/gethostbyname.c.s
+
+.PHONY : gethostbyname/gethostbyname.s
+
+# target to generate assembly for a file
+gethostbyname/gethostbyname.c.s:
+	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/gethostbyname/gethostbyname.c.s
+.PHONY : gethostbyname/gethostbyname.c.s
+
+gethostbyname/gethostbyname2.o: gethostbyname/gethostbyname2.c.o
+
+.PHONY : gethostbyname/gethostbyname2.o
+
+# target to build an object file
+gethostbyname/gethostbyname2.c.o:
+	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/gethostbyname/gethostbyname2.c.o
+.PHONY : gethostbyname/gethostbyname2.c.o
+
+gethostbyname/gethostbyname2.i: gethostbyname/gethostbyname2.c.i
+
+.PHONY : gethostbyname/gethostbyname2.i
+
+# target to preprocess a source file
+gethostbyname/gethostbyname2.c.i:
+	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/gethostbyname/gethostbyname2.c.i
+.PHONY : gethostbyname/gethostbyname2.c.i
+
+gethostbyname/gethostbyname2.s: gethostbyname/gethostbyname2.c.s
+
+.PHONY : gethostbyname/gethostbyname2.s
+
+# target to generate assembly for a file
+gethostbyname/gethostbyname2.c.s:
+	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/gethostbyname/gethostbyname2.c.s
+.PHONY : gethostbyname/gethostbyname2.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -798,6 +878,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... gethostbyname2"
+	@echo "... gethostbyname"
 	@echo "... echo3_fork_client"
 	@echo "... echo3_fork_server"
 	@echo "... echo2_fork_client"
@@ -851,6 +933,12 @@ help:
 	@echo "... echo_fork/echo_fork_server.o"
 	@echo "... echo_fork/echo_fork_server.i"
 	@echo "... echo_fork/echo_fork_server.s"
+	@echo "... gethostbyname/gethostbyname.o"
+	@echo "... gethostbyname/gethostbyname.i"
+	@echo "... gethostbyname/gethostbyname.s"
+	@echo "... gethostbyname/gethostbyname2.o"
+	@echo "... gethostbyname/gethostbyname2.i"
+	@echo "... gethostbyname/gethostbyname2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

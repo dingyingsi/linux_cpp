@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/select_server.dir/select/server.c.o  -o select_server 
+/usr/bin/cc -g   CMakeFiles/select_server.dir/select/server.c.o  -o select_server 

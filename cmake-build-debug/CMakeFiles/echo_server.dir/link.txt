@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo_server.dir/echo/echo_server.c.o  -o echo_server 
+/usr/bin/cc -g   CMakeFiles/echo_server.dir/echo/echo_server.c.o  -o echo_server 
