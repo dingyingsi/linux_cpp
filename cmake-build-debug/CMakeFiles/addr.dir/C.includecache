@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dingyingsi/CLionProjects/tcp/addr/addr.c
+stdlib.h
+-
+stdio.h
+-
+arpa/inet.h
+-
+
