@@ -1,0 +1,1 @@
+signal(SIGCHLD, SIG_IGN);  to remove zombie process
