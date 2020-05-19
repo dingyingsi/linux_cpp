@@ -1,4 +1,6 @@
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/select_server.dir
+/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/gethostbyname2.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/addr.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo5_fork_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo4_fork_client.dir
@@ -9,7 +11,6 @@
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo2_fork_server.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/p2p_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/main.dir
-/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/select_server.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_fork_server.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo_fork_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo4_fork_server.dir
@@ -19,7 +20,8 @@
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo2_fork_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/select_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo3_fork_server.dir
+/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo7_fork_server.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo3_fork_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo6_fork_client.dir
+/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo7_fork_client.dir
 /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/gethostbyname.dir
-/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/gethostbyname2.dir

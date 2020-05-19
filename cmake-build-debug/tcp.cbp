@@ -27,6 +27,82 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="select_server">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/select_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 select_server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="select_server/fast">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/select_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 select_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gethostbyname2">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/gethostbyname2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gethostbyname2/fast">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/gethostbyname2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="addr">
 				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/addr" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
@@ -379,44 +455,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="select_server">
-				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/select_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 select_server"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="select_server/fast">
-				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/select_server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 select_server/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="echo_fork_server">
 				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/echo_fork_server" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
@@ -759,6 +797,44 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="echo7_fork_server">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/echo7_fork_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo7_fork_server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="echo7_fork_server/fast">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/echo7_fork_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo7_fork_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="echo3_fork_client">
 				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/echo3_fork_client" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
@@ -835,6 +911,44 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="echo7_fork_client">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/echo7_fork_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo7_fork_client"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="echo7_fork_client/fast">
+				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/echo7_fork_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo7_fork_client/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="gethostbyname">
 				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/gethostbyname" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
@@ -868,44 +982,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gethostbyname2">
-				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/gethostbyname2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname2"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gethostbyname2/fast">
-				<Option output="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/gethostbyname2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dingyingsi/CLionProjects/tcp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 gethostbyname2/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -953,6 +1029,12 @@
 		</Unit>
 		<Unit filename="/home/dingyingsi/CLionProjects/tcp/echo6_fork/echo6_fork_server.c">
 			<Option target="echo6_fork_server"/>
+		</Unit>
+		<Unit filename="/home/dingyingsi/CLionProjects/tcp/echo7_fork/echo7_fork_client.c">
+			<Option target="echo7_fork_client"/>
+		</Unit>
+		<Unit filename="/home/dingyingsi/CLionProjects/tcp/echo7_fork/echo7_fork_server.c">
+			<Option target="echo7_fork_server"/>
 		</Unit>
 		<Unit filename="/home/dingyingsi/CLionProjects/tcp/echo_fork/echo_fork_client.c">
 			<Option target="echo_fork_client"/>
