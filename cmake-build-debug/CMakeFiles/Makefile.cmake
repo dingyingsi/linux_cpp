@@ -44,8 +44,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/select_server.dir/DependInfo.cmake"
   "CMakeFiles/gethostbyname2.dir/DependInfo.cmake"
+  "CMakeFiles/gethostbyname.dir/DependInfo.cmake"
+  "CMakeFiles/echo9_fork_client.dir/DependInfo.cmake"
+  "CMakeFiles/echo9_fork_server.dir/DependInfo.cmake"
+  "CMakeFiles/select_server.dir/DependInfo.cmake"
+  "CMakeFiles/echo8_fork_client.dir/DependInfo.cmake"
   "CMakeFiles/addr.dir/DependInfo.cmake"
   "CMakeFiles/echo5_fork_client.dir/DependInfo.cmake"
   "CMakeFiles/echo4_fork_client.dir/DependInfo.cmake"
@@ -68,5 +72,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/echo3_fork_client.dir/DependInfo.cmake"
   "CMakeFiles/echo6_fork_client.dir/DependInfo.cmake"
   "CMakeFiles/echo7_fork_client.dir/DependInfo.cmake"
-  "CMakeFiles/gethostbyname.dir/DependInfo.cmake"
+  "CMakeFiles/echo8_fork_server.dir/DependInfo.cmake"
   )

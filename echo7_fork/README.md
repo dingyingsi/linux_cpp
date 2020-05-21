@@ -11,3 +11,4 @@ void handle_sigchld(int sig)
     /* wait(NULL);*/  remove one process which signal comes first
     waitpid(-1, NULL, WNOHANG);
 }
+
