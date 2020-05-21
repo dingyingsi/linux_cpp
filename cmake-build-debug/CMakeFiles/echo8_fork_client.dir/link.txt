@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/echo8_fork_client.dir/echo8_fork/echo8_fork_client.c.o  -o echo8_fork_client 
