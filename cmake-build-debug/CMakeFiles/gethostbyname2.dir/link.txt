@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/gethostbyname2.dir/gethostbyname/gethostbyname2.c.o  -o gethostbyname2 
+/bin/cc -g   CMakeFiles/gethostbyname2.dir/gethostbyname/gethostbyname2.c.o  -o gethostbyname2 

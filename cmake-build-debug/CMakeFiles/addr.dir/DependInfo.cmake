@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/dingyingsi/CLionProjects/tcp/addr/addr.c" "/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/addr.dir/addr/addr.c.o"
+  "/root/CLionProjects/tcp/addr/addr.c" "/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/addr.dir/addr/addr.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/echo7_fork_client.dir/echo7_fork/echo7_fork_client.c.o  -o echo7_fork_client 
+/bin/cc -g   CMakeFiles/echo7_fork_client.dir/echo7_fork/echo7_fork_client.c.o  -o echo7_fork_client 
