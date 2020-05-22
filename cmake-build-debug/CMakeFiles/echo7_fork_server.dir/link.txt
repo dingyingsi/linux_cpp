@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo7_fork_server.dir/echo7_fork/echo7_fork_server.c.o  -o echo7_fork_server 
+/usr/bin/cc -g   CMakeFiles/echo7_fork_server.dir/echo7_fork/echo7_fork_server.c.o  -o echo7_fork_server 

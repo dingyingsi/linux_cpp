@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo6_fork_client.dir/echo6_fork/echo6_fork_client.c.o  -o echo6_fork_client 
+/usr/bin/cc -g   CMakeFiles/echo6_fork_client.dir/echo6_fork/echo6_fork_client.c.o  -o echo6_fork_client 

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2020.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/tcp
+CMAKE_SOURCE_DIR = /home/dingyingsi/CLionProjects/tcp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dingyingsi/CLionProjects/tcp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,19 @@ gethostbyname2: cmake_check_build_system
 gethostbyname2/fast:
 	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
 .PHONY : gethostbyname2/fast
+
+#=============================================================================
+# Target rules for targets named echo11_fork_client
+
+# Build rule for target.
+echo11_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo11_fork_client
+.PHONY : echo11_fork_client
+
+# fast build rule for target.
+echo11_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo11_fork_client.dir/build.make CMakeFiles/echo11_fork_client.dir/build
+.PHONY : echo11_fork_client/fast
 
 #=============================================================================
 # Target rules for targets named echo10_fork_server
@@ -317,6 +330,19 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named echo11_fork_server
+
+# Build rule for target.
+echo11_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo11_fork_server
+.PHONY : echo11_fork_server
+
+# fast build rule for target.
+echo11_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo11_fork_server.dir/build.make CMakeFiles/echo11_fork_server.dir/build
+.PHONY : echo11_fork_server/fast
 
 #=============================================================================
 # Target rules for targets named echo10_fork_client
@@ -674,6 +700,60 @@ echo10_fork/echo10_fork_server.s: echo10_fork/echo10_fork_server.c.s
 echo10_fork/echo10_fork_server.c.s:
 	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/echo10_fork/echo10_fork_server.c.s
 .PHONY : echo10_fork/echo10_fork_server.c.s
+
+echo11_fork/echo11_fork_client.o: echo11_fork/echo11_fork_client.c.o
+
+.PHONY : echo11_fork/echo11_fork_client.o
+
+# target to build an object file
+echo11_fork/echo11_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo11_fork_client.dir/build.make CMakeFiles/echo11_fork_client.dir/echo11_fork/echo11_fork_client.c.o
+.PHONY : echo11_fork/echo11_fork_client.c.o
+
+echo11_fork/echo11_fork_client.i: echo11_fork/echo11_fork_client.c.i
+
+.PHONY : echo11_fork/echo11_fork_client.i
+
+# target to preprocess a source file
+echo11_fork/echo11_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo11_fork_client.dir/build.make CMakeFiles/echo11_fork_client.dir/echo11_fork/echo11_fork_client.c.i
+.PHONY : echo11_fork/echo11_fork_client.c.i
+
+echo11_fork/echo11_fork_client.s: echo11_fork/echo11_fork_client.c.s
+
+.PHONY : echo11_fork/echo11_fork_client.s
+
+# target to generate assembly for a file
+echo11_fork/echo11_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo11_fork_client.dir/build.make CMakeFiles/echo11_fork_client.dir/echo11_fork/echo11_fork_client.c.s
+.PHONY : echo11_fork/echo11_fork_client.c.s
+
+echo11_fork/echo11_fork_server.o: echo11_fork/echo11_fork_server.c.o
+
+.PHONY : echo11_fork/echo11_fork_server.o
+
+# target to build an object file
+echo11_fork/echo11_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo11_fork_server.dir/build.make CMakeFiles/echo11_fork_server.dir/echo11_fork/echo11_fork_server.c.o
+.PHONY : echo11_fork/echo11_fork_server.c.o
+
+echo11_fork/echo11_fork_server.i: echo11_fork/echo11_fork_server.c.i
+
+.PHONY : echo11_fork/echo11_fork_server.i
+
+# target to preprocess a source file
+echo11_fork/echo11_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo11_fork_server.dir/build.make CMakeFiles/echo11_fork_server.dir/echo11_fork/echo11_fork_server.c.i
+.PHONY : echo11_fork/echo11_fork_server.c.i
+
+echo11_fork/echo11_fork_server.s: echo11_fork/echo11_fork_server.c.s
+
+.PHONY : echo11_fork/echo11_fork_server.s
+
+# target to generate assembly for a file
+echo11_fork/echo11_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo11_fork_server.dir/build.make CMakeFiles/echo11_fork_server.dir/echo11_fork/echo11_fork_server.c.s
+.PHONY : echo11_fork/echo11_fork_server.c.s
 
 echo2_fork/echo2_fork_client.o: echo2_fork/echo2_fork_client.c.o
 
@@ -1358,6 +1438,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... gethostbyname2"
+	@echo "... echo11_fork_client"
 	@echo "... echo10_fork_server"
 	@echo "... gethostbyname"
 	@echo "... echo9_fork_client"
@@ -1374,6 +1455,7 @@ help:
 	@echo "... echo2_fork_server"
 	@echo "... p2p_client"
 	@echo "... main"
+	@echo "... echo11_fork_server"
 	@echo "... echo10_fork_client"
 	@echo "... echo_fork_server"
 	@echo "... echo_fork_client"
@@ -1407,6 +1489,12 @@ help:
 	@echo "... echo10_fork/echo10_fork_server.o"
 	@echo "... echo10_fork/echo10_fork_server.i"
 	@echo "... echo10_fork/echo10_fork_server.s"
+	@echo "... echo11_fork/echo11_fork_client.o"
+	@echo "... echo11_fork/echo11_fork_client.i"
+	@echo "... echo11_fork/echo11_fork_client.s"
+	@echo "... echo11_fork/echo11_fork_server.o"
+	@echo "... echo11_fork/echo11_fork_server.i"
+	@echo "... echo11_fork/echo11_fork_server.s"
 	@echo "... echo2_fork/echo2_fork_client.o"
 	@echo "... echo2_fork/echo2_fork_client.i"
 	@echo "... echo2_fork/echo2_fork_client.s"

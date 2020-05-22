@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo_client.dir/echo/echo_client.c.o  -o echo_client 
+/usr/bin/cc -g   CMakeFiles/echo_client.dir/echo/echo_client.c.o  -o echo_client 

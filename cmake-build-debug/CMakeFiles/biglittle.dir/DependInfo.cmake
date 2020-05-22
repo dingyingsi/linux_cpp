@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/root/CLionProjects/tcp/biglittle/biglitter.c" "/root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/biglittle.dir/biglittle/biglitter.c.o"
+  "/home/dingyingsi/CLionProjects/tcp/biglittle/biglitter.c" "/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/biglittle.dir/biglittle/biglitter.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

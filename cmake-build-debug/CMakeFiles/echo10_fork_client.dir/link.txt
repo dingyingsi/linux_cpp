@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo10_fork_client.dir/echo10_fork/echo10_fork_client.c.o  -o echo10_fork_client 
+/usr/bin/cc -g   CMakeFiles/echo10_fork_client.dir/echo10_fork/echo10_fork_client.c.o  -o echo10_fork_client 
