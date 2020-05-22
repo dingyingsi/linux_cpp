@@ -151,9 +151,7 @@ void echo_srv(int conn)
 
 void handle_sigchld(int sig)
 {
-    /* wait(NULL);*/
-    /* waitpid(-1, NULL, WNOHANG); */
-    while (waitpid(-1, NULL, WNOHANG) > 0);
+    wait(NULL);
 }
 
 int main(int argc, char** argv)

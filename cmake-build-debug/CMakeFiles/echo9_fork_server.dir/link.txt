@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/echo9_fork_server.dir/echo9_fork/echo9_fork_server.c.o  -o echo9_fork_server 
+/bin/cc -g   CMakeFiles/echo9_fork_server.dir/echo9_fork/echo9_fork_server.c.o  -o echo9_fork_server 

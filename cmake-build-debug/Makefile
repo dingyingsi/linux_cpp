@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /root/clion-2020.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /root/clion-2020.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dingyingsi/CLionProjects/tcp
+CMAKE_SOURCE_DIR = /root/CLionProjects/tcp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dingyingsi/CLionProjects/tcp/cmake-build-debug
+CMAKE_BINARY_DIR = /root/CLionProjects/tcp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/dingyingsi/CLionProjects/tcp/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/root/clion-2020.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/dingyingsi/clion-2020.1.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/root/clion-2020.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/tcp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gethostbyname2
+
+# Build rule for target.
+gethostbyname2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname2
+.PHONY : gethostbyname2
+
+# fast build rule for target.
+gethostbyname2/fast:
+	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
+.PHONY : gethostbyname2/fast
+
+#=============================================================================
+# Target rules for targets named echo10_fork_server
+
+# Build rule for target.
+echo10_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo10_fork_server
+.PHONY : echo10_fork_server
+
+# fast build rule for target.
+echo10_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/build
+.PHONY : echo10_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named gethostbyname
+
+# Build rule for target.
+gethostbyname: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname
+.PHONY : gethostbyname
+
+# fast build rule for target.
+gethostbyname/fast:
+	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/build
+.PHONY : gethostbyname/fast
+
+#=============================================================================
+# Target rules for targets named echo9_fork_client
+
+# Build rule for target.
+echo9_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo9_fork_client
+.PHONY : echo9_fork_client
+
+# fast build rule for target.
+echo9_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo9_fork_client.dir/build.make CMakeFiles/echo9_fork_client.dir/build
+.PHONY : echo9_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo9_fork_server
+
+# Build rule for target.
+echo9_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo9_fork_server
+.PHONY : echo9_fork_server
+
+# fast build rule for target.
+echo9_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo9_fork_server.dir/build.make CMakeFiles/echo9_fork_server.dir/build
+.PHONY : echo9_fork_server/fast
+
+#=============================================================================
 # Target rules for targets named select_server
 
 # Build rule for target.
@@ -124,17 +189,17 @@ select_server/fast:
 .PHONY : select_server/fast
 
 #=============================================================================
-# Target rules for targets named gethostbyname2
+# Target rules for targets named echo8_fork_client
 
 # Build rule for target.
-gethostbyname2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname2
-.PHONY : gethostbyname2
+echo8_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo8_fork_client
+.PHONY : echo8_fork_client
 
 # fast build rule for target.
-gethostbyname2/fast:
-	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
-.PHONY : gethostbyname2/fast
+echo8_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo8_fork_client.dir/build.make CMakeFiles/echo8_fork_client.dir/build
+.PHONY : echo8_fork_client/fast
 
 #=============================================================================
 # Target rules for targets named addr
@@ -252,6 +317,19 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named echo10_fork_client
+
+# Build rule for target.
+echo10_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo10_fork_client
+.PHONY : echo10_fork_client
+
+# fast build rule for target.
+echo10_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo10_fork_client.dir/build.make CMakeFiles/echo10_fork_client.dir/build
+.PHONY : echo10_fork_client/fast
 
 #=============================================================================
 # Target rules for targets named echo_fork_server
@@ -423,17 +501,17 @@ echo7_fork_client/fast:
 .PHONY : echo7_fork_client/fast
 
 #=============================================================================
-# Target rules for targets named gethostbyname
+# Target rules for targets named echo8_fork_server
 
 # Build rule for target.
-gethostbyname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname
-.PHONY : gethostbyname
+echo8_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo8_fork_server
+.PHONY : echo8_fork_server
 
 # fast build rule for target.
-gethostbyname/fast:
-	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/build
-.PHONY : gethostbyname/fast
+echo8_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo8_fork_server.dir/build.make CMakeFiles/echo8_fork_server.dir/build
+.PHONY : echo8_fork_server/fast
 
 addr/addr.o: addr/addr.c.o
 
@@ -542,6 +620,60 @@ echo/echo_server.s: echo/echo_server.c.s
 echo/echo_server.c.s:
 	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/echo/echo_server.c.s
 .PHONY : echo/echo_server.c.s
+
+echo10_fork/echo10_fork_client.o: echo10_fork/echo10_fork_client.c.o
+
+.PHONY : echo10_fork/echo10_fork_client.o
+
+# target to build an object file
+echo10_fork/echo10_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo10_fork_client.dir/build.make CMakeFiles/echo10_fork_client.dir/echo10_fork/echo10_fork_client.c.o
+.PHONY : echo10_fork/echo10_fork_client.c.o
+
+echo10_fork/echo10_fork_client.i: echo10_fork/echo10_fork_client.c.i
+
+.PHONY : echo10_fork/echo10_fork_client.i
+
+# target to preprocess a source file
+echo10_fork/echo10_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo10_fork_client.dir/build.make CMakeFiles/echo10_fork_client.dir/echo10_fork/echo10_fork_client.c.i
+.PHONY : echo10_fork/echo10_fork_client.c.i
+
+echo10_fork/echo10_fork_client.s: echo10_fork/echo10_fork_client.c.s
+
+.PHONY : echo10_fork/echo10_fork_client.s
+
+# target to generate assembly for a file
+echo10_fork/echo10_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo10_fork_client.dir/build.make CMakeFiles/echo10_fork_client.dir/echo10_fork/echo10_fork_client.c.s
+.PHONY : echo10_fork/echo10_fork_client.c.s
+
+echo10_fork/echo10_fork_server.o: echo10_fork/echo10_fork_server.c.o
+
+.PHONY : echo10_fork/echo10_fork_server.o
+
+# target to build an object file
+echo10_fork/echo10_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/echo10_fork/echo10_fork_server.c.o
+.PHONY : echo10_fork/echo10_fork_server.c.o
+
+echo10_fork/echo10_fork_server.i: echo10_fork/echo10_fork_server.c.i
+
+.PHONY : echo10_fork/echo10_fork_server.i
+
+# target to preprocess a source file
+echo10_fork/echo10_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/echo10_fork/echo10_fork_server.c.i
+.PHONY : echo10_fork/echo10_fork_server.c.i
+
+echo10_fork/echo10_fork_server.s: echo10_fork/echo10_fork_server.c.s
+
+.PHONY : echo10_fork/echo10_fork_server.s
+
+# target to generate assembly for a file
+echo10_fork/echo10_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/echo10_fork/echo10_fork_server.c.s
+.PHONY : echo10_fork/echo10_fork_server.c.s
 
 echo2_fork/echo2_fork_client.o: echo2_fork/echo2_fork_client.c.o
 
@@ -867,6 +999,114 @@ echo7_fork/echo7_fork_server.c.s:
 	$(MAKE) -f CMakeFiles/echo7_fork_server.dir/build.make CMakeFiles/echo7_fork_server.dir/echo7_fork/echo7_fork_server.c.s
 .PHONY : echo7_fork/echo7_fork_server.c.s
 
+echo8_fork/echo8_fork_client.o: echo8_fork/echo8_fork_client.c.o
+
+.PHONY : echo8_fork/echo8_fork_client.o
+
+# target to build an object file
+echo8_fork/echo8_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo8_fork_client.dir/build.make CMakeFiles/echo8_fork_client.dir/echo8_fork/echo8_fork_client.c.o
+.PHONY : echo8_fork/echo8_fork_client.c.o
+
+echo8_fork/echo8_fork_client.i: echo8_fork/echo8_fork_client.c.i
+
+.PHONY : echo8_fork/echo8_fork_client.i
+
+# target to preprocess a source file
+echo8_fork/echo8_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo8_fork_client.dir/build.make CMakeFiles/echo8_fork_client.dir/echo8_fork/echo8_fork_client.c.i
+.PHONY : echo8_fork/echo8_fork_client.c.i
+
+echo8_fork/echo8_fork_client.s: echo8_fork/echo8_fork_client.c.s
+
+.PHONY : echo8_fork/echo8_fork_client.s
+
+# target to generate assembly for a file
+echo8_fork/echo8_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo8_fork_client.dir/build.make CMakeFiles/echo8_fork_client.dir/echo8_fork/echo8_fork_client.c.s
+.PHONY : echo8_fork/echo8_fork_client.c.s
+
+echo8_fork/echo8_fork_server.o: echo8_fork/echo8_fork_server.c.o
+
+.PHONY : echo8_fork/echo8_fork_server.o
+
+# target to build an object file
+echo8_fork/echo8_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo8_fork_server.dir/build.make CMakeFiles/echo8_fork_server.dir/echo8_fork/echo8_fork_server.c.o
+.PHONY : echo8_fork/echo8_fork_server.c.o
+
+echo8_fork/echo8_fork_server.i: echo8_fork/echo8_fork_server.c.i
+
+.PHONY : echo8_fork/echo8_fork_server.i
+
+# target to preprocess a source file
+echo8_fork/echo8_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo8_fork_server.dir/build.make CMakeFiles/echo8_fork_server.dir/echo8_fork/echo8_fork_server.c.i
+.PHONY : echo8_fork/echo8_fork_server.c.i
+
+echo8_fork/echo8_fork_server.s: echo8_fork/echo8_fork_server.c.s
+
+.PHONY : echo8_fork/echo8_fork_server.s
+
+# target to generate assembly for a file
+echo8_fork/echo8_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo8_fork_server.dir/build.make CMakeFiles/echo8_fork_server.dir/echo8_fork/echo8_fork_server.c.s
+.PHONY : echo8_fork/echo8_fork_server.c.s
+
+echo9_fork/echo9_fork_client.o: echo9_fork/echo9_fork_client.c.o
+
+.PHONY : echo9_fork/echo9_fork_client.o
+
+# target to build an object file
+echo9_fork/echo9_fork_client.c.o:
+	$(MAKE) -f CMakeFiles/echo9_fork_client.dir/build.make CMakeFiles/echo9_fork_client.dir/echo9_fork/echo9_fork_client.c.o
+.PHONY : echo9_fork/echo9_fork_client.c.o
+
+echo9_fork/echo9_fork_client.i: echo9_fork/echo9_fork_client.c.i
+
+.PHONY : echo9_fork/echo9_fork_client.i
+
+# target to preprocess a source file
+echo9_fork/echo9_fork_client.c.i:
+	$(MAKE) -f CMakeFiles/echo9_fork_client.dir/build.make CMakeFiles/echo9_fork_client.dir/echo9_fork/echo9_fork_client.c.i
+.PHONY : echo9_fork/echo9_fork_client.c.i
+
+echo9_fork/echo9_fork_client.s: echo9_fork/echo9_fork_client.c.s
+
+.PHONY : echo9_fork/echo9_fork_client.s
+
+# target to generate assembly for a file
+echo9_fork/echo9_fork_client.c.s:
+	$(MAKE) -f CMakeFiles/echo9_fork_client.dir/build.make CMakeFiles/echo9_fork_client.dir/echo9_fork/echo9_fork_client.c.s
+.PHONY : echo9_fork/echo9_fork_client.c.s
+
+echo9_fork/echo9_fork_server.o: echo9_fork/echo9_fork_server.c.o
+
+.PHONY : echo9_fork/echo9_fork_server.o
+
+# target to build an object file
+echo9_fork/echo9_fork_server.c.o:
+	$(MAKE) -f CMakeFiles/echo9_fork_server.dir/build.make CMakeFiles/echo9_fork_server.dir/echo9_fork/echo9_fork_server.c.o
+.PHONY : echo9_fork/echo9_fork_server.c.o
+
+echo9_fork/echo9_fork_server.i: echo9_fork/echo9_fork_server.c.i
+
+.PHONY : echo9_fork/echo9_fork_server.i
+
+# target to preprocess a source file
+echo9_fork/echo9_fork_server.c.i:
+	$(MAKE) -f CMakeFiles/echo9_fork_server.dir/build.make CMakeFiles/echo9_fork_server.dir/echo9_fork/echo9_fork_server.c.i
+.PHONY : echo9_fork/echo9_fork_server.c.i
+
+echo9_fork/echo9_fork_server.s: echo9_fork/echo9_fork_server.c.s
+
+.PHONY : echo9_fork/echo9_fork_server.s
+
+# target to generate assembly for a file
+echo9_fork/echo9_fork_server.c.s:
+	$(MAKE) -f CMakeFiles/echo9_fork_server.dir/build.make CMakeFiles/echo9_fork_server.dir/echo9_fork/echo9_fork_server.c.s
+.PHONY : echo9_fork/echo9_fork_server.c.s
+
 echo_fork/echo_fork_client.o: echo_fork/echo_fork_client.c.o
 
 .PHONY : echo_fork/echo_fork_client.o
@@ -1117,8 +1357,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... select_server"
 	@echo "... gethostbyname2"
+	@echo "... echo10_fork_server"
+	@echo "... gethostbyname"
+	@echo "... echo9_fork_client"
+	@echo "... echo9_fork_server"
+	@echo "... select_server"
+	@echo "... echo8_fork_client"
 	@echo "... addr"
 	@echo "... echo5_fork_client"
 	@echo "... echo4_fork_client"
@@ -1129,6 +1374,7 @@ help:
 	@echo "... echo2_fork_server"
 	@echo "... p2p_client"
 	@echo "... main"
+	@echo "... echo10_fork_client"
 	@echo "... echo_fork_server"
 	@echo "... echo_fork_client"
 	@echo "... echo4_fork_server"
@@ -1142,7 +1388,7 @@ help:
 	@echo "... echo3_fork_client"
 	@echo "... echo6_fork_client"
 	@echo "... echo7_fork_client"
-	@echo "... gethostbyname"
+	@echo "... echo8_fork_server"
 	@echo "... addr/addr.o"
 	@echo "... addr/addr.i"
 	@echo "... addr/addr.s"
@@ -1155,6 +1401,12 @@ help:
 	@echo "... echo/echo_server.o"
 	@echo "... echo/echo_server.i"
 	@echo "... echo/echo_server.s"
+	@echo "... echo10_fork/echo10_fork_client.o"
+	@echo "... echo10_fork/echo10_fork_client.i"
+	@echo "... echo10_fork/echo10_fork_client.s"
+	@echo "... echo10_fork/echo10_fork_server.o"
+	@echo "... echo10_fork/echo10_fork_server.i"
+	@echo "... echo10_fork/echo10_fork_server.s"
 	@echo "... echo2_fork/echo2_fork_client.o"
 	@echo "... echo2_fork/echo2_fork_client.i"
 	@echo "... echo2_fork/echo2_fork_client.s"
@@ -1191,6 +1443,18 @@ help:
 	@echo "... echo7_fork/echo7_fork_server.o"
 	@echo "... echo7_fork/echo7_fork_server.i"
 	@echo "... echo7_fork/echo7_fork_server.s"
+	@echo "... echo8_fork/echo8_fork_client.o"
+	@echo "... echo8_fork/echo8_fork_client.i"
+	@echo "... echo8_fork/echo8_fork_client.s"
+	@echo "... echo8_fork/echo8_fork_server.o"
+	@echo "... echo8_fork/echo8_fork_server.i"
+	@echo "... echo8_fork/echo8_fork_server.s"
+	@echo "... echo9_fork/echo9_fork_client.o"
+	@echo "... echo9_fork/echo9_fork_client.i"
+	@echo "... echo9_fork/echo9_fork_client.s"
+	@echo "... echo9_fork/echo9_fork_server.o"
+	@echo "... echo9_fork/echo9_fork_server.i"
+	@echo "... echo9_fork/echo9_fork_server.s"
 	@echo "... echo_fork/echo_fork_client.o"
 	@echo "... echo_fork/echo_fork_client.i"
 	@echo "... echo_fork/echo_fork_client.s"

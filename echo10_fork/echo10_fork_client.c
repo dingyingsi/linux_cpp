@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <asm/errno.h>
 #include <errno.h>
+#include <signal.h>
 
 #define ERR_EXIT(m) \
     do \
@@ -127,30 +128,6 @@ ssize_t readline(int sockfd, void *buf, size_t maxline)
 
 void echo_cli(int sock)
 {
-    char sendbuf[1024] = {0};
-    char recvbuf[1024] = {0};
-    int n;
-    while (fgets(sendbuf, sizeof(sendbuf), stdin) != NULL)
-    {
-        writen(sock, sendbuf, strlen(sendbuf));
-
-        int ret = readline(sock, recvbuf, sizeof(recvbuf));
-
-        if(ret == -1)
-        {
-            ERR_EXIT("readline");
-        }
-        else if (ret == 0)
-        {
-            printf("client close\n");
-            break;
-        }
-        fputs(recvbuf, stdout);
-        memset(sendbuf, 0, sizeof(sendbuf));
-        memset(recvbuf, 0, sizeof(recvbuf));
-    }
-    close(sock);
-
     fd_set rset;
     FD_ZERO(&rset);
     int nready;
@@ -164,48 +141,82 @@ void echo_cli(int sock)
     {
         maxfd = sock;
     }
+    char sendbuf[1024] = {0};
+    char recvbuf[1024] = {0};
     while(1) {
         FD_SET(fd_stdin, &rset);
         FD_SET(sock, &rset);
         nready = select(maxfd + 1, &rset, NULL, NULL, NULL);
-        if (nready == -1) {
+        if (nready == -1)
+        {
             ERR_EXIT("select");
         }
-        if (nready == 0) {
+        if (nready == 0)
+        {
             continue;
+        }
+        if (FD_ISSET(sock, &rset))
+        {
+            int ret = readline(sock, recvbuf, sizeof(recvbuf));
+            if (ret == -1)
+            {
+                ERR_EXIT("readline");
+            }
+            else if (ret == 0)
+            {
+                printf("server close\n");
+                break;
+            }
+            fputs(recvbuf, stdout);
+            memset(recvbuf, 0, sizeof(recvbuf));
+        }
+
+        if (FD_ISSET(fd_stdin, &rset))
+        {
+            if (fgets(sendbuf, sizeof(sendbuf), stdin) == NULL)
+            {
+                break;
+            }
+            writen(sock, sendbuf, strlen(sendbuf));
         }
 
     }
 
+    close(sock);
+}
 
+void handle_sigpipe(int sig)
+{
+    printf("recv a sig=%d\n", sig);
 }
 
 int main(int argc, char** argv)
 {
+    signal(SIGPIPE, handle_sigpipe);
+    /* signal(SIGPIPE, SIG_IGN); */
 
-    int sock[5];
-    int i;
-    for (i = 0;i < 5; i++) {
-        if ((sock[i] = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) {
-            ERR_EXIT("socket");
-        }
-        struct sockaddr_in servaddr;
-        memset(&servaddr, 0, sizeof(servaddr));
-        servaddr.sin_family = AF_INET;
-        servaddr.sin_port = htons(5188);
-        servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-
-        if (connect(sock[i], (struct sockaddr *) &servaddr, sizeof(servaddr)) < 0) {
-            ERR_EXIT("connect");
-        }
-        struct sockaddr_in localaddr;
-        socklen_t addrlen = sizeof(localaddr);
-        if (getsockname(sock[i], (struct sockaddr *) &localaddr, &addrlen) < 0) {
-            ERR_EXIT("getsockname");
-        }
-        printf("ip=%s port=%d\n", inet_ntoa(localaddr.sin_addr), ntohs(localaddr.sin_port));
+    int sock;
+    if ((sock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) {
+        ERR_EXIT("socket");
     }
-    echo_cli(sock[0]);
+    struct sockaddr_in servaddr;
+    memset(&servaddr, 0, sizeof(servaddr));
+    servaddr.sin_family = AF_INET;
+    servaddr.sin_port = htons(5188);
+    servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+
+    if (connect(sock, (struct sockaddr*)&servaddr, sizeof(servaddr)) < 0){
+        ERR_EXIT("connect");
+    }
+    struct sockaddr_in localaddr;
+    socklen_t addrlen = sizeof(localaddr);
+    if (getsockname(sock, (struct sockaddr *) &localaddr, &addrlen) < 0)
+    {
+        ERR_EXIT("getsockname");
+    }
+    printf("ip=%s port=%d\n", inet_ntoa(localaddr.sin_addr), ntohs(localaddr.sin_port));
+
+    echo_cli(sock);
 
     return EXIT_SUCCESS;
 }
