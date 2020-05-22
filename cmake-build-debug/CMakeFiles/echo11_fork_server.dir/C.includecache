@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dingyingsi/CLionProjects/tcp/echo11_fork/echo11_fork_server.c
+stdlib.h
+-
+stdio.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+string.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+asm/errno.h
+-
+errno.h
+-
+signal.h
+-
+sys/wait.h
+-
+
