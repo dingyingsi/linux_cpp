@@ -269,7 +269,7 @@ int main(int argc, char** argv)
             {
                 char recvbuf[1024] = {0};
                 int ret = readline(conn, recvbuf, 1024);
-                if (ret == 0)
+                if (ret == -1)
                 {
                     ERR_EXIT("readline");
                 }
