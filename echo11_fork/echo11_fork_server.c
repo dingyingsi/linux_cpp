@@ -275,6 +275,7 @@ int main(int argc, char** argv)
                 }
                 if (ret == 0)
                 {
+
                     printf("client close\n");
                     FD_CLR(conn, &allset);
                     client[i] = -1;
