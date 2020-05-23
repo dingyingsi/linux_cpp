@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/echo13_fork_client.dir/echo13_fork/echo13_fork_client.c.o  -o echo13_fork_client 
