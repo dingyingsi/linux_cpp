@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named echo16_epoll_server
+
+# Build rule for target.
+echo16_epoll_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo16_epoll_server
+.PHONY : echo16_epoll_server
+
+# fast build rule for target.
+echo16_epoll_server/fast:
+	$(MAKE) -f CMakeFiles/echo16_epoll_server.dir/build.make CMakeFiles/echo16_epoll_server.dir/build
+.PHONY : echo16_epoll_server/fast
+
+#=============================================================================
+# Target rules for targets named echo15_select_client
+
+# Build rule for target.
+echo15_select_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo15_select_client
+.PHONY : echo15_select_client
+
+# fast build rule for target.
+echo15_select_client/fast:
+	$(MAKE) -f CMakeFiles/echo15_select_client.dir/build.make CMakeFiles/echo15_select_client.dir/build
+.PHONY : echo15_select_client/fast
+
+#=============================================================================
 # Target rules for targets named echo14_fork_client
 
 # Build rule for target.
@@ -135,19 +161,6 @@ gethostbyname2: cmake_check_build_system
 gethostbyname2/fast:
 	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
 .PHONY : gethostbyname2/fast
-
-#=============================================================================
-# Target rules for targets named echo15_fork_client
-
-# Build rule for target.
-echo15_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo15_fork_client
-.PHONY : echo15_fork_client
-
-# fast build rule for target.
-echo15_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo15_fork_client.dir/build.make CMakeFiles/echo15_fork_client.dir/build
-.PHONY : echo15_fork_client/fast
 
 #=============================================================================
 # Target rules for targets named ulimit_nofile
@@ -254,6 +267,19 @@ echo9_fork_client/fast:
 .PHONY : echo9_fork_client/fast
 
 #=============================================================================
+# Target rules for targets named echo16_epoll_client
+
+# Build rule for target.
+echo16_epoll_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo16_epoll_client
+.PHONY : echo16_epoll_client
+
+# fast build rule for target.
+echo16_epoll_client/fast:
+	$(MAKE) -f CMakeFiles/echo16_epoll_client.dir/build.make CMakeFiles/echo16_epoll_client.dir/build
+.PHONY : echo16_epoll_client/fast
+
+#=============================================================================
 # Target rules for targets named echo9_fork_server
 
 # Build rule for target.
@@ -343,19 +369,6 @@ echo_client: cmake_check_build_system
 echo_client/fast:
 	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
 .PHONY : echo_client/fast
-
-#=============================================================================
-# Target rules for targets named echo15_fork_server
-
-# Build rule for target.
-echo15_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo15_fork_server
-.PHONY : echo15_fork_server
-
-# fast build rule for target.
-echo15_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo15_fork_server.dir/build.make CMakeFiles/echo15_fork_server.dir/build
-.PHONY : echo15_fork_server/fast
 
 #=============================================================================
 # Target rules for targets named p2p_server
@@ -616,6 +629,19 @@ echo6_fork_client: cmake_check_build_system
 echo6_fork_client/fast:
 	$(MAKE) -f CMakeFiles/echo6_fork_client.dir/build.make CMakeFiles/echo6_fork_client.dir/build
 .PHONY : echo6_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo15_select_server
+
+# Build rule for target.
+echo15_select_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo15_select_server
+.PHONY : echo15_select_server
+
+# fast build rule for target.
+echo15_select_server/fast:
+	$(MAKE) -f CMakeFiles/echo15_select_server.dir/build.make CMakeFiles/echo15_select_server.dir/build
+.PHONY : echo15_select_server/fast
 
 #=============================================================================
 # Target rules for targets named echo7_fork_client
@@ -1034,59 +1060,113 @@ echo14_fork/echo14_fork_server.c.s:
 	$(MAKE) -f CMakeFiles/echo14_fork_server.dir/build.make CMakeFiles/echo14_fork_server.dir/echo14_fork/echo14_fork_server.c.s
 .PHONY : echo14_fork/echo14_fork_server.c.s
 
-echo15_fork/echo15_fork_client.o: echo15_fork/echo15_fork_client.c.o
+echo15_select/echo15_select_client.o: echo15_select/echo15_select_client.c.o
 
-.PHONY : echo15_fork/echo15_fork_client.o
-
-# target to build an object file
-echo15_fork/echo15_fork_client.c.o:
-	$(MAKE) -f CMakeFiles/echo15_fork_client.dir/build.make CMakeFiles/echo15_fork_client.dir/echo15_fork/echo15_fork_client.c.o
-.PHONY : echo15_fork/echo15_fork_client.c.o
-
-echo15_fork/echo15_fork_client.i: echo15_fork/echo15_fork_client.c.i
-
-.PHONY : echo15_fork/echo15_fork_client.i
-
-# target to preprocess a source file
-echo15_fork/echo15_fork_client.c.i:
-	$(MAKE) -f CMakeFiles/echo15_fork_client.dir/build.make CMakeFiles/echo15_fork_client.dir/echo15_fork/echo15_fork_client.c.i
-.PHONY : echo15_fork/echo15_fork_client.c.i
-
-echo15_fork/echo15_fork_client.s: echo15_fork/echo15_fork_client.c.s
-
-.PHONY : echo15_fork/echo15_fork_client.s
-
-# target to generate assembly for a file
-echo15_fork/echo15_fork_client.c.s:
-	$(MAKE) -f CMakeFiles/echo15_fork_client.dir/build.make CMakeFiles/echo15_fork_client.dir/echo15_fork/echo15_fork_client.c.s
-.PHONY : echo15_fork/echo15_fork_client.c.s
-
-echo15_fork/echo15_fork_server.o: echo15_fork/echo15_fork_server.c.o
-
-.PHONY : echo15_fork/echo15_fork_server.o
+.PHONY : echo15_select/echo15_select_client.o
 
 # target to build an object file
-echo15_fork/echo15_fork_server.c.o:
-	$(MAKE) -f CMakeFiles/echo15_fork_server.dir/build.make CMakeFiles/echo15_fork_server.dir/echo15_fork/echo15_fork_server.c.o
-.PHONY : echo15_fork/echo15_fork_server.c.o
+echo15_select/echo15_select_client.c.o:
+	$(MAKE) -f CMakeFiles/echo15_select_client.dir/build.make CMakeFiles/echo15_select_client.dir/echo15_select/echo15_select_client.c.o
+.PHONY : echo15_select/echo15_select_client.c.o
 
-echo15_fork/echo15_fork_server.i: echo15_fork/echo15_fork_server.c.i
+echo15_select/echo15_select_client.i: echo15_select/echo15_select_client.c.i
 
-.PHONY : echo15_fork/echo15_fork_server.i
+.PHONY : echo15_select/echo15_select_client.i
 
 # target to preprocess a source file
-echo15_fork/echo15_fork_server.c.i:
-	$(MAKE) -f CMakeFiles/echo15_fork_server.dir/build.make CMakeFiles/echo15_fork_server.dir/echo15_fork/echo15_fork_server.c.i
-.PHONY : echo15_fork/echo15_fork_server.c.i
+echo15_select/echo15_select_client.c.i:
+	$(MAKE) -f CMakeFiles/echo15_select_client.dir/build.make CMakeFiles/echo15_select_client.dir/echo15_select/echo15_select_client.c.i
+.PHONY : echo15_select/echo15_select_client.c.i
 
-echo15_fork/echo15_fork_server.s: echo15_fork/echo15_fork_server.c.s
+echo15_select/echo15_select_client.s: echo15_select/echo15_select_client.c.s
 
-.PHONY : echo15_fork/echo15_fork_server.s
+.PHONY : echo15_select/echo15_select_client.s
 
 # target to generate assembly for a file
-echo15_fork/echo15_fork_server.c.s:
-	$(MAKE) -f CMakeFiles/echo15_fork_server.dir/build.make CMakeFiles/echo15_fork_server.dir/echo15_fork/echo15_fork_server.c.s
-.PHONY : echo15_fork/echo15_fork_server.c.s
+echo15_select/echo15_select_client.c.s:
+	$(MAKE) -f CMakeFiles/echo15_select_client.dir/build.make CMakeFiles/echo15_select_client.dir/echo15_select/echo15_select_client.c.s
+.PHONY : echo15_select/echo15_select_client.c.s
+
+echo15_select/echo15_select_server.o: echo15_select/echo15_select_server.c.o
+
+.PHONY : echo15_select/echo15_select_server.o
+
+# target to build an object file
+echo15_select/echo15_select_server.c.o:
+	$(MAKE) -f CMakeFiles/echo15_select_server.dir/build.make CMakeFiles/echo15_select_server.dir/echo15_select/echo15_select_server.c.o
+.PHONY : echo15_select/echo15_select_server.c.o
+
+echo15_select/echo15_select_server.i: echo15_select/echo15_select_server.c.i
+
+.PHONY : echo15_select/echo15_select_server.i
+
+# target to preprocess a source file
+echo15_select/echo15_select_server.c.i:
+	$(MAKE) -f CMakeFiles/echo15_select_server.dir/build.make CMakeFiles/echo15_select_server.dir/echo15_select/echo15_select_server.c.i
+.PHONY : echo15_select/echo15_select_server.c.i
+
+echo15_select/echo15_select_server.s: echo15_select/echo15_select_server.c.s
+
+.PHONY : echo15_select/echo15_select_server.s
+
+# target to generate assembly for a file
+echo15_select/echo15_select_server.c.s:
+	$(MAKE) -f CMakeFiles/echo15_select_server.dir/build.make CMakeFiles/echo15_select_server.dir/echo15_select/echo15_select_server.c.s
+.PHONY : echo15_select/echo15_select_server.c.s
+
+echo16_epoll/echo16_epoll_client.o: echo16_epoll/echo16_epoll_client.cpp.o
+
+.PHONY : echo16_epoll/echo16_epoll_client.o
+
+# target to build an object file
+echo16_epoll/echo16_epoll_client.cpp.o:
+	$(MAKE) -f CMakeFiles/echo16_epoll_client.dir/build.make CMakeFiles/echo16_epoll_client.dir/echo16_epoll/echo16_epoll_client.cpp.o
+.PHONY : echo16_epoll/echo16_epoll_client.cpp.o
+
+echo16_epoll/echo16_epoll_client.i: echo16_epoll/echo16_epoll_client.cpp.i
+
+.PHONY : echo16_epoll/echo16_epoll_client.i
+
+# target to preprocess a source file
+echo16_epoll/echo16_epoll_client.cpp.i:
+	$(MAKE) -f CMakeFiles/echo16_epoll_client.dir/build.make CMakeFiles/echo16_epoll_client.dir/echo16_epoll/echo16_epoll_client.cpp.i
+.PHONY : echo16_epoll/echo16_epoll_client.cpp.i
+
+echo16_epoll/echo16_epoll_client.s: echo16_epoll/echo16_epoll_client.cpp.s
+
+.PHONY : echo16_epoll/echo16_epoll_client.s
+
+# target to generate assembly for a file
+echo16_epoll/echo16_epoll_client.cpp.s:
+	$(MAKE) -f CMakeFiles/echo16_epoll_client.dir/build.make CMakeFiles/echo16_epoll_client.dir/echo16_epoll/echo16_epoll_client.cpp.s
+.PHONY : echo16_epoll/echo16_epoll_client.cpp.s
+
+echo16_epoll/echo16_epoll_server.o: echo16_epoll/echo16_epoll_server.cpp.o
+
+.PHONY : echo16_epoll/echo16_epoll_server.o
+
+# target to build an object file
+echo16_epoll/echo16_epoll_server.cpp.o:
+	$(MAKE) -f CMakeFiles/echo16_epoll_server.dir/build.make CMakeFiles/echo16_epoll_server.dir/echo16_epoll/echo16_epoll_server.cpp.o
+.PHONY : echo16_epoll/echo16_epoll_server.cpp.o
+
+echo16_epoll/echo16_epoll_server.i: echo16_epoll/echo16_epoll_server.cpp.i
+
+.PHONY : echo16_epoll/echo16_epoll_server.i
+
+# target to preprocess a source file
+echo16_epoll/echo16_epoll_server.cpp.i:
+	$(MAKE) -f CMakeFiles/echo16_epoll_server.dir/build.make CMakeFiles/echo16_epoll_server.dir/echo16_epoll/echo16_epoll_server.cpp.i
+.PHONY : echo16_epoll/echo16_epoll_server.cpp.i
+
+echo16_epoll/echo16_epoll_server.s: echo16_epoll/echo16_epoll_server.cpp.s
+
+.PHONY : echo16_epoll/echo16_epoll_server.s
+
+# target to generate assembly for a file
+echo16_epoll/echo16_epoll_server.cpp.s:
+	$(MAKE) -f CMakeFiles/echo16_epoll_server.dir/build.make CMakeFiles/echo16_epoll_server.dir/echo16_epoll/echo16_epoll_server.cpp.s
+.PHONY : echo16_epoll/echo16_epoll_server.cpp.s
 
 echo2_fork/echo2_fork_client.o: echo2_fork/echo2_fork_client.c.o
 
@@ -1797,9 +1877,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... echo16_epoll_server"
+	@echo "... echo15_select_client"
 	@echo "... echo14_fork_client"
 	@echo "... gethostbyname2"
-	@echo "... echo15_fork_client"
 	@echo "... ulimit_nofile"
 	@echo "... echo13_fork_server"
 	@echo "... echo12_fork_client"
@@ -1808,6 +1889,7 @@ help:
 	@echo "... gethostbyname"
 	@echo "... echo12_fork_server"
 	@echo "... echo9_fork_client"
+	@echo "... echo16_epoll_client"
 	@echo "... echo9_fork_server"
 	@echo "... select_server"
 	@echo "... echo8_fork_client"
@@ -1816,7 +1898,6 @@ help:
 	@echo "... echo4_fork_client"
 	@echo "... echo_client"
 	@echo "... edit_cache"
-	@echo "... echo15_fork_server"
 	@echo "... p2p_server"
 	@echo "... echo6_fork_server"
 	@echo "... echo2_fork_server"
@@ -1837,6 +1918,7 @@ help:
 	@echo "... echo3_fork_client"
 	@echo "... echo13_fork_client"
 	@echo "... echo6_fork_client"
+	@echo "... echo15_select_server"
 	@echo "... echo7_fork_client"
 	@echo "... echo14_fork_server"
 	@echo "... echo8_fork_server"
@@ -1882,12 +1964,18 @@ help:
 	@echo "... echo14_fork/echo14_fork_server.o"
 	@echo "... echo14_fork/echo14_fork_server.i"
 	@echo "... echo14_fork/echo14_fork_server.s"
-	@echo "... echo15_fork/echo15_fork_client.o"
-	@echo "... echo15_fork/echo15_fork_client.i"
-	@echo "... echo15_fork/echo15_fork_client.s"
-	@echo "... echo15_fork/echo15_fork_server.o"
-	@echo "... echo15_fork/echo15_fork_server.i"
-	@echo "... echo15_fork/echo15_fork_server.s"
+	@echo "... echo15_select/echo15_select_client.o"
+	@echo "... echo15_select/echo15_select_client.i"
+	@echo "... echo15_select/echo15_select_client.s"
+	@echo "... echo15_select/echo15_select_server.o"
+	@echo "... echo15_select/echo15_select_server.i"
+	@echo "... echo15_select/echo15_select_server.s"
+	@echo "... echo16_epoll/echo16_epoll_client.o"
+	@echo "... echo16_epoll/echo16_epoll_client.i"
+	@echo "... echo16_epoll/echo16_epoll_client.s"
+	@echo "... echo16_epoll/echo16_epoll_server.o"
+	@echo "... echo16_epoll/echo16_epoll_server.i"
+	@echo "... echo16_epoll/echo16_epoll_server.s"
 	@echo "... echo2_fork/echo2_fork_client.o"
 	@echo "... echo2_fork/echo2_fork_client.i"
 	@echo "... echo2_fork/echo2_fork_client.s"
