@@ -123,10 +123,15 @@ void echo_srv(int conn) {
 }
 
 void handle_sigchld(int sig) {
-    wait(NULL);
+    while (waitpid(-1, NULL, WNOHANG) > 0);
+}
+
+void handle_sigpipe(int sig) {
+    printf("recv a sig=%d\n", sig);
 }
 
 int main(int argc, char **argv) {
+    signal(SIGPIPE, handle_sigpipe);
     signal(SIGCHLD, handle_sigchld);
     int listenfd;
     /* if ((listenfd = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) */
@@ -227,12 +232,14 @@ int main(int argc, char **argv) {
                     ERR_EXIT("readline");
                 }
                 if (ret == 0) {
+
                     printf("client close\n");
                     FD_CLR(conn, &allset);
                     client[i] = -1;
                     close(conn);
                 }
                 fputs(recvbuf, stdout);
+                sleep(4);
                 writen(conn, recvbuf, strlen(recvbuf));
 
                 if (--nready <= 0) {

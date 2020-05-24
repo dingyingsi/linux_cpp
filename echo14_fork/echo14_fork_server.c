@@ -127,6 +127,9 @@ void handle_sigchld(int sig) {
 }
 
 int main(int argc, char **argv) {
+
+    int count = 0;
+
     signal(SIGCHLD, handle_sigchld);
     int listenfd;
     /* if ((listenfd = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) */
@@ -204,7 +207,7 @@ int main(int argc, char **argv) {
                 fprintf(stderr, "too many clients");
                 exit(EXIT_FAILURE);
             }
-            printf("ip=%s port=%d\n", inet_ntoa(peeraddr.sin_addr), ntohs(peeraddr.sin_port));
+            printf("ip=%s port=%d count=%d\n", inet_ntoa(peeraddr.sin_addr), ntohs(peeraddr.sin_port), ++count);
 
             FD_SET(conn, &allset);
             if (conn > maxfd) {
