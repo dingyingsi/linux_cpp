@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/echo16_select_client.dir/echo15_select/echo15_select_client.c.o  -o echo16_select_client 

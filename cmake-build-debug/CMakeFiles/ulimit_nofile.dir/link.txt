@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ulimit_nofile.dir/ulimit_nofile/ulimit_nofile.c.o  -o ulimit_nofile 
