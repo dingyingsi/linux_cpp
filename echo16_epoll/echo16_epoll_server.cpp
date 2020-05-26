@@ -9,7 +9,6 @@
 #include <errno.h>
 #include <signal.h>
 #include <sys/wait.h>
-#include <sys/poll.h>
 #include <vector>
 #include <fcntl.h>
 #include <sys/epoll.h>

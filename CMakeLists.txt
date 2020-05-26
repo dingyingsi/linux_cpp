@@ -45,5 +45,8 @@ add_executable(echo16_epoll_server echo16_epoll/echo16_epoll_server.cpp)
 add_executable(echo16_epoll_client echo16_epoll/echo16_epoll_client.cpp)
 add_executable(gethostbyname gethostbyname/gethostbyname.c)
 add_executable(gethostbyname2 gethostbyname/gethostbyname2.c)
+add_executable(echo_udp_server echo_udp/echo_udp_server.c)
+add_executable(echo_udp_client echo_udp/echo_udp_client.c)
+
 add_executable(select_server select/server.c)
 add_executable(select_client select/client.c)

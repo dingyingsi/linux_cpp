@@ -111,537 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named echo16_epoll_server
+# Target rules for targets named echo14_fork_server
 
 # Build rule for target.
-echo16_epoll_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo16_epoll_server
-.PHONY : echo16_epoll_server
+echo14_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo14_fork_server
+.PHONY : echo14_fork_server
 
 # fast build rule for target.
-echo16_epoll_server/fast:
-	$(MAKE) -f CMakeFiles/echo16_epoll_server.dir/build.make CMakeFiles/echo16_epoll_server.dir/build
-.PHONY : echo16_epoll_server/fast
-
-#=============================================================================
-# Target rules for targets named echo15_select_client
-
-# Build rule for target.
-echo15_select_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo15_select_client
-.PHONY : echo15_select_client
-
-# fast build rule for target.
-echo15_select_client/fast:
-	$(MAKE) -f CMakeFiles/echo15_select_client.dir/build.make CMakeFiles/echo15_select_client.dir/build
-.PHONY : echo15_select_client/fast
-
-#=============================================================================
-# Target rules for targets named echo14_fork_client
-
-# Build rule for target.
-echo14_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo14_fork_client
-.PHONY : echo14_fork_client
-
-# fast build rule for target.
-echo14_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo14_fork_client.dir/build.make CMakeFiles/echo14_fork_client.dir/build
-.PHONY : echo14_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named gethostbyname2
-
-# Build rule for target.
-gethostbyname2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname2
-.PHONY : gethostbyname2
-
-# fast build rule for target.
-gethostbyname2/fast:
-	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
-.PHONY : gethostbyname2/fast
-
-#=============================================================================
-# Target rules for targets named ulimit_nofile
-
-# Build rule for target.
-ulimit_nofile: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ulimit_nofile
-.PHONY : ulimit_nofile
-
-# fast build rule for target.
-ulimit_nofile/fast:
-	$(MAKE) -f CMakeFiles/ulimit_nofile.dir/build.make CMakeFiles/ulimit_nofile.dir/build
-.PHONY : ulimit_nofile/fast
-
-#=============================================================================
-# Target rules for targets named echo13_fork_server
-
-# Build rule for target.
-echo13_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo13_fork_server
-.PHONY : echo13_fork_server
-
-# fast build rule for target.
-echo13_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo13_fork_server.dir/build.make CMakeFiles/echo13_fork_server.dir/build
-.PHONY : echo13_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo12_fork_client
-
-# Build rule for target.
-echo12_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo12_fork_client
-.PHONY : echo12_fork_client
-
-# fast build rule for target.
-echo12_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo12_fork_client.dir/build.make CMakeFiles/echo12_fork_client.dir/build
-.PHONY : echo12_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo11_fork_client
-
-# Build rule for target.
-echo11_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo11_fork_client
-.PHONY : echo11_fork_client
-
-# fast build rule for target.
-echo11_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo11_fork_client.dir/build.make CMakeFiles/echo11_fork_client.dir/build
-.PHONY : echo11_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo10_fork_server
-
-# Build rule for target.
-echo10_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo10_fork_server
-.PHONY : echo10_fork_server
-
-# fast build rule for target.
-echo10_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/build
-.PHONY : echo10_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named gethostbyname
-
-# Build rule for target.
-gethostbyname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname
-.PHONY : gethostbyname
-
-# fast build rule for target.
-gethostbyname/fast:
-	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/build
-.PHONY : gethostbyname/fast
-
-#=============================================================================
-# Target rules for targets named echo12_fork_server
-
-# Build rule for target.
-echo12_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo12_fork_server
-.PHONY : echo12_fork_server
-
-# fast build rule for target.
-echo12_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo12_fork_server.dir/build.make CMakeFiles/echo12_fork_server.dir/build
-.PHONY : echo12_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo9_fork_client
-
-# Build rule for target.
-echo9_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo9_fork_client
-.PHONY : echo9_fork_client
-
-# fast build rule for target.
-echo9_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo9_fork_client.dir/build.make CMakeFiles/echo9_fork_client.dir/build
-.PHONY : echo9_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo16_epoll_client
-
-# Build rule for target.
-echo16_epoll_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo16_epoll_client
-.PHONY : echo16_epoll_client
-
-# fast build rule for target.
-echo16_epoll_client/fast:
-	$(MAKE) -f CMakeFiles/echo16_epoll_client.dir/build.make CMakeFiles/echo16_epoll_client.dir/build
-.PHONY : echo16_epoll_client/fast
-
-#=============================================================================
-# Target rules for targets named echo9_fork_server
-
-# Build rule for target.
-echo9_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo9_fork_server
-.PHONY : echo9_fork_server
-
-# fast build rule for target.
-echo9_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo9_fork_server.dir/build.make CMakeFiles/echo9_fork_server.dir/build
-.PHONY : echo9_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named select_server
-
-# Build rule for target.
-select_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 select_server
-.PHONY : select_server
-
-# fast build rule for target.
-select_server/fast:
-	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
-.PHONY : select_server/fast
-
-#=============================================================================
-# Target rules for targets named echo8_fork_client
-
-# Build rule for target.
-echo8_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo8_fork_client
-.PHONY : echo8_fork_client
-
-# fast build rule for target.
-echo8_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo8_fork_client.dir/build.make CMakeFiles/echo8_fork_client.dir/build
-.PHONY : echo8_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named addr
-
-# Build rule for target.
-addr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 addr
-.PHONY : addr
-
-# fast build rule for target.
-addr/fast:
-	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
-.PHONY : addr/fast
-
-#=============================================================================
-# Target rules for targets named echo5_fork_client
-
-# Build rule for target.
-echo5_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo5_fork_client
-.PHONY : echo5_fork_client
-
-# fast build rule for target.
-echo5_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo5_fork_client.dir/build.make CMakeFiles/echo5_fork_client.dir/build
-.PHONY : echo5_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo4_fork_client
-
-# Build rule for target.
-echo4_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo4_fork_client
-.PHONY : echo4_fork_client
-
-# fast build rule for target.
-echo4_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo4_fork_client.dir/build.make CMakeFiles/echo4_fork_client.dir/build
-.PHONY : echo4_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo_client
-
-# Build rule for target.
-echo_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_client
-.PHONY : echo_client
-
-# fast build rule for target.
-echo_client/fast:
-	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
-.PHONY : echo_client/fast
-
-#=============================================================================
-# Target rules for targets named p2p_server
-
-# Build rule for target.
-p2p_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 p2p_server
-.PHONY : p2p_server
-
-# fast build rule for target.
-p2p_server/fast:
-	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/build
-.PHONY : p2p_server/fast
-
-#=============================================================================
-# Target rules for targets named echo6_fork_server
-
-# Build rule for target.
-echo6_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo6_fork_server
-.PHONY : echo6_fork_server
-
-# fast build rule for target.
-echo6_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo6_fork_server.dir/build.make CMakeFiles/echo6_fork_server.dir/build
-.PHONY : echo6_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo2_fork_server
-
-# Build rule for target.
-echo2_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo2_fork_server
-.PHONY : echo2_fork_server
-
-# fast build rule for target.
-echo2_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo2_fork_server.dir/build.make CMakeFiles/echo2_fork_server.dir/build
-.PHONY : echo2_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named p2p_client
-
-# Build rule for target.
-p2p_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 p2p_client
-.PHONY : p2p_client
-
-# fast build rule for target.
-p2p_client/fast:
-	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/build
-.PHONY : p2p_client/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named echo11_fork_server
-
-# Build rule for target.
-echo11_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo11_fork_server
-.PHONY : echo11_fork_server
-
-# fast build rule for target.
-echo11_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo11_fork_server.dir/build.make CMakeFiles/echo11_fork_server.dir/build
-.PHONY : echo11_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo10_fork_client
-
-# Build rule for target.
-echo10_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo10_fork_client
-.PHONY : echo10_fork_client
-
-# fast build rule for target.
-echo10_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo10_fork_client.dir/build.make CMakeFiles/echo10_fork_client.dir/build
-.PHONY : echo10_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo_fork_server
-
-# Build rule for target.
-echo_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_fork_server
-.PHONY : echo_fork_server
-
-# fast build rule for target.
-echo_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo_fork_server.dir/build.make CMakeFiles/echo_fork_server.dir/build
-.PHONY : echo_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo_fork_client
-
-# Build rule for target.
-echo_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_fork_client
-.PHONY : echo_fork_client
-
-# fast build rule for target.
-echo_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo_fork_client.dir/build.make CMakeFiles/echo_fork_client.dir/build
-.PHONY : echo_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo4_fork_server
-
-# Build rule for target.
-echo4_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo4_fork_server
-.PHONY : echo4_fork_server
-
-# fast build rule for target.
-echo4_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo4_fork_server.dir/build.make CMakeFiles/echo4_fork_server.dir/build
-.PHONY : echo4_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named biglittle
-
-# Build rule for target.
-biglittle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 biglittle
-.PHONY : biglittle
-
-# fast build rule for target.
-biglittle/fast:
-	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/build
-.PHONY : biglittle/fast
-
-#=============================================================================
-# Target rules for targets named echo5_fork_server
-
-# Build rule for target.
-echo5_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo5_fork_server
-.PHONY : echo5_fork_server
-
-# fast build rule for target.
-echo5_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo5_fork_server.dir/build.make CMakeFiles/echo5_fork_server.dir/build
-.PHONY : echo5_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo_server
-
-# Build rule for target.
-echo_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo_server
-.PHONY : echo_server
-
-# fast build rule for target.
-echo_server/fast:
-	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
-.PHONY : echo_server/fast
-
-#=============================================================================
-# Target rules for targets named echo2_fork_client
-
-# Build rule for target.
-echo2_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo2_fork_client
-.PHONY : echo2_fork_client
-
-# fast build rule for target.
-echo2_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo2_fork_client.dir/build.make CMakeFiles/echo2_fork_client.dir/build
-.PHONY : echo2_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named select_client
-
-# Build rule for target.
-select_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 select_client
-.PHONY : select_client
-
-# fast build rule for target.
-select_client/fast:
-	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
-.PHONY : select_client/fast
-
-#=============================================================================
-# Target rules for targets named echo3_fork_server
-
-# Build rule for target.
-echo3_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo3_fork_server
-.PHONY : echo3_fork_server
-
-# fast build rule for target.
-echo3_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/build
-.PHONY : echo3_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo7_fork_server
-
-# Build rule for target.
-echo7_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo7_fork_server
-.PHONY : echo7_fork_server
-
-# fast build rule for target.
-echo7_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo7_fork_server.dir/build.make CMakeFiles/echo7_fork_server.dir/build
-.PHONY : echo7_fork_server/fast
-
-#=============================================================================
-# Target rules for targets named echo3_fork_client
-
-# Build rule for target.
-echo3_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo3_fork_client
-.PHONY : echo3_fork_client
-
-# fast build rule for target.
-echo3_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo3_fork_client.dir/build.make CMakeFiles/echo3_fork_client.dir/build
-.PHONY : echo3_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo13_fork_client
-
-# Build rule for target.
-echo13_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo13_fork_client
-.PHONY : echo13_fork_client
-
-# fast build rule for target.
-echo13_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo13_fork_client.dir/build.make CMakeFiles/echo13_fork_client.dir/build
-.PHONY : echo13_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo6_fork_client
-
-# Build rule for target.
-echo6_fork_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo6_fork_client
-.PHONY : echo6_fork_client
-
-# fast build rule for target.
-echo6_fork_client/fast:
-	$(MAKE) -f CMakeFiles/echo6_fork_client.dir/build.make CMakeFiles/echo6_fork_client.dir/build
-.PHONY : echo6_fork_client/fast
-
-#=============================================================================
-# Target rules for targets named echo15_select_server
-
-# Build rule for target.
-echo15_select_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo15_select_server
-.PHONY : echo15_select_server
-
-# fast build rule for target.
-echo15_select_server/fast:
-	$(MAKE) -f CMakeFiles/echo15_select_server.dir/build.make CMakeFiles/echo15_select_server.dir/build
-.PHONY : echo15_select_server/fast
+echo14_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo14_fork_server.dir/build.make CMakeFiles/echo14_fork_server.dir/build
+.PHONY : echo14_fork_server/fast
 
 #=============================================================================
 # Target rules for targets named echo7_fork_client
@@ -657,17 +137,277 @@ echo7_fork_client/fast:
 .PHONY : echo7_fork_client/fast
 
 #=============================================================================
-# Target rules for targets named echo14_fork_server
+# Target rules for targets named echo6_fork_client
 
 # Build rule for target.
-echo14_fork_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 echo14_fork_server
-.PHONY : echo14_fork_server
+echo6_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo6_fork_client
+.PHONY : echo6_fork_client
 
 # fast build rule for target.
-echo14_fork_server/fast:
-	$(MAKE) -f CMakeFiles/echo14_fork_server.dir/build.make CMakeFiles/echo14_fork_server.dir/build
-.PHONY : echo14_fork_server/fast
+echo6_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo6_fork_client.dir/build.make CMakeFiles/echo6_fork_client.dir/build
+.PHONY : echo6_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo13_fork_client
+
+# Build rule for target.
+echo13_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo13_fork_client
+.PHONY : echo13_fork_client
+
+# fast build rule for target.
+echo13_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo13_fork_client.dir/build.make CMakeFiles/echo13_fork_client.dir/build
+.PHONY : echo13_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo7_fork_server
+
+# Build rule for target.
+echo7_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo7_fork_server
+.PHONY : echo7_fork_server
+
+# fast build rule for target.
+echo7_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo7_fork_server.dir/build.make CMakeFiles/echo7_fork_server.dir/build
+.PHONY : echo7_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo_server
+
+# Build rule for target.
+echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
+
+# fast build rule for target.
+echo_server/fast:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
+
+#=============================================================================
+# Target rules for targets named echo5_fork_server
+
+# Build rule for target.
+echo5_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo5_fork_server
+.PHONY : echo5_fork_server
+
+# fast build rule for target.
+echo5_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo5_fork_server.dir/build.make CMakeFiles/echo5_fork_server.dir/build
+.PHONY : echo5_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named biglittle
+
+# Build rule for target.
+biglittle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 biglittle
+.PHONY : biglittle
+
+# fast build rule for target.
+biglittle/fast:
+	$(MAKE) -f CMakeFiles/biglittle.dir/build.make CMakeFiles/biglittle.dir/build
+.PHONY : biglittle/fast
+
+#=============================================================================
+# Target rules for targets named echo4_fork_server
+
+# Build rule for target.
+echo4_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo4_fork_server
+.PHONY : echo4_fork_server
+
+# fast build rule for target.
+echo4_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo4_fork_server.dir/build.make CMakeFiles/echo4_fork_server.dir/build
+.PHONY : echo4_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo3_fork_server
+
+# Build rule for target.
+echo3_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo3_fork_server
+.PHONY : echo3_fork_server
+
+# fast build rule for target.
+echo3_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo3_fork_server.dir/build.make CMakeFiles/echo3_fork_server.dir/build
+.PHONY : echo3_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo_fork_client
+
+# Build rule for target.
+echo_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_fork_client
+.PHONY : echo_fork_client
+
+# fast build rule for target.
+echo_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo_fork_client.dir/build.make CMakeFiles/echo_fork_client.dir/build
+.PHONY : echo_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo_fork_server
+
+# Build rule for target.
+echo_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_fork_server
+.PHONY : echo_fork_server
+
+# fast build rule for target.
+echo_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo_fork_server.dir/build.make CMakeFiles/echo_fork_server.dir/build
+.PHONY : echo_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo11_fork_server
+
+# Build rule for target.
+echo11_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo11_fork_server
+.PHONY : echo11_fork_server
+
+# fast build rule for target.
+echo11_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo11_fork_server.dir/build.make CMakeFiles/echo11_fork_server.dir/build
+.PHONY : echo11_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named p2p_client
+
+# Build rule for target.
+p2p_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p2p_client
+.PHONY : p2p_client
+
+# fast build rule for target.
+p2p_client/fast:
+	$(MAKE) -f CMakeFiles/p2p_client.dir/build.make CMakeFiles/p2p_client.dir/build
+.PHONY : p2p_client/fast
+
+#=============================================================================
+# Target rules for targets named echo2_fork_server
+
+# Build rule for target.
+echo2_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo2_fork_server
+.PHONY : echo2_fork_server
+
+# fast build rule for target.
+echo2_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo2_fork_server.dir/build.make CMakeFiles/echo2_fork_server.dir/build
+.PHONY : echo2_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo6_fork_server
+
+# Build rule for target.
+echo6_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo6_fork_server
+.PHONY : echo6_fork_server
+
+# fast build rule for target.
+echo6_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo6_fork_server.dir/build.make CMakeFiles/echo6_fork_server.dir/build
+.PHONY : echo6_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo3_fork_client
+
+# Build rule for target.
+echo3_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo3_fork_client
+.PHONY : echo3_fork_client
+
+# fast build rule for target.
+echo3_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo3_fork_client.dir/build.make CMakeFiles/echo3_fork_client.dir/build
+.PHONY : echo3_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named p2p_server
+
+# Build rule for target.
+p2p_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p2p_server
+.PHONY : p2p_server
+
+# fast build rule for target.
+p2p_server/fast:
+	$(MAKE) -f CMakeFiles/p2p_server.dir/build.make CMakeFiles/p2p_server.dir/build
+.PHONY : p2p_server/fast
+
+#=============================================================================
+# Target rules for targets named echo4_fork_client
+
+# Build rule for target.
+echo4_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo4_fork_client
+.PHONY : echo4_fork_client
+
+# fast build rule for target.
+echo4_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo4_fork_client.dir/build.make CMakeFiles/echo4_fork_client.dir/build
+.PHONY : echo4_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo5_fork_client
+
+# Build rule for target.
+echo5_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo5_fork_client
+.PHONY : echo5_fork_client
+
+# fast build rule for target.
+echo5_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo5_fork_client.dir/build.make CMakeFiles/echo5_fork_client.dir/build
+.PHONY : echo5_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named addr
+
+# Build rule for target.
+addr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 addr
+.PHONY : addr
+
+# fast build rule for target.
+addr/fast:
+	$(MAKE) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/build
+.PHONY : addr/fast
+
+#=============================================================================
+# Target rules for targets named echo8_fork_client
+
+# Build rule for target.
+echo8_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo8_fork_client
+.PHONY : echo8_fork_client
+
+# fast build rule for target.
+echo8_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo8_fork_client.dir/build.make CMakeFiles/echo8_fork_client.dir/build
+.PHONY : echo8_fork_client/fast
 
 #=============================================================================
 # Target rules for targets named echo8_fork_server
@@ -681,6 +421,292 @@ echo8_fork_server: cmake_check_build_system
 echo8_fork_server/fast:
 	$(MAKE) -f CMakeFiles/echo8_fork_server.dir/build.make CMakeFiles/echo8_fork_server.dir/build
 .PHONY : echo8_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named select_server
+
+# Build rule for target.
+select_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 select_server
+.PHONY : select_server
+
+# fast build rule for target.
+select_server/fast:
+	$(MAKE) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
+.PHONY : select_server/fast
+
+#=============================================================================
+# Target rules for targets named echo_udp_client
+
+# Build rule for target.
+echo_udp_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_udp_client
+.PHONY : echo_udp_client
+
+# fast build rule for target.
+echo_udp_client/fast:
+	$(MAKE) -f CMakeFiles/echo_udp_client.dir/build.make CMakeFiles/echo_udp_client.dir/build
+.PHONY : echo_udp_client/fast
+
+#=============================================================================
+# Target rules for targets named echo9_fork_server
+
+# Build rule for target.
+echo9_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo9_fork_server
+.PHONY : echo9_fork_server
+
+# fast build rule for target.
+echo9_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo9_fork_server.dir/build.make CMakeFiles/echo9_fork_server.dir/build
+.PHONY : echo9_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo15_select_server
+
+# Build rule for target.
+echo15_select_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo15_select_server
+.PHONY : echo15_select_server
+
+# fast build rule for target.
+echo15_select_server/fast:
+	$(MAKE) -f CMakeFiles/echo15_select_server.dir/build.make CMakeFiles/echo15_select_server.dir/build
+.PHONY : echo15_select_server/fast
+
+#=============================================================================
+# Target rules for targets named echo9_fork_client
+
+# Build rule for target.
+echo9_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo9_fork_client
+.PHONY : echo9_fork_client
+
+# fast build rule for target.
+echo9_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo9_fork_client.dir/build.make CMakeFiles/echo9_fork_client.dir/build
+.PHONY : echo9_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo12_fork_server
+
+# Build rule for target.
+echo12_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo12_fork_server
+.PHONY : echo12_fork_server
+
+# fast build rule for target.
+echo12_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo12_fork_server.dir/build.make CMakeFiles/echo12_fork_server.dir/build
+.PHONY : echo12_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named gethostbyname
+
+# Build rule for target.
+gethostbyname: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname
+.PHONY : gethostbyname
+
+# fast build rule for target.
+gethostbyname/fast:
+	$(MAKE) -f CMakeFiles/gethostbyname.dir/build.make CMakeFiles/gethostbyname.dir/build
+.PHONY : gethostbyname/fast
+
+#=============================================================================
+# Target rules for targets named echo10_fork_client
+
+# Build rule for target.
+echo10_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo10_fork_client
+.PHONY : echo10_fork_client
+
+# fast build rule for target.
+echo10_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo10_fork_client.dir/build.make CMakeFiles/echo10_fork_client.dir/build
+.PHONY : echo10_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo10_fork_server
+
+# Build rule for target.
+echo10_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo10_fork_server
+.PHONY : echo10_fork_server
+
+# fast build rule for target.
+echo10_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo10_fork_server.dir/build.make CMakeFiles/echo10_fork_server.dir/build
+.PHONY : echo10_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named echo_client
+
+# Build rule for target.
+echo_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_client
+.PHONY : echo_client
+
+# fast build rule for target.
+echo_client/fast:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
+.PHONY : echo_client/fast
+
+#=============================================================================
+# Target rules for targets named echo11_fork_client
+
+# Build rule for target.
+echo11_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo11_fork_client
+.PHONY : echo11_fork_client
+
+# fast build rule for target.
+echo11_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo11_fork_client.dir/build.make CMakeFiles/echo11_fork_client.dir/build
+.PHONY : echo11_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo2_fork_client
+
+# Build rule for target.
+echo2_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo2_fork_client
+.PHONY : echo2_fork_client
+
+# fast build rule for target.
+echo2_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo2_fork_client.dir/build.make CMakeFiles/echo2_fork_client.dir/build
+.PHONY : echo2_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo12_fork_client
+
+# Build rule for target.
+echo12_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo12_fork_client
+.PHONY : echo12_fork_client
+
+# fast build rule for target.
+echo12_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo12_fork_client.dir/build.make CMakeFiles/echo12_fork_client.dir/build
+.PHONY : echo12_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named echo13_fork_server
+
+# Build rule for target.
+echo13_fork_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo13_fork_server
+.PHONY : echo13_fork_server
+
+# fast build rule for target.
+echo13_fork_server/fast:
+	$(MAKE) -f CMakeFiles/echo13_fork_server.dir/build.make CMakeFiles/echo13_fork_server.dir/build
+.PHONY : echo13_fork_server/fast
+
+#=============================================================================
+# Target rules for targets named ulimit_nofile
+
+# Build rule for target.
+ulimit_nofile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ulimit_nofile
+.PHONY : ulimit_nofile
+
+# fast build rule for target.
+ulimit_nofile/fast:
+	$(MAKE) -f CMakeFiles/ulimit_nofile.dir/build.make CMakeFiles/ulimit_nofile.dir/build
+.PHONY : ulimit_nofile/fast
+
+#=============================================================================
+# Target rules for targets named gethostbyname2
+
+# Build rule for target.
+gethostbyname2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gethostbyname2
+.PHONY : gethostbyname2
+
+# fast build rule for target.
+gethostbyname2/fast:
+	$(MAKE) -f CMakeFiles/gethostbyname2.dir/build.make CMakeFiles/gethostbyname2.dir/build
+.PHONY : gethostbyname2/fast
+
+#=============================================================================
+# Target rules for targets named echo14_fork_client
+
+# Build rule for target.
+echo14_fork_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo14_fork_client
+.PHONY : echo14_fork_client
+
+# fast build rule for target.
+echo14_fork_client/fast:
+	$(MAKE) -f CMakeFiles/echo14_fork_client.dir/build.make CMakeFiles/echo14_fork_client.dir/build
+.PHONY : echo14_fork_client/fast
+
+#=============================================================================
+# Target rules for targets named select_client
+
+# Build rule for target.
+select_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 select_client
+.PHONY : select_client
+
+# fast build rule for target.
+select_client/fast:
+	$(MAKE) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
+.PHONY : select_client/fast
+
+#=============================================================================
+# Target rules for targets named echo15_select_client
+
+# Build rule for target.
+echo15_select_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo15_select_client
+.PHONY : echo15_select_client
+
+# fast build rule for target.
+echo15_select_client/fast:
+	$(MAKE) -f CMakeFiles/echo15_select_client.dir/build.make CMakeFiles/echo15_select_client.dir/build
+.PHONY : echo15_select_client/fast
+
+#=============================================================================
+# Target rules for targets named echo16_epoll_server
+
+# Build rule for target.
+echo16_epoll_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo16_epoll_server
+.PHONY : echo16_epoll_server
+
+# fast build rule for target.
+echo16_epoll_server/fast:
+	$(MAKE) -f CMakeFiles/echo16_epoll_server.dir/build.make CMakeFiles/echo16_epoll_server.dir/build
+.PHONY : echo16_epoll_server/fast
+
+#=============================================================================
+# Target rules for targets named echo16_epoll_client
+
+# Build rule for target.
+echo16_epoll_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo16_epoll_client
+.PHONY : echo16_epoll_client
+
+# fast build rule for target.
+echo16_epoll_client/fast:
+	$(MAKE) -f CMakeFiles/echo16_epoll_client.dir/build.make CMakeFiles/echo16_epoll_client.dir/build
+.PHONY : echo16_epoll_client/fast
+
+#=============================================================================
+# Target rules for targets named echo_udp_server
+
+# Build rule for target.
+echo_udp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_udp_server
+.PHONY : echo_udp_server
+
+# fast build rule for target.
+echo_udp_server/fast:
+	$(MAKE) -f CMakeFiles/echo_udp_server.dir/build.make CMakeFiles/echo_udp_server.dir/build
+.PHONY : echo_udp_server/fast
 
 addr/addr.o: addr/addr.c.o
 
@@ -1654,6 +1680,60 @@ echo_fork/echo_fork_server.c.s:
 	$(MAKE) -f CMakeFiles/echo_fork_server.dir/build.make CMakeFiles/echo_fork_server.dir/echo_fork/echo_fork_server.c.s
 .PHONY : echo_fork/echo_fork_server.c.s
 
+echo_udp/echo_udp_client.o: echo_udp/echo_udp_client.c.o
+
+.PHONY : echo_udp/echo_udp_client.o
+
+# target to build an object file
+echo_udp/echo_udp_client.c.o:
+	$(MAKE) -f CMakeFiles/echo_udp_client.dir/build.make CMakeFiles/echo_udp_client.dir/echo_udp/echo_udp_client.c.o
+.PHONY : echo_udp/echo_udp_client.c.o
+
+echo_udp/echo_udp_client.i: echo_udp/echo_udp_client.c.i
+
+.PHONY : echo_udp/echo_udp_client.i
+
+# target to preprocess a source file
+echo_udp/echo_udp_client.c.i:
+	$(MAKE) -f CMakeFiles/echo_udp_client.dir/build.make CMakeFiles/echo_udp_client.dir/echo_udp/echo_udp_client.c.i
+.PHONY : echo_udp/echo_udp_client.c.i
+
+echo_udp/echo_udp_client.s: echo_udp/echo_udp_client.c.s
+
+.PHONY : echo_udp/echo_udp_client.s
+
+# target to generate assembly for a file
+echo_udp/echo_udp_client.c.s:
+	$(MAKE) -f CMakeFiles/echo_udp_client.dir/build.make CMakeFiles/echo_udp_client.dir/echo_udp/echo_udp_client.c.s
+.PHONY : echo_udp/echo_udp_client.c.s
+
+echo_udp/echo_udp_server.o: echo_udp/echo_udp_server.c.o
+
+.PHONY : echo_udp/echo_udp_server.o
+
+# target to build an object file
+echo_udp/echo_udp_server.c.o:
+	$(MAKE) -f CMakeFiles/echo_udp_server.dir/build.make CMakeFiles/echo_udp_server.dir/echo_udp/echo_udp_server.c.o
+.PHONY : echo_udp/echo_udp_server.c.o
+
+echo_udp/echo_udp_server.i: echo_udp/echo_udp_server.c.i
+
+.PHONY : echo_udp/echo_udp_server.i
+
+# target to preprocess a source file
+echo_udp/echo_udp_server.c.i:
+	$(MAKE) -f CMakeFiles/echo_udp_server.dir/build.make CMakeFiles/echo_udp_server.dir/echo_udp/echo_udp_server.c.i
+.PHONY : echo_udp/echo_udp_server.c.i
+
+echo_udp/echo_udp_server.s: echo_udp/echo_udp_server.c.s
+
+.PHONY : echo_udp/echo_udp_server.s
+
+# target to generate assembly for a file
+echo_udp/echo_udp_server.c.s:
+	$(MAKE) -f CMakeFiles/echo_udp_server.dir/build.make CMakeFiles/echo_udp_server.dir/echo_udp/echo_udp_server.c.s
+.PHONY : echo_udp/echo_udp_server.c.s
+
 gethostbyname/gethostbyname.o: gethostbyname/gethostbyname.c.o
 
 .PHONY : gethostbyname/gethostbyname.o
@@ -1877,51 +1957,53 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... echo16_epoll_server"
-	@echo "... echo15_select_client"
-	@echo "... echo14_fork_client"
-	@echo "... gethostbyname2"
-	@echo "... ulimit_nofile"
-	@echo "... echo13_fork_server"
-	@echo "... echo12_fork_client"
-	@echo "... echo11_fork_client"
-	@echo "... echo10_fork_server"
-	@echo "... gethostbyname"
-	@echo "... echo12_fork_server"
-	@echo "... echo9_fork_client"
-	@echo "... echo16_epoll_client"
-	@echo "... echo9_fork_server"
-	@echo "... select_server"
-	@echo "... echo8_fork_client"
-	@echo "... addr"
-	@echo "... echo5_fork_client"
-	@echo "... echo4_fork_client"
-	@echo "... echo_client"
 	@echo "... edit_cache"
-	@echo "... p2p_server"
-	@echo "... echo6_fork_server"
-	@echo "... echo2_fork_server"
-	@echo "... p2p_client"
-	@echo "... main"
-	@echo "... echo11_fork_server"
-	@echo "... echo10_fork_client"
-	@echo "... echo_fork_server"
-	@echo "... echo_fork_client"
-	@echo "... echo4_fork_server"
-	@echo "... biglittle"
-	@echo "... echo5_fork_server"
-	@echo "... echo_server"
-	@echo "... echo2_fork_client"
-	@echo "... select_client"
-	@echo "... echo3_fork_server"
-	@echo "... echo7_fork_server"
-	@echo "... echo3_fork_client"
-	@echo "... echo13_fork_client"
-	@echo "... echo6_fork_client"
-	@echo "... echo15_select_server"
-	@echo "... echo7_fork_client"
 	@echo "... echo14_fork_server"
+	@echo "... echo7_fork_client"
+	@echo "... echo6_fork_client"
+	@echo "... echo13_fork_client"
+	@echo "... echo7_fork_server"
+	@echo "... echo_server"
+	@echo "... echo5_fork_server"
+	@echo "... biglittle"
+	@echo "... echo4_fork_server"
+	@echo "... echo3_fork_server"
+	@echo "... echo_fork_client"
+	@echo "... echo_fork_server"
+	@echo "... echo11_fork_server"
+	@echo "... main"
+	@echo "... p2p_client"
+	@echo "... echo2_fork_server"
+	@echo "... echo6_fork_server"
+	@echo "... echo3_fork_client"
+	@echo "... p2p_server"
+	@echo "... echo4_fork_client"
+	@echo "... echo5_fork_client"
+	@echo "... addr"
+	@echo "... echo8_fork_client"
 	@echo "... echo8_fork_server"
+	@echo "... select_server"
+	@echo "... echo_udp_client"
+	@echo "... echo9_fork_server"
+	@echo "... echo15_select_server"
+	@echo "... echo9_fork_client"
+	@echo "... echo12_fork_server"
+	@echo "... gethostbyname"
+	@echo "... echo10_fork_client"
+	@echo "... echo10_fork_server"
+	@echo "... echo_client"
+	@echo "... echo11_fork_client"
+	@echo "... echo2_fork_client"
+	@echo "... echo12_fork_client"
+	@echo "... echo13_fork_server"
+	@echo "... ulimit_nofile"
+	@echo "... gethostbyname2"
+	@echo "... echo14_fork_client"
+	@echo "... select_client"
+	@echo "... echo15_select_client"
+	@echo "... echo16_epoll_server"
+	@echo "... echo16_epoll_client"
+	@echo "... echo_udp_server"
 	@echo "... addr/addr.o"
 	@echo "... addr/addr.i"
 	@echo "... addr/addr.s"
@@ -2030,6 +2112,12 @@ help:
 	@echo "... echo_fork/echo_fork_server.o"
 	@echo "... echo_fork/echo_fork_server.i"
 	@echo "... echo_fork/echo_fork_server.s"
+	@echo "... echo_udp/echo_udp_client.o"
+	@echo "... echo_udp/echo_udp_client.i"
+	@echo "... echo_udp/echo_udp_client.s"
+	@echo "... echo_udp/echo_udp_server.o"
+	@echo "... echo_udp/echo_udp_server.i"
+	@echo "... echo_udp/echo_udp_server.s"
 	@echo "... gethostbyname/gethostbyname.o"
 	@echo "... gethostbyname/gethostbyname.i"
 	@echo "... gethostbyname/gethostbyname.s"
