@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dingyingsi/CLionProjects/tcp/echo_udp/echo_udp_server.c
+sys/socket.h
+-
+netinet/in.h
+-
+stdlib.h
+-
+asm/errno.h
+-
+errno.h
+-
+stdio.h
+-
+unistd.h
+-
+string.h
+-
+
