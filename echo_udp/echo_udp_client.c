@@ -5,8 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-#include <arpa/inet.h>
-
+#include <arpa/inet.h
 #define ERR_EXIT(m) \
     do \
     { \
