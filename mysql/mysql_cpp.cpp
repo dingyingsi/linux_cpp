@@ -37,7 +37,9 @@ bool Mysql::execSql(string sql) {
             int num_rows = mysql_field_count(conn);
             for (int i = 0; i < num_rows; i++) {
                 row = mysql_fetch_row(result);
-                if (row < 0) { break; }
+                if (row == NULL) {
+                    break;
+                }
                 for (int j = 0; j < num_fields; j++) {
                     cout << row[j] << "\t";
                 }
