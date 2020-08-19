@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/CLionProjects/linux_cpp/mysql/mysql_cpp.cpp
+iostream
+-
+string
+-
+mysql_cpp.h
+/root/CLionProjects/linux_cpp/mysql/mysql_cpp.h
+
+/root/CLionProjects/linux_cpp/mysql/mysql_cpp.h
+iostream
+-
+string
+-
+mysql/mysql.h
+-
+
