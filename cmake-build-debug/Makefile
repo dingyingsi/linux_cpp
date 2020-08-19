@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mysql_cpp
+
+# Build rule for target.
+mysql_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysql_cpp
+.PHONY : mysql_cpp
+
+# fast build rule for target.
+mysql_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
+.PHONY : mysql_cpp/fast
+
+#=============================================================================
 # Target rules for targets named echo14_fork_server
 
 # Build rule for target.
@@ -754,6 +767,36 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mysql/mysql_cpp.o: mysql/mysql_cpp.cpp.o
+
+.PHONY : mysql/mysql_cpp.o
+
+# target to build an object file
+mysql/mysql_cpp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/mysql/mysql_cpp.cpp.o
+.PHONY : mysql/mysql_cpp.cpp.o
+
+mysql/mysql_cpp.i: mysql/mysql_cpp.cpp.i
+
+.PHONY : mysql/mysql_cpp.i
+
+# target to preprocess a source file
+mysql/mysql_cpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/mysql/mysql_cpp.cpp.i
+.PHONY : mysql/mysql_cpp.cpp.i
+
+mysql/mysql_cpp.s: mysql/mysql_cpp.cpp.s
+
+.PHONY : mysql/mysql_cpp.s
+
+# target to generate assembly for a file
+mysql/mysql_cpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/addr.dir/build.make CMakeFiles/addr.dir/mysql/mysql_cpp.cpp.s
+.PHONY : mysql/mysql_cpp.cpp.s
 
 tcp/addr/addr.o: tcp/addr/addr.c.o
 
@@ -2019,6 +2062,7 @@ help:
 	@echo "... gethostbyname"
 	@echo "... gethostbyname2"
 	@echo "... main"
+	@echo "... mysql_cpp"
 	@echo "... p2p_client"
 	@echo "... p2p_server"
 	@echo "... select_client"
@@ -2027,6 +2071,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mysql/mysql_cpp.o"
+	@echo "... mysql/mysql_cpp.i"
+	@echo "... mysql/mysql_cpp.s"
 	@echo "... tcp/addr/addr.o"
 	@echo "... tcp/addr/addr.i"
 	@echo "... tcp/addr/addr.s"

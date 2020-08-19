@@ -1,5 +1,6 @@
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/mysql_cpp.dir
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/echo14_fork_server.dir
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/echo7_fork_client.dir
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/echo6_fork_client.dir

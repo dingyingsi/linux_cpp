@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo_client.dir/tcp/echo/echo_client.c.o  -o echo_client 
+/bin/cc -g   CMakeFiles/echo_client.dir/tcp/echo/echo_client.c.o  -o echo_client   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo2_fork_server.dir/tcp/echo2_fork/echo2_fork_server.c.o  -o echo2_fork_server 
+/bin/cc -g   CMakeFiles/echo2_fork_server.dir/tcp/echo2_fork/echo2_fork_server.c.o  -o echo2_fork_server   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

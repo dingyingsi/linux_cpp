@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/addr.dir/tcp/addr/addr.c.o  -o addr 
+/bin/c++  -g   CMakeFiles/addr.dir/tcp/addr/addr.c.o CMakeFiles/addr.dir/mysql/mysql_cpp.cpp.o  -o addr   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

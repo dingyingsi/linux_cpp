@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/p2p_client.dir/tcp/p2p/p2p_client.c.o  -o p2p_client 
+/bin/cc -g   CMakeFiles/p2p_client.dir/tcp/p2p/p2p_client.c.o  -o p2p_client   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

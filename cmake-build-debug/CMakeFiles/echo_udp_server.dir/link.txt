@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo_udp_server.dir/tcp/echo_udp/echo_udp_server.c.o  -o echo_udp_server 
+/bin/cc -g   CMakeFiles/echo_udp_server.dir/tcp/echo_udp/echo_udp_server.c.o  -o echo_udp_server   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/select_server.dir/tcp/select/server.c.o  -o select_server 
+/bin/cc -g   CMakeFiles/select_server.dir/tcp/select/server.c.o  -o select_server   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

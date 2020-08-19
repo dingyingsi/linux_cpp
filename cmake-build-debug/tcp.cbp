@@ -1507,6 +1507,48 @@
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="mysql">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/mysql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 mysql"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mysql/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/mysql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 mysql/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="echo2_fork_client">
 				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/echo2_fork_client" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
@@ -1972,6 +2014,13 @@
 		</Build>
 		<Unit filename="/root/CLionProjects/linux_cpp/main.cpp">
 			<Option target="main"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/mysql/mysql_cpp.cpp">
+			<Option target="addr"/>
+			<Option target="mysql"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/mysql/mysql_cpp.h">
+			<Option target="addr"/>
 		</Unit>
 		<Unit filename="/root/CLionProjects/linux_cpp/tcp/addr/addr.c">
 			<Option target="addr"/>

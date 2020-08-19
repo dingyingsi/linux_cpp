@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/ulimit_nofile.dir/tcp/ulimit_nofile/ulimit_nofile.c.o  -o ulimit_nofile 
+/bin/cc -g   CMakeFiles/ulimit_nofile.dir/tcp/ulimit_nofile/ulimit_nofile.c.o  -o ulimit_nofile   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

@@ -1,1 +1,1 @@
-/bin/cc -g   CMakeFiles/echo15_select_client.dir/tcp/echo15_select/echo15_select_client.c.o  -o echo15_select_client 
+/bin/cc -g   CMakeFiles/echo15_select_client.dir/tcp/echo15_select/echo15_select_client.c.o  -o echo15_select_client   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

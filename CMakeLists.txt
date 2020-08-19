@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.16)
-project(tcp C CXX)
+project(linux_cpp C CXX)
 
 set(CMAKE_C_STANDARD 11)
 
+link_directories(/usr/lib64/mysql)
+link_libraries(mysqlclient)
+
 add_executable(main main.cpp)
 add_executable(biglittle tcp/biglittle/biglitter.c)
-add_executable(addr tcp/addr/addr.c)
+add_executable(addr tcp/addr/addr.c mysql/mysql_cpp.cpp mysql/mysql_cpp.h)
 add_executable(echo_server tcp/echo/echo_server.c)
 add_executable(echo_client tcp/echo/echo_client.c)
 add_executable(echo_fork_server tcp/echo_fork/echo_fork_server.c)
@@ -50,3 +53,5 @@ add_executable(echo_udp_client tcp/echo_udp/echo_udp_client.c)
 
 add_executable(select_server tcp/select/server.c)
 add_executable(select_client tcp/select/client.c)
+
+add_executable(mysql_cpp mysql/mysql_cpp.cpp)

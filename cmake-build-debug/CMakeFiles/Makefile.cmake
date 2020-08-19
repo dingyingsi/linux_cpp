@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/mysql_cpp.dir/DependInfo.cmake"
   "CMakeFiles/echo14_fork_server.dir/DependInfo.cmake"
   "CMakeFiles/echo7_fork_client.dir/DependInfo.cmake"
   "CMakeFiles/echo6_fork_client.dir/DependInfo.cmake"
