@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/p2p_server.dir/p2p/p2p_server.c.o  -o p2p_server 
+/bin/cc -g   CMakeFiles/p2p_server.dir/tcp/p2p/p2p_server.c.o  -o p2p_server 

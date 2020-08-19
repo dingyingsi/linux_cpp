@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/echo_fork_client.dir/echo_fork/echo_fork_client.c.o  -o echo_fork_client 
+/bin/cc -g   CMakeFiles/echo_fork_client.dir/tcp/echo_fork/echo_fork_client.c.o  -o echo_fork_client 

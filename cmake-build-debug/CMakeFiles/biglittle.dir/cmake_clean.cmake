@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/biglittle.dir/biglittle/biglitter.c.o"
+  "CMakeFiles/biglittle.dir/tcp/biglittle/biglitter.c.o"
   "biglittle"
   "biglittle.pdb"
 )

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/addr.dir/addr/addr.c.o"
+  "CMakeFiles/addr.dir/tcp/addr/addr.c.o"
   "addr"
   "addr.pdb"
 )

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/echo_udp_client.dir/echo_udp/echo_udp_client.c.o"
+  "CMakeFiles/echo_udp_client.dir/tcp/echo_udp/echo_udp_client.c.o"
   "echo_udp_client"
   "echo_udp_client.pdb"
 )

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gethostbyname2.dir/gethostbyname/gethostbyname2.c.o"
+  "CMakeFiles/gethostbyname2.dir/tcp/gethostbyname/gethostbyname2.c.o"
   "gethostbyname2"
   "gethostbyname2.pdb"
 )

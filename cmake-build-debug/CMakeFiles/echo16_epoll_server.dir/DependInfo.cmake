@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dingyingsi/CLionProjects/tcp/echo16_epoll/echo16_epoll_server.cpp" "/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/echo16_epoll_server.dir/echo16_epoll/echo16_epoll_server.cpp.o"
+  "/root/CLionProjects/linux_cpp/tcp/echo16_epoll/echo16_epoll_server.cpp" "/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/echo16_epoll_server.dir/tcp/echo16_epoll/echo16_epoll_server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

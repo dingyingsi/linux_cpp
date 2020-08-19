@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/echo16_epoll_client.dir/echo16_epoll/echo16_epoll_client.cpp.o"
+  "CMakeFiles/echo16_epoll_client.dir/tcp/echo16_epoll/echo16_epoll_client.cpp.o"
   "echo16_epoll_client"
   "echo16_epoll_client.pdb"
 )

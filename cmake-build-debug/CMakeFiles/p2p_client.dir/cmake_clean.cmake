@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p2p_client.dir/p2p/p2p_client.c.o"
+  "CMakeFiles/p2p_client.dir/tcp/p2p/p2p_client.c.o"
   "p2p_client"
   "p2p_client.pdb"
 )

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/echo15_select_client.dir/echo15_select/echo15_select_client.c.o"
+  "CMakeFiles/echo15_select_client.dir/tcp/echo15_select/echo15_select_client.c.o"
   "echo15_select_client"
   "echo15_select_client.pdb"
 )

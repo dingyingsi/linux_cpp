@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/echo14_fork_server.dir/echo14_fork/echo14_fork_server.c.o  -o echo14_fork_server 
+/bin/cc -g   CMakeFiles/echo14_fork_server.dir/tcp/echo14_fork/echo14_fork_server.c.o  -o echo14_fork_server 

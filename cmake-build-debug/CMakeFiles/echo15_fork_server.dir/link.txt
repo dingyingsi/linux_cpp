@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/echo15_fork_server.dir/echo15_select/echo15_select_server.c.o  -o echo15_fork_server 

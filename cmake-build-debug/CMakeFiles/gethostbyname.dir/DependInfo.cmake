@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/dingyingsi/CLionProjects/tcp/gethostbyname/gethostbyname.c" "/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/gethostbyname.dir/gethostbyname/gethostbyname.c.o"
+  "/root/CLionProjects/linux_cpp/tcp/gethostbyname/gethostbyname.c" "/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/gethostbyname.dir/tcp/gethostbyname/gethostbyname.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

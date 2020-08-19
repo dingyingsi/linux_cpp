@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/echo11_fork_client.dir/echo11_fork/echo11_fork_client.c.o"
+  "CMakeFiles/echo11_fork_client.dir/tcp/echo11_fork/echo11_fork_client.c.o"
   "echo11_fork_client"
   "echo11_fork_client.pdb"
 )

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/dingyingsi/CLionProjects/tcp/ulimit_nofile/ulimit_nofile.c" "/home/dingyingsi/CLionProjects/tcp/cmake-build-debug/CMakeFiles/ulimit_nofile.dir/ulimit_nofile/ulimit_nofile.c.o"
+  "/root/CLionProjects/linux_cpp/tcp/ulimit_nofile/ulimit_nofile.c" "/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/ulimit_nofile.dir/tcp/ulimit_nofile/ulimit_nofile.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
