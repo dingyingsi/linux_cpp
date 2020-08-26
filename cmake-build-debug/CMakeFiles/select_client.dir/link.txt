@@ -1,1 +1,0 @@
-/bin/cc -g   CMakeFiles/select_client.dir/tcp/select/client.c.o  -o select_client   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

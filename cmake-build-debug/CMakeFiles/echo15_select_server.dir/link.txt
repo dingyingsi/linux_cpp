@@ -1,1 +1,0 @@
-/bin/cc -g   CMakeFiles/echo15_select_server.dir/tcp/echo15_select/echo15_select_server.c.o  -o echo15_select_server   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

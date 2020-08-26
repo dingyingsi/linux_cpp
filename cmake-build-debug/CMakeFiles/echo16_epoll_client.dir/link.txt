@@ -1,1 +1,0 @@
-/bin/c++  -g   CMakeFiles/echo16_epoll_client.dir/tcp/echo16_epoll/echo16_epoll_client.cpp.o  -o echo16_epoll_client   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 

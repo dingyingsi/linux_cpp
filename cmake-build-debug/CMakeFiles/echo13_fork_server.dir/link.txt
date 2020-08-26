@@ -1,1 +1,0 @@
-/bin/cc -g   CMakeFiles/echo13_fork_server.dir/tcp/echo13_fork/echo13_fork_server.c.o  -o echo13_fork_server   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 
