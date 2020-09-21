@@ -53,7 +53,7 @@ bool Mysql::execSql(string sql) {
 
 int main(int argc, char** argv){
     Mysql db;
-    db.initDb("127.0.0.1","root","Xl123456","word");
-    db.execSql("select * from word");
+    db.initDb("192.168.31.132","root","Dingyingsi1988!","e_coupon");
+    db.execSql("select * from e_coupon");
     return 0;
 }

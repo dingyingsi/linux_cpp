@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/root/CLionProjects/linux_cpp/mysql/mysql_cpp.cpp
+/home/dingyingsi/linux_cpp/mysql/mysql_cpp.cpp
 iostream
 -
 string
 -
 mysql_cpp.h
-/root/CLionProjects/linux_cpp/mysql/mysql_cpp.h
+/home/dingyingsi/linux_cpp/mysql/mysql_cpp.h
 
-/root/CLionProjects/linux_cpp/mysql/mysql_cpp.h
+/home/dingyingsi/linux_cpp/mysql/mysql_cpp.h
 iostream
 -
 string

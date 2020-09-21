@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion-2020.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dingyingsi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion-2020.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/dingyingsi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/linux_cpp
+CMAKE_SOURCE_DIR = /home/dingyingsi/linux_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/linux_cpp/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dingyingsi/linux_cpp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /root/CLionProjects/linux_cpp/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/dingyingsi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/dingyingsi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,6 +131,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named T01
+
+# Build rule for target.
+T01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 T01
+.PHONY : T01
+
+# fast build rule for target.
+T01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T01.dir/build.make CMakeFiles/T01.dir/build
+.PHONY : T01/fast
+
+#=============================================================================
+# Target rules for targets named T02
+
+# Build rule for target.
+T02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 T02
+.PHONY : T02
+
+# fast build rule for target.
+T02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/build
+.PHONY : T02/fast
+
+#=============================================================================
 # Target rules for targets named mysql_cpp
 
 # Build rule for target.
@@ -143,18 +182,59 @@ mysql_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
 .PHONY : mysql_cpp/fast
 
-#=============================================================================
-# Target rules for targets named main
+cpp/template/T01.o: cpp/template/T01.cpp.o
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+.PHONY : cpp/template/T01.o
 
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+# target to build an object file
+cpp/template/T01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T01.dir/build.make CMakeFiles/T01.dir/cpp/template/T01.cpp.o
+.PHONY : cpp/template/T01.cpp.o
+
+cpp/template/T01.i: cpp/template/T01.cpp.i
+
+.PHONY : cpp/template/T01.i
+
+# target to preprocess a source file
+cpp/template/T01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T01.dir/build.make CMakeFiles/T01.dir/cpp/template/T01.cpp.i
+.PHONY : cpp/template/T01.cpp.i
+
+cpp/template/T01.s: cpp/template/T01.cpp.s
+
+.PHONY : cpp/template/T01.s
+
+# target to generate assembly for a file
+cpp/template/T01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T01.dir/build.make CMakeFiles/T01.dir/cpp/template/T01.cpp.s
+.PHONY : cpp/template/T01.cpp.s
+
+cpp/template/T02.o: cpp/template/T02.cpp.o
+
+.PHONY : cpp/template/T02.o
+
+# target to build an object file
+cpp/template/T02.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/cpp/template/T02.cpp.o
+.PHONY : cpp/template/T02.cpp.o
+
+cpp/template/T02.i: cpp/template/T02.cpp.i
+
+.PHONY : cpp/template/T02.i
+
+# target to preprocess a source file
+cpp/template/T02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/cpp/template/T02.cpp.i
+.PHONY : cpp/template/T02.cpp.i
+
+cpp/template/T02.s: cpp/template/T02.cpp.s
+
+.PHONY : cpp/template/T02.s
+
+# target to generate assembly for a file
+cpp/template/T02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/cpp/template/T02.cpp.s
+.PHONY : cpp/template/T02.cpp.s
 
 main.o: main.cpp.o
 
@@ -218,8 +298,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... T01"
+	@echo "... T02"
 	@echo "... main"
 	@echo "... mysql_cpp"
+	@echo "... cpp/template/T01.o"
+	@echo "... cpp/template/T01.i"
+	@echo "... cpp/template/T01.s"
+	@echo "... cpp/template/T02.o"
+	@echo "... cpp/template/T02.i"
+	@echo "... cpp/template/T02.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
