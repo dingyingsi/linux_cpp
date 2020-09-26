@@ -2,6 +2,10 @@
 
 using namespace std;
 
+template <typename T> T square(T x) {
+    return x * x;
+}
+
 template <typename T> class BoVector {
 private:
     T arr[1000];
@@ -12,6 +16,12 @@ public:
         arr[size] = x;
         size++;
     }
+    T get(int i) const {
+        return arr[i];
+    }
+    int getSize() const {
+        return size;
+    }
     void print() const {
         for (int i = 0; i < size; i++) {
             cout << arr[i] << endl;
@@ -20,12 +30,24 @@ public:
 
 };
 
+template<typename T> BoVector<T> operator* (const BoVector<T>& rhs1, BoVector<T>& rhs2) {
+    BoVector<T> ret;
+    for (int i = 0; i < rhs1.getSize(); i++) {
+        ret.push(rhs1.get(i) * rhs2.get(i));
+    }
+    return ret;
+}
+
 int main(int argc, char** argv) {
     BoVector<int> bv;
     bv.push(2);
     bv.push(5);
     bv.push(8);
     bv.push(9);
+    bv.print();
+
+    cout << "Print squared bv : " << endl;
+    bv = square(bv);
     bv.print();
 
     return EXIT_SUCCESS;

@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mysql_cpp
+
+# Build rule for target.
+mysql_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysql_cpp
+.PHONY : mysql_cpp
+
+# fast build rule for target.
+mysql_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
+.PHONY : mysql_cpp/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -142,6 +155,19 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named T02Vector
+
+# Build rule for target.
+T02Vector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 T02Vector
+.PHONY : T02Vector
+
+# fast build rule for target.
+T02Vector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/build
+.PHONY : T02Vector/fast
 
 #=============================================================================
 # Target rules for targets named T01
@@ -168,19 +194,6 @@ T02: cmake_check_build_system
 T02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/build
 .PHONY : T02/fast
-
-#=============================================================================
-# Target rules for targets named mysql_cpp
-
-# Build rule for target.
-mysql_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysql_cpp
-.PHONY : mysql_cpp
-
-# fast build rule for target.
-mysql_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
-.PHONY : mysql_cpp/fast
 
 cpp/template/T01.o: cpp/template/T01.cpp.o
 
@@ -235,6 +248,33 @@ cpp/template/T02.s: cpp/template/T02.cpp.s
 cpp/template/T02.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/cpp/template/T02.cpp.s
 .PHONY : cpp/template/T02.cpp.s
+
+cpp/template/T02Vector.o: cpp/template/T02Vector.cpp.o
+
+.PHONY : cpp/template/T02Vector.o
+
+# target to build an object file
+cpp/template/T02Vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/cpp/template/T02Vector.cpp.o
+.PHONY : cpp/template/T02Vector.cpp.o
+
+cpp/template/T02Vector.i: cpp/template/T02Vector.cpp.i
+
+.PHONY : cpp/template/T02Vector.i
+
+# target to preprocess a source file
+cpp/template/T02Vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/cpp/template/T02Vector.cpp.i
+.PHONY : cpp/template/T02Vector.cpp.i
+
+cpp/template/T02Vector.s: cpp/template/T02Vector.cpp.s
+
+.PHONY : cpp/template/T02Vector.s
+
+# target to generate assembly for a file
+cpp/template/T02Vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/cpp/template/T02Vector.cpp.s
+.PHONY : cpp/template/T02Vector.cpp.s
 
 main.o: main.cpp.o
 
@@ -300,6 +340,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... T01"
 	@echo "... T02"
+	@echo "... T02Vector"
 	@echo "... main"
 	@echo "... mysql_cpp"
 	@echo "... cpp/template/T01.o"
@@ -308,6 +349,9 @@ help:
 	@echo "... cpp/template/T02.o"
 	@echo "... cpp/template/T02.i"
 	@echo "... cpp/template/T02.s"
+	@echo "... cpp/template/T02Vector.o"
+	@echo "... cpp/template/T02Vector.i"
+	@echo "... cpp/template/T02Vector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

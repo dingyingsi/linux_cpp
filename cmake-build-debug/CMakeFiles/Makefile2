@@ -73,10 +73,11 @@ CMAKE_BINARY_DIR = /home/dingyingsi/linux_cpp/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/mysql_cpp.dir/all
 all: CMakeFiles/main.dir/all
+all: CMakeFiles/T02Vector.dir/all
 all: CMakeFiles/T01.dir/all
 all: CMakeFiles/T02.dir/all
-all: CMakeFiles/mysql_cpp.dir/all
 
 .PHONY : all
 
@@ -86,12 +87,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/mysql_cpp.dir/clean
 clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/T02Vector.dir/clean
 clean: CMakeFiles/T01.dir/clean
 clean: CMakeFiles/T02.dir/clean
-clean: CMakeFiles/mysql_cpp.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mysql_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/mysql_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target mysql_cpp"
+.PHONY : CMakeFiles/mysql_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mysql_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mysql_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/mysql_cpp.dir/rule
+
+# Convenience name for target.
+mysql_cpp: CMakeFiles/mysql_cpp.dir/rule
+
+.PHONY : mysql_cpp
+
+# clean rule for target.
+CMakeFiles/mysql_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/clean
+.PHONY : CMakeFiles/mysql_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir
@@ -100,7 +129,7 @@ clean: CMakeFiles/mysql_cpp.dir/clean
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -119,6 +148,33 @@ main: CMakeFiles/main.dir/rule
 CMakeFiles/main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
 .PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/T02Vector.dir
+
+# All Build rule for target.
+CMakeFiles/T02Vector.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target T02Vector"
+.PHONY : CMakeFiles/T02Vector.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/T02Vector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/T02Vector.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/T02Vector.dir/rule
+
+# Convenience name for target.
+T02Vector: CMakeFiles/T02Vector.dir/rule
+
+.PHONY : T02Vector
+
+# clean rule for target.
+CMakeFiles/T02Vector.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/clean
+.PHONY : CMakeFiles/T02Vector.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/T01.dir
@@ -173,33 +229,6 @@ T02: CMakeFiles/T02.dir/rule
 CMakeFiles/T02.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/clean
 .PHONY : CMakeFiles/T02.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/mysql_cpp.dir
-
-# All Build rule for target.
-CMakeFiles/mysql_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target mysql_cpp"
-.PHONY : CMakeFiles/mysql_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/mysql_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mysql_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/mysql_cpp.dir/rule
-
-# Convenience name for target.
-mysql_cpp: CMakeFiles/mysql_cpp.dir/rule
-
-.PHONY : mysql_cpp
-
-# clean rule for target.
-CMakeFiles/mysql_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/clean
-.PHONY : CMakeFiles/mysql_cpp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
