@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dingyingsi/linux_cpp/mysql/mysql_cpp.cpp" "/home/dingyingsi/linux_cpp/cmake-build-debug/CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.o"
+  "/root/CLionProjects/linux_cpp/mysql/mysql_cpp.cpp" "/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
