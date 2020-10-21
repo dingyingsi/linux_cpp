@@ -136,7 +136,7 @@ int Linequ::solve() {                             //解线性方程组
         }
         d = matrixA[k * index + k];
 
-        for (j = k; j <= index - 1; j++) { // every element devided by / d
+        for (j = k; j <= index - 1; j++) { // 所有元素都除以得到的系数
             p = k * index + j;
             matrixA[p] = matrixA[p] / d;
         }
