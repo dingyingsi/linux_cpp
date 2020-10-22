@@ -1,196 +1,127 @@
-#include<iostream>
-#include<cmath>
+
+#include <iostream>
+
 #include <iomanip>
+
+#include <cmath>
+#include <cstring>
 
 using namespace std;
 
-using std::setw;
+int rows, columns, i, j, k;
 
-class Matrix {               //定义矩阵类
+double matrix[15][15], temp[15], quotient;
 
-protected:
-    int index;
-    double *matrixA;
+int main(int argc, char **argv) {
 
-public:
-    Matrix(int dims = 4)    //构造函数
-    {
-        index = dims;                 //保护数据赋值
-        matrixA = new double[index * index];        //动态内存分配
+    cout << "请问所输入的系数矩阵行数为：";
+    cin >> rows;
+    cout << "请问所输入的系数矩阵列数为：";
+    cin >> columns;
+
+    if (rows <= 0 || columns <= 0) {
+        cout << "输入的格式有误！" << endl;
     }
 
-    ~Matrix() { //内存释放
-        delete[] matrixA;
-    }
+    for (i = 0; i < rows; i++) {
 
-    void setMatrix(double *rmatr) { //设置矩阵值
-        for (int i = 0; i < index * index; i++) {
-            *(matrixA + i) = rmatr[i]; //矩阵成员赋初值
+        cout << "请输入第" << i + 1 << "行的系数(空格隔开, 回车结束)：";
+
+        for (j = 0; j < columns; j++) {
+            cin >> matrix[i][j];
         }
     }
 
-    void printM(); //显示矩阵
-};
+    cout << "请输入未知向量的值：";
 
-class Linequ : public Matrix { //线性方程组类
-
-public:
-    Linequ(int dims = 4) : Matrix(dims) {
-        sums = new double[dims];
-        solu = new double[dims];
+    for (i = 0; i < rows; i++) {
+        cin >> matrix[i][columns];
     }
 
-    ~ Linequ();
+    cout << "该方程组的增广矩阵为:\n";
 
-    void setLinequ(double *a, double *b); //方程赋值
-    void printL(); //显示方程
-    int solve();  //高斯消元法求解
-    void showX();  //输出方程的解
-private:
-    double *sums;
-    double *solu;
-};
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < columns + 1; j++) {
+            cout << matrix[i][j] << " ";
+        }
 
-void Matrix::printM() { //显示矩阵的元素
-    cout << "The Matrix is:" << endl;
-    for (int i = 0; i < index; i++) {
-        for (int j = 0; j < index; j++)
-            cout << *(matrixA + i * index + j) << " ";
         cout << endl;
     }
-}
 
-Linequ::~Linequ() {
-    delete[] sums;
-    delete[] solu;
-}
 
-void Linequ::setLinequ(double *a, double *b) { //方程赋值
+    for (k = 0; k < columns - 1; k++) { //找列主元最大值
 
-    setMatrix(a);
+        double maxValue = 0;
+        int maxValueIndex = 0;
 
-    for (int i = 0; i < index; i++) {
-        sums[i] = b[i];
-    }
-}
-
-void Linequ::printL() {  //显示方程
-    cout << "The Line eqution is : " << endl;
-
-    cout.setf(ios::left, ios::adjustfield);
-
-    for (int i = 0; i < index; i++) {
-        for (int j = 0; j < index; j++) {
-            cout << setw(7) << *(matrixA + i * index + j);
-        }
-        cout << setw(14) << sums[i] << endl;
-    }
-}
-
-void Linequ::showX() {                          //输出方程的解
-    cout << "The Result is: " << endl;
-    for (int i = 0; i < index; i++) {
-        cout << "X[" << i << "]=" << solu[i] << endl;
-    }
-}
-
-int Linequ::solve() {                             //解线性方程组
-    int l, k, i, j, is, p, q, m = 0;
-    double d, t;
-    l = 1;
-    for (k = 0; k <= index - 2; k++) {                     //消去过程
-        d = 0.0;
-        for (i = k; i <= index - 1; i++) {  // iterate rows
-            for (j = k; j <= index - 1; j++) {
-                t = fabs(matrixA[i * index + j]);  // iterate elements
-                if (t > d) {  // max element
-                    d = t;
-                    is = i;
-                }
+        for (i = k; i < columns; i++) {
+            if (fabs(matrix[i][k]) > maxValue) {
+                maxValue = fabs(matrix[i][k]);
+                maxValueIndex = i;
             }
         }
-        if (d + 1.0 == 1.0) {
-            l = 0; // flag: all zero elements
+
+        if (matrix[maxValueIndex][k] == 0) {
+            cout << "无法计算" << endl;
+            return EXIT_FAILURE;
         }
-        if (l == 0) {
-            cout << "fail" << endl;
-            return (0);
-        }
-        d = matrixA[k * index + k];
-        if (d == 0) {
-            m++;
-            d = matrixA[(k + m) * index + k];
-            is = k + m;
-        }
-        if (is != k) {
-            for (j = k; j <= index - 1; j++) {
-                p = k * index + j;
-                q = is * index + j;
-                t = matrixA[p];
-                matrixA[p] = matrixA[q];
-                matrixA[q] = t;
+
+        if (k != maxValueIndex) { //将子矩阵中maxValue所在的行与子矩阵中第一行交换行
+            for (i = 0; i < rows + 1; i++) {
+                temp[i] = matrix[k][i];
+                matrix[k][i] = matrix[maxValueIndex][i];
+                matrix[maxValueIndex][i] = temp[i];
             }
-            t = sums[k];
-            sums[k] = sums[is];
-            sums[is] = t;
         }
-        d = matrixA[k * index + k];
 
-        for (j = k; j <= index - 1; j++) { // 所有元素都除以得到的系数
-            p = k * index + j;
-            matrixA[p] = matrixA[p] / d;
-        }
-        sums[k] = sums[k] / d;
+        cout << "选取列主元后的矩阵:" << endl;
 
-        for (i = k + 1; i <= index - 1; i++) {
-            for (j = k + 1; j <= index - 1; j++) {
-                p = i * index + j;
-                matrixA[p] = matrixA[p] - matrixA[i * index + k] * matrixA[k * index + j];
+        for (i = 0; i < rows; i++) {
+            for (j = 0; j < columns + 1; j++) {
+                cout << matrix[i][j] << " ";
             }
-            sums[i] = sums[i] - matrixA[i * index + k] * sums[k];
+            cout << endl;
+        }
+
+        // 消元
+        for (i = k + 1; i < rows; i++) {
+            quotient = matrix[i][k] / matrix[k][k]; // 求出商
+            for (j = 0; j < columns + 1; j++) { // 将子矩阵中的行中每一个元素相减操作
+                matrix[i][j] = matrix[i][j] - quotient * matrix[k][j]; // 消元具体操作
+            }
+        }
+
+        cout << "进行消元操作后的矩阵: " << endl;
+
+        for (i = 0; i < rows; i++) {
+            for (j = 0; j < columns + 1; j++) {
+                cout << matrix[i][j] << " ";
+            }
+            cout << endl;
         }
     }
-    d = matrixA[(index - 1) * index + index - 1];
-    if (fabs(d) + 1.0 == 1.0) {
-        cout << "fail" << endl;
-        return (0);
+
+    // 将temp清0，准备存放解向量
+    memset(temp, 0, 15 * sizeof(double));
+
+    // 从矩阵最后一行开始回代求解
+    for (i = rows - 1; i >= 0; i--) {
+        quotient = 0;
+        for (k = 0; k < columns; k++) {
+            quotient = quotient + temp[k] * matrix[i][k];
+        }
+        // 回代求解
+        temp[i] = (matrix[i][columns] - quotient) / matrix[i][i];
     }
 
-    solu[index - 1] = sums[index - 1] / d;                        //回代过程
-    for (i = index - 2; i >= 0; i--) {
-        t = 0.0;
-        for (j = i + 1; j <= index - 1; j++)
-            t = t + matrixA[i * index + j] * solu[j];
-        solu[i] = sums[i] - t;
+    cout << "将线性方程组的解向量进行由列转置为行得出解为：" << endl;
+
+    //输出方程组的解
+    for (i = 0; i < rows; i++) {
+        // 6位小数与考试输出求一致
+        cout << "x" << i + 1 << " = " << fixed << setprecision(6) << temp[i] << endl;
     }
-}
 
-int main()                                                  //主函数
-{
-    // double a[]= {2,-0.5,-0.5,0, -0.5,2,0,-0.5, -0.5,0,2,-0.5, 0,-0.5,-0.5,2};
-    // double b[4]={0,3,3,0};
-    double a[] = {
-            8, 2, 1, 2.5,
-            1, 8, -0.5, 2,
-            1.5, 2, 8, -1,
-            1, 0.5, 0.7, 8
-    };
-    double b[4] = {
-            1.5,
-            -3,
-            -4.5,
-            3.2
-    };
-
-    Linequ equl(4);
-    equl.setLinequ(a, b);
-    equl.printL();
-
-    if (equl.solve()) {
-        equl.showX();
-    } else {
-        cout << "Fail" << endl;
-    }
 
     return EXIT_SUCCESS;
 }
