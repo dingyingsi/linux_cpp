@@ -208,6 +208,46 @@ T02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/build
 .PHONY : T02/fast
 
+#=============================================================================
+# Target rules for targets named const_usage
+
+# Build rule for target.
+const_usage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 const_usage
+.PHONY : const_usage
+
+# fast build rule for target.
+const_usage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/build
+.PHONY : const_usage/fast
+
+cpp/others/const_usage.o: cpp/others/const_usage.cpp.o
+
+.PHONY : cpp/others/const_usage.o
+
+# target to build an object file
+cpp/others/const_usage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/others/const_usage.cpp.o
+.PHONY : cpp/others/const_usage.cpp.o
+
+cpp/others/const_usage.i: cpp/others/const_usage.cpp.i
+
+.PHONY : cpp/others/const_usage.i
+
+# target to preprocess a source file
+cpp/others/const_usage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/others/const_usage.cpp.i
+.PHONY : cpp/others/const_usage.cpp.i
+
+cpp/others/const_usage.s: cpp/others/const_usage.cpp.s
+
+.PHONY : cpp/others/const_usage.s
+
+# target to generate assembly for a file
+cpp/others/const_usage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/others/const_usage.cpp.s
+.PHONY : cpp/others/const_usage.cpp.s
+
 cpp/others/typeid.o: cpp/others/typeid.cpp.o
 
 .PHONY : cpp/others/typeid.o
@@ -381,9 +421,13 @@ help:
 	@echo "... T01"
 	@echo "... T02"
 	@echo "... T02Vector"
+	@echo "... const_usage"
 	@echo "... main"
 	@echo "... mysql_cpp"
 	@echo "... typeid"
+	@echo "... cpp/others/const_usage.o"
+	@echo "... cpp/others/const_usage.i"
+	@echo "... cpp/others/const_usage.s"
 	@echo "... cpp/others/typeid.o"
 	@echo "... cpp/others/typeid.i"
 	@echo "... cpp/others/typeid.s"

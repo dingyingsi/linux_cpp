@@ -79,6 +79,7 @@ all: CMakeFiles/main.dir/all
 all: CMakeFiles/typeid.dir/all
 all: CMakeFiles/T01.dir/all
 all: CMakeFiles/T02.dir/all
+all: CMakeFiles/const_usage.dir/all
 
 .PHONY : all
 
@@ -94,6 +95,7 @@ clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/typeid.dir/clean
 clean: CMakeFiles/T01.dir/clean
 clean: CMakeFiles/T02.dir/clean
+clean: CMakeFiles/const_usage.dir/clean
 
 .PHONY : clean
 
@@ -104,7 +106,7 @@ clean: CMakeFiles/T02.dir/clean
 CMakeFiles/mysql_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target mysql_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target mysql_cpp"
 .PHONY : CMakeFiles/mysql_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,7 +160,7 @@ CMakeFiles/T02Vector.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -185,7 +187,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/typeid.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target typeid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target typeid"
 .PHONY : CMakeFiles/typeid.dir/all
 
 # Build rule for subdir invocation for target.
@@ -258,6 +260,33 @@ T02: CMakeFiles/T02.dir/rule
 CMakeFiles/T02.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02.dir/build.make CMakeFiles/T02.dir/clean
 .PHONY : CMakeFiles/T02.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/const_usage.dir
+
+# All Build rule for target.
+CMakeFiles/const_usage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target const_usage"
+.PHONY : CMakeFiles/const_usage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/const_usage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/const_usage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/const_usage.dir/rule
+
+# Convenience name for target.
+const_usage: CMakeFiles/const_usage.dir/rule
+
+.PHONY : const_usage
+
+# clean rule for target.
+CMakeFiles/const_usage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/clean
+.PHONY : CMakeFiles/const_usage.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

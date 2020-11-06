@@ -6,3 +6,4 @@
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/typeid.dir
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/T01.dir
 /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/T02.dir
+/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles/const_usage.dir
