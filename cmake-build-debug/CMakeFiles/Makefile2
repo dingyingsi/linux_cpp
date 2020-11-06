@@ -73,13 +73,21 @@ CMAKE_BINARY_DIR = /root/CLionProjects/linux_cpp/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/mysql_cpp.dir/all
-all: CMakeFiles/T02Vector.dir/all
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/pointer_operator.dir/all
+all: CMakeFiles/brace_operator.dir/all
+all: CMakeFiles/assignment_operator.dir/all
+all: CMakeFiles/brace_1_operator.dir/all
+all: CMakeFiles/one_operator.dir/all
 all: CMakeFiles/typeid.dir/all
-all: CMakeFiles/T01.dir/all
-all: CMakeFiles/T02.dir/all
+all: CMakeFiles/main.dir/all
 all: CMakeFiles/const_usage.dir/all
+all: CMakeFiles/T01.dir/all
+all: CMakeFiles/relation_operator.dir/all
+all: CMakeFiles/plus_plus_operator.dir/all
+all: CMakeFiles/T02Vector.dir/all
+all: CMakeFiles/two_operator.dir/all
+all: CMakeFiles/T02.dir/all
+all: CMakeFiles/io_operator.dir/all
 
 .PHONY : all
 
@@ -89,69 +97,185 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/mysql_cpp.dir/clean
-clean: CMakeFiles/T02Vector.dir/clean
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/pointer_operator.dir/clean
+clean: CMakeFiles/brace_operator.dir/clean
+clean: CMakeFiles/assignment_operator.dir/clean
+clean: CMakeFiles/brace_1_operator.dir/clean
+clean: CMakeFiles/one_operator.dir/clean
 clean: CMakeFiles/typeid.dir/clean
-clean: CMakeFiles/T01.dir/clean
-clean: CMakeFiles/T02.dir/clean
+clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/const_usage.dir/clean
+clean: CMakeFiles/T01.dir/clean
+clean: CMakeFiles/relation_operator.dir/clean
+clean: CMakeFiles/plus_plus_operator.dir/clean
+clean: CMakeFiles/T02Vector.dir/clean
+clean: CMakeFiles/two_operator.dir/clean
+clean: CMakeFiles/T02.dir/clean
+clean: CMakeFiles/io_operator.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mysql_cpp.dir
+# Target rules for target CMakeFiles/pointer_operator.dir
 
 # All Build rule for target.
-CMakeFiles/mysql_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target mysql_cpp"
-.PHONY : CMakeFiles/mysql_cpp.dir/all
+CMakeFiles/pointer_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=34,35 "Built target pointer_operator"
+.PHONY : CMakeFiles/pointer_operator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mysql_cpp.dir/rule: cmake_check_build_system
+CMakeFiles/pointer_operator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mysql_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pointer_operator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/mysql_cpp.dir/rule
+.PHONY : CMakeFiles/pointer_operator.dir/rule
 
 # Convenience name for target.
-mysql_cpp: CMakeFiles/mysql_cpp.dir/rule
+pointer_operator: CMakeFiles/pointer_operator.dir/rule
 
-.PHONY : mysql_cpp
+.PHONY : pointer_operator
 
 # clean rule for target.
-CMakeFiles/mysql_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/clean
-.PHONY : CMakeFiles/mysql_cpp.dir/clean
+CMakeFiles/pointer_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/clean
+.PHONY : CMakeFiles/pointer_operator.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/T02Vector.dir
+# Target rules for target CMakeFiles/brace_operator.dir
 
 # All Build rule for target.
-CMakeFiles/T02Vector.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target T02Vector"
-.PHONY : CMakeFiles/T02Vector.dir/all
+CMakeFiles/brace_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target brace_operator"
+.PHONY : CMakeFiles/brace_operator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/T02Vector.dir/rule: cmake_check_build_system
+CMakeFiles/brace_operator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/T02Vector.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/brace_operator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/T02Vector.dir/rule
+.PHONY : CMakeFiles/brace_operator.dir/rule
 
 # Convenience name for target.
-T02Vector: CMakeFiles/T02Vector.dir/rule
+brace_operator: CMakeFiles/brace_operator.dir/rule
 
-.PHONY : T02Vector
+.PHONY : brace_operator
 
 # clean rule for target.
-CMakeFiles/T02Vector.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/clean
-.PHONY : CMakeFiles/T02Vector.dir/clean
+CMakeFiles/brace_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/clean
+.PHONY : CMakeFiles/brace_operator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/assignment_operator.dir
+
+# All Build rule for target.
+CMakeFiles/assignment_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target assignment_operator"
+.PHONY : CMakeFiles/assignment_operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/assignment_operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/assignment_operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/assignment_operator.dir/rule
+
+# Convenience name for target.
+assignment_operator: CMakeFiles/assignment_operator.dir/rule
+
+.PHONY : assignment_operator
+
+# clean rule for target.
+CMakeFiles/assignment_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/clean
+.PHONY : CMakeFiles/assignment_operator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/brace_1_operator.dir
+
+# All Build rule for target.
+CMakeFiles/brace_1_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target brace_1_operator"
+.PHONY : CMakeFiles/brace_1_operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/brace_1_operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/brace_1_operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/brace_1_operator.dir/rule
+
+# Convenience name for target.
+brace_1_operator: CMakeFiles/brace_1_operator.dir/rule
+
+.PHONY : brace_1_operator
+
+# clean rule for target.
+CMakeFiles/brace_1_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/clean
+.PHONY : CMakeFiles/brace_1_operator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/one_operator.dir
+
+# All Build rule for target.
+CMakeFiles/one_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=30,31 "Built target one_operator"
+.PHONY : CMakeFiles/one_operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/one_operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/one_operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/one_operator.dir/rule
+
+# Convenience name for target.
+one_operator: CMakeFiles/one_operator.dir/rule
+
+.PHONY : one_operator
+
+# clean rule for target.
+CMakeFiles/one_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/clean
+.PHONY : CMakeFiles/one_operator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/typeid.dir
+
+# All Build rule for target.
+CMakeFiles/typeid.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=40,41 "Built target typeid"
+.PHONY : CMakeFiles/typeid.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/typeid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/typeid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/typeid.dir/rule
+
+# Convenience name for target.
+typeid: CMakeFiles/typeid.dir/rule
+
+.PHONY : typeid
+
+# clean rule for target.
+CMakeFiles/typeid.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/clean
+.PHONY : CMakeFiles/typeid.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir
@@ -160,7 +284,7 @@ CMakeFiles/T02Vector.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=28,29 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,31 +305,31 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/typeid.dir
+# Target rules for target CMakeFiles/const_usage.dir
 
 # All Build rule for target.
-CMakeFiles/typeid.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target typeid"
-.PHONY : CMakeFiles/typeid.dir/all
+CMakeFiles/const_usage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=24,25 "Built target const_usage"
+.PHONY : CMakeFiles/const_usage.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/typeid.dir/rule: cmake_check_build_system
+CMakeFiles/const_usage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/typeid.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/const_usage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/typeid.dir/rule
+.PHONY : CMakeFiles/const_usage.dir/rule
 
 # Convenience name for target.
-typeid: CMakeFiles/typeid.dir/rule
+const_usage: CMakeFiles/const_usage.dir/rule
 
-.PHONY : typeid
+.PHONY : const_usage
 
 # clean rule for target.
-CMakeFiles/typeid.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/clean
-.PHONY : CMakeFiles/typeid.dir/clean
+CMakeFiles/const_usage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/clean
+.PHONY : CMakeFiles/const_usage.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/T01.dir
@@ -235,6 +359,114 @@ CMakeFiles/T01.dir/clean:
 .PHONY : CMakeFiles/T01.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/relation_operator.dir
+
+# All Build rule for target.
+CMakeFiles/relation_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=36,37 "Built target relation_operator"
+.PHONY : CMakeFiles/relation_operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/relation_operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/relation_operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/relation_operator.dir/rule
+
+# Convenience name for target.
+relation_operator: CMakeFiles/relation_operator.dir/rule
+
+.PHONY : relation_operator
+
+# clean rule for target.
+CMakeFiles/relation_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/clean
+.PHONY : CMakeFiles/relation_operator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/plus_plus_operator.dir
+
+# All Build rule for target.
+CMakeFiles/plus_plus_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=32,33 "Built target plus_plus_operator"
+.PHONY : CMakeFiles/plus_plus_operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/plus_plus_operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/plus_plus_operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/plus_plus_operator.dir/rule
+
+# Convenience name for target.
+plus_plus_operator: CMakeFiles/plus_plus_operator.dir/rule
+
+.PHONY : plus_plus_operator
+
+# clean rule for target.
+CMakeFiles/plus_plus_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/clean
+.PHONY : CMakeFiles/plus_plus_operator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/T02Vector.dir
+
+# All Build rule for target.
+CMakeFiles/T02Vector.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target T02Vector"
+.PHONY : CMakeFiles/T02Vector.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/T02Vector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/T02Vector.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/T02Vector.dir/rule
+
+# Convenience name for target.
+T02Vector: CMakeFiles/T02Vector.dir/rule
+
+.PHONY : T02Vector
+
+# clean rule for target.
+CMakeFiles/T02Vector.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/clean
+.PHONY : CMakeFiles/T02Vector.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/two_operator.dir
+
+# All Build rule for target.
+CMakeFiles/two_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=38,39 "Built target two_operator"
+.PHONY : CMakeFiles/two_operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/two_operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/two_operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/two_operator.dir/rule
+
+# Convenience name for target.
+two_operator: CMakeFiles/two_operator.dir/rule
+
+.PHONY : two_operator
+
+# clean rule for target.
+CMakeFiles/two_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/clean
+.PHONY : CMakeFiles/two_operator.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/T02.dir
 
 # All Build rule for target.
@@ -262,31 +494,31 @@ CMakeFiles/T02.dir/clean:
 .PHONY : CMakeFiles/T02.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/const_usage.dir
+# Target rules for target CMakeFiles/io_operator.dir
 
 # All Build rule for target.
-CMakeFiles/const_usage.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target const_usage"
-.PHONY : CMakeFiles/const_usage.dir/all
+CMakeFiles/io_operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles --progress-num=26,27 "Built target io_operator"
+.PHONY : CMakeFiles/io_operator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/const_usage.dir/rule: cmake_check_build_system
+CMakeFiles/io_operator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/const_usage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/io_operator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/linux_cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/const_usage.dir/rule
+.PHONY : CMakeFiles/io_operator.dir/rule
 
 # Convenience name for target.
-const_usage: CMakeFiles/const_usage.dir/rule
+io_operator: CMakeFiles/io_operator.dir/rule
 
-.PHONY : const_usage
+.PHONY : io_operator
 
 # clean rule for target.
-CMakeFiles/const_usage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/clean
-.PHONY : CMakeFiles/const_usage.dir/clean
+CMakeFiles/io_operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/clean
+.PHONY : CMakeFiles/io_operator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

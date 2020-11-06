@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /root/CLionProjects/linux_cpp/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion-2020.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/root/clion-2020.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,43 +131,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mysql_cpp
+# Target rules for targets named pointer_operator
 
 # Build rule for target.
-mysql_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysql_cpp
-.PHONY : mysql_cpp
+pointer_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer_operator
+.PHONY : pointer_operator
 
 # fast build rule for target.
-mysql_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/build
-.PHONY : mysql_cpp/fast
+pointer_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/build
+.PHONY : pointer_operator/fast
 
 #=============================================================================
-# Target rules for targets named T02Vector
+# Target rules for targets named brace_operator
 
 # Build rule for target.
-T02Vector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 T02Vector
-.PHONY : T02Vector
+brace_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 brace_operator
+.PHONY : brace_operator
 
 # fast build rule for target.
-T02Vector/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/build
-.PHONY : T02Vector/fast
+brace_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/build
+.PHONY : brace_operator/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named assignment_operator
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+assignment_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment_operator
+.PHONY : assignment_operator
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+assignment_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/build
+.PHONY : assignment_operator/fast
+
+#=============================================================================
+# Target rules for targets named brace_1_operator
+
+# Build rule for target.
+brace_1_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 brace_1_operator
+.PHONY : brace_1_operator
+
+# fast build rule for target.
+brace_1_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/build
+.PHONY : brace_1_operator/fast
+
+#=============================================================================
+# Target rules for targets named one_operator
+
+# Build rule for target.
+one_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 one_operator
+.PHONY : one_operator
+
+# fast build rule for target.
+one_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/build
+.PHONY : one_operator/fast
 
 #=============================================================================
 # Target rules for targets named typeid
@@ -183,6 +209,32 @@ typeid/fast:
 .PHONY : typeid/fast
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named const_usage
+
+# Build rule for target.
+const_usage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 const_usage
+.PHONY : const_usage
+
+# fast build rule for target.
+const_usage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/build
+.PHONY : const_usage/fast
+
+#=============================================================================
 # Target rules for targets named T01
 
 # Build rule for target.
@@ -194,6 +246,58 @@ T01: cmake_check_build_system
 T01/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T01.dir/build.make CMakeFiles/T01.dir/build
 .PHONY : T01/fast
+
+#=============================================================================
+# Target rules for targets named relation_operator
+
+# Build rule for target.
+relation_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 relation_operator
+.PHONY : relation_operator
+
+# fast build rule for target.
+relation_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/build
+.PHONY : relation_operator/fast
+
+#=============================================================================
+# Target rules for targets named plus_plus_operator
+
+# Build rule for target.
+plus_plus_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plus_plus_operator
+.PHONY : plus_plus_operator
+
+# fast build rule for target.
+plus_plus_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/build
+.PHONY : plus_plus_operator/fast
+
+#=============================================================================
+# Target rules for targets named T02Vector
+
+# Build rule for target.
+T02Vector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 T02Vector
+.PHONY : T02Vector
+
+# fast build rule for target.
+T02Vector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/build
+.PHONY : T02Vector/fast
+
+#=============================================================================
+# Target rules for targets named two_operator
+
+# Build rule for target.
+two_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 two_operator
+.PHONY : two_operator
+
+# fast build rule for target.
+two_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/build
+.PHONY : two_operator/fast
 
 #=============================================================================
 # Target rules for targets named T02
@@ -209,44 +313,206 @@ T02/fast:
 .PHONY : T02/fast
 
 #=============================================================================
-# Target rules for targets named const_usage
+# Target rules for targets named io_operator
 
 # Build rule for target.
-const_usage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 const_usage
-.PHONY : const_usage
+io_operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io_operator
+.PHONY : io_operator
 
 # fast build rule for target.
-const_usage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/build
-.PHONY : const_usage/fast
+io_operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/build
+.PHONY : io_operator/fast
 
-cpp/others/const_usage.o: cpp/others/const_usage.cpp.o
+cpp/auto_register/auto_register.o: cpp/auto_register/auto_register.cpp.o
 
-.PHONY : cpp/others/const_usage.o
+.PHONY : cpp/auto_register/auto_register.o
 
 # target to build an object file
-cpp/others/const_usage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/others/const_usage.cpp.o
-.PHONY : cpp/others/const_usage.cpp.o
+cpp/auto_register/auto_register.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/auto_register/auto_register.cpp.o
+.PHONY : cpp/auto_register/auto_register.cpp.o
 
-cpp/others/const_usage.i: cpp/others/const_usage.cpp.i
+cpp/auto_register/auto_register.i: cpp/auto_register/auto_register.cpp.i
 
-.PHONY : cpp/others/const_usage.i
+.PHONY : cpp/auto_register/auto_register.i
 
 # target to preprocess a source file
-cpp/others/const_usage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/others/const_usage.cpp.i
-.PHONY : cpp/others/const_usage.cpp.i
+cpp/auto_register/auto_register.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/auto_register/auto_register.cpp.i
+.PHONY : cpp/auto_register/auto_register.cpp.i
 
-cpp/others/const_usage.s: cpp/others/const_usage.cpp.s
+cpp/auto_register/auto_register.s: cpp/auto_register/auto_register.cpp.s
 
-.PHONY : cpp/others/const_usage.s
+.PHONY : cpp/auto_register/auto_register.s
 
 # target to generate assembly for a file
-cpp/others/const_usage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/others/const_usage.cpp.s
-.PHONY : cpp/others/const_usage.cpp.s
+cpp/auto_register/auto_register.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/auto_register/auto_register.cpp.s
+.PHONY : cpp/auto_register/auto_register.cpp.s
+
+cpp/auto_register/static_1.o: cpp/auto_register/static_1.cpp.o
+
+.PHONY : cpp/auto_register/static_1.o
+
+# target to build an object file
+cpp/auto_register/static_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/auto_register/static_1.cpp.o
+.PHONY : cpp/auto_register/static_1.cpp.o
+
+cpp/auto_register/static_1.i: cpp/auto_register/static_1.cpp.i
+
+.PHONY : cpp/auto_register/static_1.i
+
+# target to preprocess a source file
+cpp/auto_register/static_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/auto_register/static_1.cpp.i
+.PHONY : cpp/auto_register/static_1.cpp.i
+
+cpp/auto_register/static_1.s: cpp/auto_register/static_1.cpp.s
+
+.PHONY : cpp/auto_register/static_1.s
+
+# target to generate assembly for a file
+cpp/auto_register/static_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/auto_register/static_1.cpp.s
+.PHONY : cpp/auto_register/static_1.cpp.s
+
+cpp/const_static/const_usage.o: cpp/const_static/const_usage.cpp.o
+
+.PHONY : cpp/const_static/const_usage.o
+
+# target to build an object file
+cpp/const_static/const_usage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/const_static/const_usage.cpp.o
+.PHONY : cpp/const_static/const_usage.cpp.o
+
+cpp/const_static/const_usage.i: cpp/const_static/const_usage.cpp.i
+
+.PHONY : cpp/const_static/const_usage.i
+
+# target to preprocess a source file
+cpp/const_static/const_usage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/const_static/const_usage.cpp.i
+.PHONY : cpp/const_static/const_usage.cpp.i
+
+cpp/const_static/const_usage.s: cpp/const_static/const_usage.cpp.s
+
+.PHONY : cpp/const_static/const_usage.s
+
+# target to generate assembly for a file
+cpp/const_static/const_usage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/const_usage.dir/build.make CMakeFiles/const_usage.dir/cpp/const_static/const_usage.cpp.s
+.PHONY : cpp/const_static/const_usage.cpp.s
+
+cpp/csignal/csignal.o: cpp/csignal/csignal.cpp.o
+
+.PHONY : cpp/csignal/csignal.o
+
+# target to build an object file
+cpp/csignal/csignal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/csignal/csignal.cpp.o
+.PHONY : cpp/csignal/csignal.cpp.o
+
+cpp/csignal/csignal.i: cpp/csignal/csignal.cpp.i
+
+.PHONY : cpp/csignal/csignal.i
+
+# target to preprocess a source file
+cpp/csignal/csignal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/csignal/csignal.cpp.i
+.PHONY : cpp/csignal/csignal.cpp.i
+
+cpp/csignal/csignal.s: cpp/csignal/csignal.cpp.s
+
+.PHONY : cpp/csignal/csignal.s
+
+# target to generate assembly for a file
+cpp/csignal/csignal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/csignal/csignal.cpp.s
+.PHONY : cpp/csignal/csignal.cpp.s
+
+cpp/exception/exception.o: cpp/exception/exception.cpp.o
+
+.PHONY : cpp/exception/exception.o
+
+# target to build an object file
+cpp/exception/exception.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/exception/exception.cpp.o
+.PHONY : cpp/exception/exception.cpp.o
+
+cpp/exception/exception.i: cpp/exception/exception.cpp.i
+
+.PHONY : cpp/exception/exception.i
+
+# target to preprocess a source file
+cpp/exception/exception.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/exception/exception.cpp.i
+.PHONY : cpp/exception/exception.cpp.i
+
+cpp/exception/exception.s: cpp/exception/exception.cpp.s
+
+.PHONY : cpp/exception/exception.s
+
+# target to generate assembly for a file
+cpp/exception/exception.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/exception/exception.cpp.s
+.PHONY : cpp/exception/exception.cpp.s
+
+cpp/io/io.o: cpp/io/io.cpp.o
+
+.PHONY : cpp/io/io.o
+
+# target to build an object file
+cpp/io/io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/io/io.cpp.o
+.PHONY : cpp/io/io.cpp.o
+
+cpp/io/io.i: cpp/io/io.cpp.i
+
+.PHONY : cpp/io/io.i
+
+# target to preprocess a source file
+cpp/io/io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/io/io.cpp.i
+.PHONY : cpp/io/io.cpp.i
+
+cpp/io/io.s: cpp/io/io.cpp.s
+
+.PHONY : cpp/io/io.s
+
+# target to generate assembly for a file
+cpp/io/io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/io/io.cpp.s
+.PHONY : cpp/io/io.cpp.s
+
+cpp/namespace/namespace.o: cpp/namespace/namespace.cpp.o
+
+.PHONY : cpp/namespace/namespace.o
+
+# target to build an object file
+cpp/namespace/namespace.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/namespace/namespace.cpp.o
+.PHONY : cpp/namespace/namespace.cpp.o
+
+cpp/namespace/namespace.i: cpp/namespace/namespace.cpp.i
+
+.PHONY : cpp/namespace/namespace.i
+
+# target to preprocess a source file
+cpp/namespace/namespace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/namespace/namespace.cpp.i
+.PHONY : cpp/namespace/namespace.cpp.i
+
+cpp/namespace/namespace.s: cpp/namespace/namespace.cpp.s
+
+.PHONY : cpp/namespace/namespace.s
+
+# target to generate assembly for a file
+cpp/namespace/namespace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/namespace/namespace.cpp.s
+.PHONY : cpp/namespace/namespace.cpp.s
 
 cpp/others/typeid.o: cpp/others/typeid.cpp.o
 
@@ -274,6 +540,249 @@ cpp/others/typeid.s: cpp/others/typeid.cpp.s
 cpp/others/typeid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/typeid.dir/build.make CMakeFiles/typeid.dir/cpp/others/typeid.cpp.s
 .PHONY : cpp/others/typeid.cpp.s
+
+cpp/override/assignment_operator.o: cpp/override/assignment_operator.cpp.o
+
+.PHONY : cpp/override/assignment_operator.o
+
+# target to build an object file
+cpp/override/assignment_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/override/assignment_operator.cpp.o
+.PHONY : cpp/override/assignment_operator.cpp.o
+
+cpp/override/assignment_operator.i: cpp/override/assignment_operator.cpp.i
+
+.PHONY : cpp/override/assignment_operator.i
+
+# target to preprocess a source file
+cpp/override/assignment_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/override/assignment_operator.cpp.i
+.PHONY : cpp/override/assignment_operator.cpp.i
+
+cpp/override/assignment_operator.s: cpp/override/assignment_operator.cpp.s
+
+.PHONY : cpp/override/assignment_operator.s
+
+# target to generate assembly for a file
+cpp/override/assignment_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/override/assignment_operator.cpp.s
+.PHONY : cpp/override/assignment_operator.cpp.s
+
+cpp/override/brace_1_operator.o: cpp/override/brace_1_operator.cpp.o
+
+.PHONY : cpp/override/brace_1_operator.o
+
+# target to build an object file
+cpp/override/brace_1_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/cpp/override/brace_1_operator.cpp.o
+.PHONY : cpp/override/brace_1_operator.cpp.o
+
+cpp/override/brace_1_operator.i: cpp/override/brace_1_operator.cpp.i
+
+.PHONY : cpp/override/brace_1_operator.i
+
+# target to preprocess a source file
+cpp/override/brace_1_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/cpp/override/brace_1_operator.cpp.i
+.PHONY : cpp/override/brace_1_operator.cpp.i
+
+cpp/override/brace_1_operator.s: cpp/override/brace_1_operator.cpp.s
+
+.PHONY : cpp/override/brace_1_operator.s
+
+# target to generate assembly for a file
+cpp/override/brace_1_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_1_operator.dir/build.make CMakeFiles/brace_1_operator.dir/cpp/override/brace_1_operator.cpp.s
+.PHONY : cpp/override/brace_1_operator.cpp.s
+
+cpp/override/brace_operator.o: cpp/override/brace_operator.cpp.o
+
+.PHONY : cpp/override/brace_operator.o
+
+# target to build an object file
+cpp/override/brace_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/cpp/override/brace_operator.cpp.o
+.PHONY : cpp/override/brace_operator.cpp.o
+
+cpp/override/brace_operator.i: cpp/override/brace_operator.cpp.i
+
+.PHONY : cpp/override/brace_operator.i
+
+# target to preprocess a source file
+cpp/override/brace_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/cpp/override/brace_operator.cpp.i
+.PHONY : cpp/override/brace_operator.cpp.i
+
+cpp/override/brace_operator.s: cpp/override/brace_operator.cpp.s
+
+.PHONY : cpp/override/brace_operator.s
+
+# target to generate assembly for a file
+cpp/override/brace_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brace_operator.dir/build.make CMakeFiles/brace_operator.dir/cpp/override/brace_operator.cpp.s
+.PHONY : cpp/override/brace_operator.cpp.s
+
+cpp/override/io_operator.o: cpp/override/io_operator.cpp.o
+
+.PHONY : cpp/override/io_operator.o
+
+# target to build an object file
+cpp/override/io_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/cpp/override/io_operator.cpp.o
+.PHONY : cpp/override/io_operator.cpp.o
+
+cpp/override/io_operator.i: cpp/override/io_operator.cpp.i
+
+.PHONY : cpp/override/io_operator.i
+
+# target to preprocess a source file
+cpp/override/io_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/cpp/override/io_operator.cpp.i
+.PHONY : cpp/override/io_operator.cpp.i
+
+cpp/override/io_operator.s: cpp/override/io_operator.cpp.s
+
+.PHONY : cpp/override/io_operator.s
+
+# target to generate assembly for a file
+cpp/override/io_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io_operator.dir/build.make CMakeFiles/io_operator.dir/cpp/override/io_operator.cpp.s
+.PHONY : cpp/override/io_operator.cpp.s
+
+cpp/override/one_operator.o: cpp/override/one_operator.cpp.o
+
+.PHONY : cpp/override/one_operator.o
+
+# target to build an object file
+cpp/override/one_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/cpp/override/one_operator.cpp.o
+.PHONY : cpp/override/one_operator.cpp.o
+
+cpp/override/one_operator.i: cpp/override/one_operator.cpp.i
+
+.PHONY : cpp/override/one_operator.i
+
+# target to preprocess a source file
+cpp/override/one_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/cpp/override/one_operator.cpp.i
+.PHONY : cpp/override/one_operator.cpp.i
+
+cpp/override/one_operator.s: cpp/override/one_operator.cpp.s
+
+.PHONY : cpp/override/one_operator.s
+
+# target to generate assembly for a file
+cpp/override/one_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/one_operator.dir/build.make CMakeFiles/one_operator.dir/cpp/override/one_operator.cpp.s
+.PHONY : cpp/override/one_operator.cpp.s
+
+cpp/override/plus_plus_operator.o: cpp/override/plus_plus_operator.cpp.o
+
+.PHONY : cpp/override/plus_plus_operator.o
+
+# target to build an object file
+cpp/override/plus_plus_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/cpp/override/plus_plus_operator.cpp.o
+.PHONY : cpp/override/plus_plus_operator.cpp.o
+
+cpp/override/plus_plus_operator.i: cpp/override/plus_plus_operator.cpp.i
+
+.PHONY : cpp/override/plus_plus_operator.i
+
+# target to preprocess a source file
+cpp/override/plus_plus_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/cpp/override/plus_plus_operator.cpp.i
+.PHONY : cpp/override/plus_plus_operator.cpp.i
+
+cpp/override/plus_plus_operator.s: cpp/override/plus_plus_operator.cpp.s
+
+.PHONY : cpp/override/plus_plus_operator.s
+
+# target to generate assembly for a file
+cpp/override/plus_plus_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plus_plus_operator.dir/build.make CMakeFiles/plus_plus_operator.dir/cpp/override/plus_plus_operator.cpp.s
+.PHONY : cpp/override/plus_plus_operator.cpp.s
+
+cpp/override/pointer_operator.o: cpp/override/pointer_operator.cpp.o
+
+.PHONY : cpp/override/pointer_operator.o
+
+# target to build an object file
+cpp/override/pointer_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/cpp/override/pointer_operator.cpp.o
+.PHONY : cpp/override/pointer_operator.cpp.o
+
+cpp/override/pointer_operator.i: cpp/override/pointer_operator.cpp.i
+
+.PHONY : cpp/override/pointer_operator.i
+
+# target to preprocess a source file
+cpp/override/pointer_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/cpp/override/pointer_operator.cpp.i
+.PHONY : cpp/override/pointer_operator.cpp.i
+
+cpp/override/pointer_operator.s: cpp/override/pointer_operator.cpp.s
+
+.PHONY : cpp/override/pointer_operator.s
+
+# target to generate assembly for a file
+cpp/override/pointer_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer_operator.dir/build.make CMakeFiles/pointer_operator.dir/cpp/override/pointer_operator.cpp.s
+.PHONY : cpp/override/pointer_operator.cpp.s
+
+cpp/override/relation_operator.o: cpp/override/relation_operator.cpp.o
+
+.PHONY : cpp/override/relation_operator.o
+
+# target to build an object file
+cpp/override/relation_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/cpp/override/relation_operator.cpp.o
+.PHONY : cpp/override/relation_operator.cpp.o
+
+cpp/override/relation_operator.i: cpp/override/relation_operator.cpp.i
+
+.PHONY : cpp/override/relation_operator.i
+
+# target to preprocess a source file
+cpp/override/relation_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/cpp/override/relation_operator.cpp.i
+.PHONY : cpp/override/relation_operator.cpp.i
+
+cpp/override/relation_operator.s: cpp/override/relation_operator.cpp.s
+
+.PHONY : cpp/override/relation_operator.s
+
+# target to generate assembly for a file
+cpp/override/relation_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relation_operator.dir/build.make CMakeFiles/relation_operator.dir/cpp/override/relation_operator.cpp.s
+.PHONY : cpp/override/relation_operator.cpp.s
+
+cpp/override/two_operator.o: cpp/override/two_operator.cpp.o
+
+.PHONY : cpp/override/two_operator.o
+
+# target to build an object file
+cpp/override/two_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/cpp/override/two_operator.cpp.o
+.PHONY : cpp/override/two_operator.cpp.o
+
+cpp/override/two_operator.i: cpp/override/two_operator.cpp.i
+
+.PHONY : cpp/override/two_operator.i
+
+# target to preprocess a source file
+cpp/override/two_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/cpp/override/two_operator.cpp.i
+.PHONY : cpp/override/two_operator.cpp.i
+
+cpp/override/two_operator.s: cpp/override/two_operator.cpp.s
+
+.PHONY : cpp/override/two_operator.s
+
+# target to generate assembly for a file
+cpp/override/two_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/two_operator.dir/build.make CMakeFiles/two_operator.dir/cpp/override/two_operator.cpp.s
+.PHONY : cpp/override/two_operator.cpp.s
 
 cpp/template/T01.o: cpp/template/T01.cpp.o
 
@@ -356,6 +865,141 @@ cpp/template/T02Vector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/T02Vector.dir/build.make CMakeFiles/T02Vector.dir/cpp/template/T02Vector.cpp.s
 .PHONY : cpp/template/T02Vector.cpp.s
 
+cpp/thread/thread_1.o: cpp/thread/thread_1.cpp.o
+
+.PHONY : cpp/thread/thread_1.o
+
+# target to build an object file
+cpp/thread/thread_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_1.cpp.o
+.PHONY : cpp/thread/thread_1.cpp.o
+
+cpp/thread/thread_1.i: cpp/thread/thread_1.cpp.i
+
+.PHONY : cpp/thread/thread_1.i
+
+# target to preprocess a source file
+cpp/thread/thread_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_1.cpp.i
+.PHONY : cpp/thread/thread_1.cpp.i
+
+cpp/thread/thread_1.s: cpp/thread/thread_1.cpp.s
+
+.PHONY : cpp/thread/thread_1.s
+
+# target to generate assembly for a file
+cpp/thread/thread_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_1.cpp.s
+.PHONY : cpp/thread/thread_1.cpp.s
+
+cpp/thread/thread_2.o: cpp/thread/thread_2.cpp.o
+
+.PHONY : cpp/thread/thread_2.o
+
+# target to build an object file
+cpp/thread/thread_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_2.cpp.o
+.PHONY : cpp/thread/thread_2.cpp.o
+
+cpp/thread/thread_2.i: cpp/thread/thread_2.cpp.i
+
+.PHONY : cpp/thread/thread_2.i
+
+# target to preprocess a source file
+cpp/thread/thread_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_2.cpp.i
+.PHONY : cpp/thread/thread_2.cpp.i
+
+cpp/thread/thread_2.s: cpp/thread/thread_2.cpp.s
+
+.PHONY : cpp/thread/thread_2.s
+
+# target to generate assembly for a file
+cpp/thread/thread_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_2.cpp.s
+.PHONY : cpp/thread/thread_2.cpp.s
+
+cpp/thread/thread_3.o: cpp/thread/thread_3.cpp.o
+
+.PHONY : cpp/thread/thread_3.o
+
+# target to build an object file
+cpp/thread/thread_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_3.cpp.o
+.PHONY : cpp/thread/thread_3.cpp.o
+
+cpp/thread/thread_3.i: cpp/thread/thread_3.cpp.i
+
+.PHONY : cpp/thread/thread_3.i
+
+# target to preprocess a source file
+cpp/thread/thread_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_3.cpp.i
+.PHONY : cpp/thread/thread_3.cpp.i
+
+cpp/thread/thread_3.s: cpp/thread/thread_3.cpp.s
+
+.PHONY : cpp/thread/thread_3.s
+
+# target to generate assembly for a file
+cpp/thread/thread_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_3.cpp.s
+.PHONY : cpp/thread/thread_3.cpp.s
+
+cpp/thread/thread_4.o: cpp/thread/thread_4.cpp.o
+
+.PHONY : cpp/thread/thread_4.o
+
+# target to build an object file
+cpp/thread/thread_4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_4.cpp.o
+.PHONY : cpp/thread/thread_4.cpp.o
+
+cpp/thread/thread_4.i: cpp/thread/thread_4.cpp.i
+
+.PHONY : cpp/thread/thread_4.i
+
+# target to preprocess a source file
+cpp/thread/thread_4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_4.cpp.i
+.PHONY : cpp/thread/thread_4.cpp.i
+
+cpp/thread/thread_4.s: cpp/thread/thread_4.cpp.s
+
+.PHONY : cpp/thread/thread_4.s
+
+# target to generate assembly for a file
+cpp/thread/thread_4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_4.cpp.s
+.PHONY : cpp/thread/thread_4.cpp.s
+
+cpp/thread/thread_5.o: cpp/thread/thread_5.cpp.o
+
+.PHONY : cpp/thread/thread_5.o
+
+# target to build an object file
+cpp/thread/thread_5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_5.cpp.o
+.PHONY : cpp/thread/thread_5.cpp.o
+
+cpp/thread/thread_5.i: cpp/thread/thread_5.cpp.i
+
+.PHONY : cpp/thread/thread_5.i
+
+# target to preprocess a source file
+cpp/thread/thread_5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_5.cpp.i
+.PHONY : cpp/thread/thread_5.cpp.i
+
+cpp/thread/thread_5.s: cpp/thread/thread_5.cpp.s
+
+.PHONY : cpp/thread/thread_5.s
+
+# target to generate assembly for a file
+cpp/thread/thread_5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assignment_operator.dir/build.make CMakeFiles/assignment_operator.dir/cpp/thread/thread_5.cpp.s
+.PHONY : cpp/thread/thread_5.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -383,33 +1027,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mysql/mysql_cpp.o: mysql/mysql_cpp.cpp.o
-
-.PHONY : mysql/mysql_cpp.o
-
-# target to build an object file
-mysql/mysql_cpp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.o
-.PHONY : mysql/mysql_cpp.cpp.o
-
-mysql/mysql_cpp.i: mysql/mysql_cpp.cpp.i
-
-.PHONY : mysql/mysql_cpp.i
-
-# target to preprocess a source file
-mysql/mysql_cpp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.i
-.PHONY : mysql/mysql_cpp.cpp.i
-
-mysql/mysql_cpp.s: mysql/mysql_cpp.cpp.s
-
-.PHONY : mysql/mysql_cpp.s
-
-# target to generate assembly for a file
-mysql/mysql_cpp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mysql_cpp.dir/build.make CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.s
-.PHONY : mysql/mysql_cpp.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -421,16 +1038,69 @@ help:
 	@echo "... T01"
 	@echo "... T02"
 	@echo "... T02Vector"
+	@echo "... assignment_operator"
+	@echo "... brace_1_operator"
+	@echo "... brace_operator"
 	@echo "... const_usage"
+	@echo "... io_operator"
 	@echo "... main"
-	@echo "... mysql_cpp"
+	@echo "... one_operator"
+	@echo "... plus_plus_operator"
+	@echo "... pointer_operator"
+	@echo "... relation_operator"
+	@echo "... two_operator"
 	@echo "... typeid"
-	@echo "... cpp/others/const_usage.o"
-	@echo "... cpp/others/const_usage.i"
-	@echo "... cpp/others/const_usage.s"
+	@echo "... cpp/auto_register/auto_register.o"
+	@echo "... cpp/auto_register/auto_register.i"
+	@echo "... cpp/auto_register/auto_register.s"
+	@echo "... cpp/auto_register/static_1.o"
+	@echo "... cpp/auto_register/static_1.i"
+	@echo "... cpp/auto_register/static_1.s"
+	@echo "... cpp/const_static/const_usage.o"
+	@echo "... cpp/const_static/const_usage.i"
+	@echo "... cpp/const_static/const_usage.s"
+	@echo "... cpp/csignal/csignal.o"
+	@echo "... cpp/csignal/csignal.i"
+	@echo "... cpp/csignal/csignal.s"
+	@echo "... cpp/exception/exception.o"
+	@echo "... cpp/exception/exception.i"
+	@echo "... cpp/exception/exception.s"
+	@echo "... cpp/io/io.o"
+	@echo "... cpp/io/io.i"
+	@echo "... cpp/io/io.s"
+	@echo "... cpp/namespace/namespace.o"
+	@echo "... cpp/namespace/namespace.i"
+	@echo "... cpp/namespace/namespace.s"
 	@echo "... cpp/others/typeid.o"
 	@echo "... cpp/others/typeid.i"
 	@echo "... cpp/others/typeid.s"
+	@echo "... cpp/override/assignment_operator.o"
+	@echo "... cpp/override/assignment_operator.i"
+	@echo "... cpp/override/assignment_operator.s"
+	@echo "... cpp/override/brace_1_operator.o"
+	@echo "... cpp/override/brace_1_operator.i"
+	@echo "... cpp/override/brace_1_operator.s"
+	@echo "... cpp/override/brace_operator.o"
+	@echo "... cpp/override/brace_operator.i"
+	@echo "... cpp/override/brace_operator.s"
+	@echo "... cpp/override/io_operator.o"
+	@echo "... cpp/override/io_operator.i"
+	@echo "... cpp/override/io_operator.s"
+	@echo "... cpp/override/one_operator.o"
+	@echo "... cpp/override/one_operator.i"
+	@echo "... cpp/override/one_operator.s"
+	@echo "... cpp/override/plus_plus_operator.o"
+	@echo "... cpp/override/plus_plus_operator.i"
+	@echo "... cpp/override/plus_plus_operator.s"
+	@echo "... cpp/override/pointer_operator.o"
+	@echo "... cpp/override/pointer_operator.i"
+	@echo "... cpp/override/pointer_operator.s"
+	@echo "... cpp/override/relation_operator.o"
+	@echo "... cpp/override/relation_operator.i"
+	@echo "... cpp/override/relation_operator.s"
+	@echo "... cpp/override/two_operator.o"
+	@echo "... cpp/override/two_operator.i"
+	@echo "... cpp/override/two_operator.s"
 	@echo "... cpp/template/T01.o"
 	@echo "... cpp/template/T01.i"
 	@echo "... cpp/template/T01.s"
@@ -440,12 +1110,24 @@ help:
 	@echo "... cpp/template/T02Vector.o"
 	@echo "... cpp/template/T02Vector.i"
 	@echo "... cpp/template/T02Vector.s"
+	@echo "... cpp/thread/thread_1.o"
+	@echo "... cpp/thread/thread_1.i"
+	@echo "... cpp/thread/thread_1.s"
+	@echo "... cpp/thread/thread_2.o"
+	@echo "... cpp/thread/thread_2.i"
+	@echo "... cpp/thread/thread_2.s"
+	@echo "... cpp/thread/thread_3.o"
+	@echo "... cpp/thread/thread_3.i"
+	@echo "... cpp/thread/thread_3.s"
+	@echo "... cpp/thread/thread_4.o"
+	@echo "... cpp/thread/thread_4.i"
+	@echo "... cpp/thread/thread_4.s"
+	@echo "... cpp/thread/thread_5.o"
+	@echo "... cpp/thread/thread_5.i"
+	@echo "... cpp/thread/thread_5.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mysql/mysql_cpp.o"
-	@echo "... mysql/mysql_cpp.i"
-	@echo "... mysql/mysql_cpp.s"
 .PHONY : help
 
 

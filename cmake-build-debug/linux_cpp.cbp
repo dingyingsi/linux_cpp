@@ -17,147 +17,231 @@
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mysql_cpp">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/mysql_cpp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 mysql_cpp"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mysql_cpp/fast">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/mysql_cpp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 mysql_cpp/fast"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="T02Vector">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02Vector" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02Vector"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="T02Vector/fast">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02Vector" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02Vector/fast"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="main/fast">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pointer_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/pointer_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 pointer_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pointer_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/pointer_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 pointer_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brace_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/brace_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 brace_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brace_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/brace_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 brace_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="assignment_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/assignment_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="assignment_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/assignment_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 assignment_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brace_1_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/brace_1_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 brace_1_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brace_1_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/brace_1_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 brace_1_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="one_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/one_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 one_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="one_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/one_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 one_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -205,8 +289,8 @@
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="T01">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T01" prefix_auto="0" extension_auto="0"/>
+			<Target title="main">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -220,14 +304,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T01"/>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
 					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="T01/fast">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T01" prefix_auto="0" extension_auto="0"/>
+			<Target title="main/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -241,49 +325,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T01/fast"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="T02">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02"/>
-					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="T02/fast">
-				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02/fast"/>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
 					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -331,12 +373,351 @@
 					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="T01">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T01"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="T01/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T01/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="relation_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/relation_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 relation_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="relation_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/relation_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 relation_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="plus_plus_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/plus_plus_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 plus_plus_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="plus_plus_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/plus_plus_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 plus_plus_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="T02Vector">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02Vector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02Vector"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="T02Vector/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02Vector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02Vector/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="two_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/two_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 two_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="two_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/two_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 two_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="T02">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="T02/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/T02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 T02/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="io_operator">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/io_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 io_operator"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="io_operator/fast">
+				<Option output="/root/CLionProjects/linux_cpp/cmake-build-debug/io_operator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/CLionProjects/linux_cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 io_operator/fast"/>
+					<CompileFile command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/gmake -j6 -f &quot;/root/CLionProjects/linux_cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="/root/CLionProjects/linux_cpp/cpp/others/const_usage.cpp">
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/auto_register/auto_register.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/auto_register/static_1.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/const_static/const_usage.cpp">
 			<Option target="const_usage"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/csignal/csignal.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/exception/exception.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/io/io.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/namespace/namespace.cpp">
+			<Option target="assignment_operator"/>
 		</Unit>
 		<Unit filename="/root/CLionProjects/linux_cpp/cpp/others/typeid.cpp">
 			<Option target="typeid"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/assignment_operator.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/brace_1_operator.cpp">
+			<Option target="brace_1_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/brace_operator.cpp">
+			<Option target="brace_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/io_operator.cpp">
+			<Option target="io_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/one_operator.cpp">
+			<Option target="one_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/plus_plus_operator.cpp">
+			<Option target="plus_plus_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/pointer_operator.cpp">
+			<Option target="pointer_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/relation_operator.cpp">
+			<Option target="relation_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/override/two_operator.cpp">
+			<Option target="two_operator"/>
 		</Unit>
 		<Unit filename="/root/CLionProjects/linux_cpp/cpp/template/T01.cpp">
 			<Option target="T01"/>
@@ -347,14 +728,23 @@
 		<Unit filename="/root/CLionProjects/linux_cpp/cpp/template/T02Vector.cpp">
 			<Option target="T02Vector"/>
 		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/thread/thread_1.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/thread/thread_2.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/thread/thread_3.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/thread/thread_4.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/linux_cpp/cpp/thread/thread_5.cpp">
+			<Option target="assignment_operator"/>
+		</Unit>
 		<Unit filename="/root/CLionProjects/linux_cpp/main.cpp">
 			<Option target="main"/>
-		</Unit>
-		<Unit filename="/root/CLionProjects/linux_cpp/mysql/mysql_cpp.cpp">
-			<Option target="mysql_cpp"/>
-		</Unit>
-		<Unit filename="/root/CLionProjects/linux_cpp/mysql/mysql_cpp.h">
-			<Option target="mysql_cpp"/>
 		</Unit>
 		<Unit filename="/root/CLionProjects/linux_cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
