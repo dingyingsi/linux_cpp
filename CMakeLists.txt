@@ -3,12 +3,12 @@ project(linux_cpp C CXX)
 
 set(CMAKE_C_STANDARD 11)
 
-link_directories(/usr/lib64/mysql)
-link_libraries(mysqlclient)
+# link_directories(/usr/lib64/mysql)
+# link_libraries(mysqlclient)
 
-add_executable(main main.cpp)
+add_executable(GaussJordanAlgrithmn cpp/code/GaussJordanAlgrithmn.cpp)
+add_executable(Complex cpp/code/Complex.cpp)
 add_executable(typeid cpp/others/typeid.cpp)
-add_executable(one_operator cpp/override/one_operator.cpp)
 add_executable(T01 cpp/template/T01.cpp)
 add_executable(T02 cpp/template/T02.cpp)
 add_executable(T02Vector cpp/template/T02Vector.cpp)

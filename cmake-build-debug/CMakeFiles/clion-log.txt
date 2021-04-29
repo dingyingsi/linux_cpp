@@ -1,16 +1,4 @@
-/root/clion-2020.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /root/CLionProjects/linux_cpp
+/home/dingyingsi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dingyingsi/CLionProjects/linux_cpp
 -- Configuring done
-CMake Error at CMakeLists.txt:11 (add_executable):
-  Cannot find source file:
-
-    cpp/override/one_operator.cpp
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at CMakeLists.txt:11 (add_executable):
-  No SOURCES given to target: one_operator
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /home/dingyingsi/CLionProjects/linux_cpp/cmake-build-debug

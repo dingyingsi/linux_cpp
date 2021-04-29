@@ -1,1 +1,0 @@
-/bin/c++  -g   CMakeFiles/mysql_cpp.dir/mysql/mysql_cpp.cpp.o  -o mysql_cpp   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lmysqlclient 
