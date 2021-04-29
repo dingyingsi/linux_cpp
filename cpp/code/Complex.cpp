@@ -93,4 +93,6 @@ int main(int argc, char** argv) {
 
     c3 = c1 % c2;
     print(c3);
+
+    return EXIT_SUCCESS;
 }
